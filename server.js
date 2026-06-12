@@ -6,8 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const app = express();
-const PORT = process.env.PORT || 5174;
+export const app = express();
 
 app.use(express.json({ limit: "1mb" }));
 
@@ -195,6 +194,4 @@ app.post("/api/backtest", async (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Backtest API listening on http://localhost:${PORT}`);
-});
+// app.listen(...) removed, as app is now mounted inside vite.config.js

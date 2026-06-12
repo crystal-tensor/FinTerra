@@ -86,6 +86,7 @@ def normalize_yahoo_symbol(stock_code: str) -> str:
 
 def get_stock_data(stock_code: str, start_date: str, end_date: str) -> pd.DataFrame:
     """通过 Yahoo Finance 获取日线数据。"""
+
     start = pd.to_datetime(start_date).strftime("%Y-%m-%d")
     # yfinance 的 end 为开区间，这里加 1 天以包含传入的结束日期
     end = (pd.to_datetime(end_date) + pd.Timedelta(days=1)).strftime("%Y-%m-%d")

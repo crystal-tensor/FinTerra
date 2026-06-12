@@ -84,6 +84,11 @@ def split_long_tail_bucket(df: pd.DataFrame, q_head=0.8, q_tail=0.95) -> pd.Data
 # ===================== 3. 数据获取与预处理（国盾量子 688027.SH） =====================
 def get_stock_data(stock_code: str, start_date: str, end_date: str) -> pd.DataFrame:
     """获取A股日线前复权数据"""
+    import requests
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    })
     start = f"{start_date[:4]}-{start_date[4:6]}-{start_date[6:]}"
     end = f"{end_date[:4]}-{end_date[4:6]}-{end_date[6:]}"
     
@@ -92,7 +97,7 @@ def get_stock_data(stock_code: str, start_date: str, end_date: str) -> pd.DataFr
     else:
         yf_symbol = f"{stock_code}.SZ"
         
-    df = yf.download(yf_symbol, start=start, end=end, progress=False)
+    df = yf.download(yf_symbol, start=start, end=end, progress=False, session=session)
     if df.empty:
         return pd.DataFrame()
         
