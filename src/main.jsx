@@ -1047,6 +1047,10 @@ function StrategyWorkbench() {
       });
       const data = await response.json();
       if (!response.ok) {
+        if (response.status === 402 && data.upgradeUrl) {
+          window.location.href = new URL(data.upgradeUrl, window.location.origin).toString();
+          return;
+        }
         throw new Error(data.error || "回测失败");
       }
       setResult(data.result);

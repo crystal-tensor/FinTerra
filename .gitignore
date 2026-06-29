@@ -7,6 +7,7 @@ __pycache__/
 .env
 .env.local
 vendor/MiroFish/.env
+FinTerra/
 
 # Large/private market data and generated research artifacts.
 data/

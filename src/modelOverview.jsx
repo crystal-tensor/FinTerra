@@ -475,6 +475,10 @@ export function ModelOverview() {
         body: JSON.stringify({ symbol: stock.symbol, name: stock.name, start: "20220101" })
       });
       const payload = await response.json();
+      if (response.status === 402 && payload.upgradeUrl) {
+        window.location.href = new URL(payload.upgradeUrl, window.location.origin).toString();
+        return;
+      }
       if (!response.ok) throw new Error(payload.error || payload.detail || "单股回测失败");
       setBacktestResult(payload.result);
     } catch (err) {
