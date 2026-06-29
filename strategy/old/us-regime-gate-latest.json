@@ -1,0 +1,817 @@
+{
+  "generatedAt": "2026-06-16 18:22:40",
+  "experimentName": "time-split-regime-gate-cv",
+  "status": "candidate_not_promoted",
+  "conclusion": "美股 状态门控仍无法避免验证期负贡献。",
+  "sourceModelPath": ".tmp/time-split-us-latest.json",
+  "assetCount": 50,
+  "sampleCount": 100,
+  "featureCount": 56,
+  "bestConfig": {
+    "model": "time-split-regime-gate-random_forest",
+    "objective": 0.524628,
+    "thresholds": {
+      "predictedScoreMin": -0.15,
+      "predictedTotalReturnMin": -0.05,
+      "predictedSharpeMin": 0,
+      "predictedDrawdownMin": -0.03
+    },
+    "summary": {
+      "assets": 50,
+      "activeRate": 0.54,
+      "avgImprovement": {
+        "totalReturn": 0.086814,
+        "annualReturn": 0.060932,
+        "sharpe": 0.181358,
+        "maxDrawdown": -0.00332
+      },
+      "returnImprovedRate": 0.42,
+      "sharpeImprovedRate": 0.4,
+      "drawdownImprovedRate": 0.32,
+      "allObjectivesImprovedRate": 0.28,
+      "byMarket": {
+        "美股": {
+          "assets": 50,
+          "activeRate": 0.54,
+          "avgImprovement": {
+            "totalReturn": 0.086814,
+            "annualReturn": 0.060932,
+            "sharpe": 0.181358,
+            "maxDrawdown": -0.00332
+          },
+          "allObjectivesImprovedRate": 0.28
+        }
+      }
+    }
+  },
+  "oracleUpperBound": {
+    "assets": 50,
+    "activeRate": 1.0,
+    "avgImprovement": {
+      "totalReturn": 0.338284,
+      "annualReturn": 0.233896,
+      "sharpe": 0.644366,
+      "maxDrawdown": 0.050532
+    },
+    "returnImprovedRate": 1.0,
+    "sharpeImprovedRate": 1.0,
+    "drawdownImprovedRate": 0.86,
+    "allObjectivesImprovedRate": 0.86,
+    "byMarket": {
+      "美股": {
+        "assets": 50,
+        "activeRate": 1.0,
+        "avgImprovement": {
+          "totalReturn": 0.338284,
+          "annualReturn": 0.233896,
+          "sharpe": 0.644366,
+          "maxDrawdown": 0.050532
+        },
+        "allObjectivesImprovedRate": 0.86
+      }
+    }
+  },
+  "topConfigs": [
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.524628,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.54,
+        "avgImprovement": {
+          "totalReturn": 0.086814,
+          "annualReturn": 0.060932,
+          "sharpe": 0.181358,
+          "maxDrawdown": -0.00332
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.086814,
+              "annualReturn": 0.060932,
+              "sharpe": 0.181358,
+              "maxDrawdown": -0.00332
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.524628,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.01,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.54,
+        "avgImprovement": {
+          "totalReturn": 0.086814,
+          "annualReturn": 0.060932,
+          "sharpe": 0.181358,
+          "maxDrawdown": -0.00332
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.086814,
+              "annualReturn": 0.060932,
+              "sharpe": 0.181358,
+              "maxDrawdown": -0.00332
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.520776,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.52,
+        "avgImprovement": {
+          "totalReturn": 0.08581,
+          "annualReturn": 0.060144,
+          "sharpe": 0.177156,
+          "maxDrawdown": -0.002712
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.38,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.52,
+            "avgImprovement": {
+              "totalReturn": 0.08581,
+              "annualReturn": 0.060144,
+              "sharpe": 0.177156,
+              "maxDrawdown": -0.002712
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.514478,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.56,
+        "avgImprovement": {
+          "totalReturn": 0.08464,
+          "annualReturn": 0.059262,
+          "sharpe": 0.17445,
+          "maxDrawdown": -0.00386
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.56,
+            "avgImprovement": {
+              "totalReturn": 0.08464,
+              "annualReturn": 0.059262,
+              "sharpe": 0.17445,
+              "maxDrawdown": -0.00386
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.514478,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.01,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.56,
+        "avgImprovement": {
+          "totalReturn": 0.08464,
+          "annualReturn": 0.059262,
+          "sharpe": 0.17445,
+          "maxDrawdown": -0.00386
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.56,
+            "avgImprovement": {
+              "totalReturn": 0.08464,
+              "annualReturn": 0.059262,
+              "sharpe": 0.17445,
+              "maxDrawdown": -0.00386
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.514478,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.01,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.56,
+        "avgImprovement": {
+          "totalReturn": 0.08464,
+          "annualReturn": 0.059262,
+          "sharpe": 0.17445,
+          "maxDrawdown": -0.00386
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.56,
+            "avgImprovement": {
+              "totalReturn": 0.08464,
+              "annualReturn": 0.059262,
+              "sharpe": 0.17445,
+              "maxDrawdown": -0.00386
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.514478,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.01,
+        "predictedSharpeMin": -0.01,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.56,
+        "avgImprovement": {
+          "totalReturn": 0.08464,
+          "annualReturn": 0.059262,
+          "sharpe": 0.17445,
+          "maxDrawdown": -0.00386
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.56,
+            "avgImprovement": {
+              "totalReturn": 0.08464,
+              "annualReturn": 0.059262,
+              "sharpe": 0.17445,
+              "maxDrawdown": -0.00386
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.510626,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.54,
+        "avgImprovement": {
+          "totalReturn": 0.083636,
+          "annualReturn": 0.058474,
+          "sharpe": 0.170248,
+          "maxDrawdown": -0.003252
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.38,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.083636,
+              "annualReturn": 0.058474,
+              "sharpe": 0.170248,
+              "maxDrawdown": -0.003252
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.510626,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": -0.01,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.54,
+        "avgImprovement": {
+          "totalReturn": 0.083636,
+          "annualReturn": 0.058474,
+          "sharpe": 0.170248,
+          "maxDrawdown": -0.003252
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.38,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.083636,
+              "annualReturn": 0.058474,
+              "sharpe": 0.170248,
+              "maxDrawdown": -0.003252
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.50749,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.5,
+        "avgImprovement": {
+          "totalReturn": 0.087036,
+          "annualReturn": 0.061108,
+          "sharpe": 0.182802,
+          "maxDrawdown": -0.003178
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.38,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.087036,
+              "annualReturn": 0.061108,
+              "sharpe": 0.182802,
+              "maxDrawdown": -0.003178
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.50749,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.01,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.5,
+        "avgImprovement": {
+          "totalReturn": 0.087036,
+          "annualReturn": 0.061108,
+          "sharpe": 0.182802,
+          "maxDrawdown": -0.003178
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.38,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.087036,
+              "annualReturn": 0.061108,
+              "sharpe": 0.182802,
+              "maxDrawdown": -0.003178
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.503638,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.086032,
+          "annualReturn": 0.06032,
+          "sharpe": 0.1786,
+          "maxDrawdown": -0.00257
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.086032,
+              "annualReturn": 0.06032,
+              "sharpe": 0.1786,
+              "maxDrawdown": -0.00257
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.503638,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.086032,
+          "annualReturn": 0.06032,
+          "sharpe": 0.1786,
+          "maxDrawdown": -0.00257
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.086032,
+              "annualReturn": 0.06032,
+              "sharpe": 0.1786,
+              "maxDrawdown": -0.00257
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.503638,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": -0.01,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.086032,
+          "annualReturn": 0.06032,
+          "sharpe": 0.1786,
+          "maxDrawdown": -0.00257
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.086032,
+              "annualReturn": 0.06032,
+              "sharpe": 0.1786,
+              "maxDrawdown": -0.00257
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.503638,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.086032,
+          "annualReturn": 0.06032,
+          "sharpe": 0.1786,
+          "maxDrawdown": -0.00257
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.086032,
+              "annualReturn": 0.06032,
+              "sharpe": 0.1786,
+              "maxDrawdown": -0.00257
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.503638,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.086032,
+          "annualReturn": 0.06032,
+          "sharpe": 0.1786,
+          "maxDrawdown": -0.00257
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.3,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.086032,
+              "annualReturn": 0.06032,
+              "sharpe": 0.1786,
+              "maxDrawdown": -0.00257
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.472254,
+      "thresholds": {
+        "predictedScoreMin": -0.05,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.085408,
+          "annualReturn": 0.059738,
+          "sharpe": 0.173374,
+          "maxDrawdown": -0.004602
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.28,
+        "allObjectivesImprovedRate": 0.24,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.085408,
+              "annualReturn": 0.059738,
+              "sharpe": 0.173374,
+              "maxDrawdown": -0.004602
+            },
+            "allObjectivesImprovedRate": 0.24
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.472254,
+      "thresholds": {
+        "predictedScoreMin": -0.05,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.01,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.085408,
+          "annualReturn": 0.059738,
+          "sharpe": 0.173374,
+          "maxDrawdown": -0.004602
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.28,
+        "allObjectivesImprovedRate": 0.24,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.085408,
+              "annualReturn": 0.059738,
+              "sharpe": 0.173374,
+              "maxDrawdown": -0.004602
+            },
+            "allObjectivesImprovedRate": 0.24
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.472254,
+      "thresholds": {
+        "predictedScoreMin": -0.05,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.085408,
+          "annualReturn": 0.059738,
+          "sharpe": 0.173374,
+          "maxDrawdown": -0.004602
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.28,
+        "allObjectivesImprovedRate": 0.24,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.085408,
+              "annualReturn": 0.059738,
+              "sharpe": 0.173374,
+              "maxDrawdown": -0.004602
+            },
+            "allObjectivesImprovedRate": 0.24
+          }
+        }
+      }
+    },
+    {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.472254,
+      "thresholds": {
+        "predictedScoreMin": -0.05,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.48,
+        "avgImprovement": {
+          "totalReturn": 0.085408,
+          "annualReturn": 0.059738,
+          "sharpe": 0.173374,
+          "maxDrawdown": -0.004602
+        },
+        "returnImprovedRate": 0.38,
+        "sharpeImprovedRate": 0.36,
+        "drawdownImprovedRate": 0.28,
+        "allObjectivesImprovedRate": 0.24,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.085408,
+              "annualReturn": 0.059738,
+              "sharpe": 0.173374,
+              "maxDrawdown": -0.004602
+            },
+            "allObjectivesImprovedRate": 0.24
+          }
+        }
+      }
+    }
+  ],
+  "topSafeConfigs": []
+}

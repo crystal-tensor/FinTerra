@@ -1,0 +1,416 @@
+{
+  "market": "A股",
+  "modelName": "PT Heavy Tail OHLCV Transformer",
+  "modelVersion": "full-market-1.0",
+  "generatedAt": "2026-06-23 15:51:33",
+  "dataDir": "data",
+  "outputDir": "strategy/smoke_fast/A股",
+  "resultPath": "strategy/smoke_fast/A股/stock_results_fast.jsonl",
+  "dateRange": {
+    "start": "20220101",
+    "end": "20260623"
+  },
+  "selectionMethod": "Full local CSV market scan. Each stock is evaluated on the same PT parameter grid; the market model chooses parameters on the train split and reports validation plus cross-validation evidence.",
+  "grid": {
+    "modes": [
+      "no_transform",
+      "tail_denoise",
+      "trend_smooth"
+    ],
+    "qHeads": [
+      0.7,
+      0.8
+    ],
+    "qTails": [
+      0.9,
+      0.95
+    ],
+    "etas": [
+      0.35,
+      0.65
+    ],
+    "combinations": 17
+  },
+  "counts": {
+    "successfulStocks": 3,
+    "failedStocks": 0,
+    "trainStocks": 2,
+    "validationStocks": 1
+  },
+  "parameters": {
+    "mode": "trend_smooth",
+    "qHead": 0.7,
+    "qTail": 0.9,
+    "eta": 0.65,
+    "avgScore": 0.328495,
+    "robustnessScore": 0.848495,
+    "returnImprovedRate": 1.0,
+    "sharpeImprovedRate": 1.0,
+    "drawdownImprovedRate": 1.0,
+    "allObjectivesImprovedRate": 1.0,
+    "avgImprovement": {
+      "totalReturn": 0.10385,
+      "annualReturn": 0.0423,
+      "sharpe": 0.1942,
+      "maxDrawdown": 0.0123
+    },
+    "stocks": 2
+  },
+  "trainEvidence": {
+    "stocks": 2,
+    "avgScore": 0.328495,
+    "positiveScoreRate": 1.0,
+    "returnImprovedRate": 1.0,
+    "sharpeImprovedRate": 1.0,
+    "drawdownImprovedRate": 1.0,
+    "allObjectivesImprovedRate": 1.0,
+    "avgBaseline": {
+      "totalReturn": -0.0656,
+      "annualReturn": -0.0292,
+      "maxDrawdown": -0.27365,
+      "winRate": 0.1839,
+      "sharpe": 0.00865
+    },
+    "avgModel": {
+      "totalReturn": 0.03825,
+      "annualReturn": 0.0131,
+      "maxDrawdown": -0.26135,
+      "winRate": 0.1863,
+      "sharpe": 0.20285
+    },
+    "avgImprovement": {
+      "totalReturn": 0.10385,
+      "annualReturn": 0.0423,
+      "sharpe": 0.1942,
+      "maxDrawdown": 0.0123
+    }
+  },
+  "validationEvidence": {
+    "stocks": 1,
+    "avgScore": -0.36727,
+    "positiveScoreRate": 0.0,
+    "returnImprovedRate": 0.0,
+    "sharpeImprovedRate": 0.0,
+    "drawdownImprovedRate": 0.0,
+    "allObjectivesImprovedRate": 0.0,
+    "avgBaseline": {
+      "totalReturn": 0.0084,
+      "annualReturn": 0.0034,
+      "maxDrawdown": -0.4856,
+      "winRate": 0.2048,
+      "sharpe": 0.2303
+    },
+    "avgModel": {
+      "totalReturn": -0.06,
+      "annualReturn": -0.0249,
+      "maxDrawdown": -0.5333,
+      "winRate": 0.2048,
+      "sharpe": 0.1687
+    },
+    "avgImprovement": {
+      "totalReturn": -0.0684,
+      "annualReturn": -0.0283,
+      "sharpe": -0.0616,
+      "maxDrawdown": -0.0477
+    }
+  },
+  "crossValidation": {
+    "stocks": 0,
+    "avgScore": 0,
+    "positiveScoreRate": 0,
+    "returnImprovedRate": 0,
+    "sharpeImprovedRate": 0,
+    "drawdownImprovedRate": 0,
+    "allObjectivesImprovedRate": 0,
+    "avgBaseline": {},
+    "avgModel": {},
+    "avgImprovement": {}
+  },
+  "oraclePerStockUpperBound": {
+    "stocks": 3,
+    "avgScore": 0.358163,
+    "positiveScoreRate": 1.0,
+    "returnImprovedRate": 1.0,
+    "sharpeImprovedRate": 1.0,
+    "drawdownImprovedRate": 1.0,
+    "allObjectivesImprovedRate": 1.0,
+    "avgBaseline": {
+      "totalReturn": -0.040933,
+      "annualReturn": -0.018333,
+      "maxDrawdown": -0.3443,
+      "winRate": 0.190867,
+      "sharpe": 0.082533
+    },
+    "avgModel": {
+      "totalReturn": 0.085667,
+      "annualReturn": 0.032567,
+      "maxDrawdown": -0.328067,
+      "winRate": 0.188167,
+      "sharpe": 0.275333
+    },
+    "avgImprovement": {
+      "totalReturn": 0.1266,
+      "annualReturn": 0.0509,
+      "sharpe": 0.1928,
+      "maxDrawdown": 0.016233
+    }
+  },
+  "candidateAggregateTop20": [
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.7,
+      "qTail": 0.95,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": 0.177353,
+      "avgImprovement": {
+        "totalReturn": 0.0792,
+        "annualReturn": 0.0298,
+        "sharpe": 0.107933,
+        "maxDrawdown": 0.007433
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.7,
+      "qTail": 0.95,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": 0.134103,
+      "avgImprovement": {
+        "totalReturn": 0.0532,
+        "annualReturn": 0.022467,
+        "sharpe": 0.106233,
+        "maxDrawdown": -0.003933
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.8,
+      "qTail": 0.95,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": 0.129143,
+      "avgImprovement": {
+        "totalReturn": 0.055267,
+        "annualReturn": 0.021167,
+        "sharpe": 0.0805,
+        "maxDrawdown": 0.004367
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.7,
+      "qTail": 0.9,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": 0.096573,
+      "avgImprovement": {
+        "totalReturn": 0.046433,
+        "annualReturn": 0.018767,
+        "sharpe": 0.108933,
+        "maxDrawdown": -0.0077
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.7,
+      "qTail": 0.95,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": 0.096573,
+      "avgImprovement": {
+        "totalReturn": 0.046433,
+        "annualReturn": 0.018767,
+        "sharpe": 0.108933,
+        "maxDrawdown": -0.0077
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.8,
+      "qTail": 0.9,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": 0.096573,
+      "avgImprovement": {
+        "totalReturn": 0.046433,
+        "annualReturn": 0.018767,
+        "sharpe": 0.108933,
+        "maxDrawdown": -0.0077
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.8,
+      "qTail": 0.95,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": 0.096573,
+      "avgImprovement": {
+        "totalReturn": 0.046433,
+        "annualReturn": 0.018767,
+        "sharpe": 0.108933,
+        "maxDrawdown": -0.0077
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.8,
+      "qTail": 0.95,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": 0.086523,
+      "avgImprovement": {
+        "totalReturn": 0.0369,
+        "annualReturn": 0.015433,
+        "sharpe": 0.0776,
+        "maxDrawdown": -0.004533
+      },
+      "positiveScoreRate": 0.666667
+    },
+    {
+      "mode": "no_transform",
+      "qHead": 0.7,
+      "qTail": 0.9,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": 0.0,
+      "avgImprovement": {
+        "totalReturn": 0.0,
+        "annualReturn": 0.0,
+        "sharpe": 0.0,
+        "maxDrawdown": 0.0
+      },
+      "positiveScoreRate": 0.0
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.8,
+      "qTail": 0.9,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": -0.090737,
+      "avgImprovement": {
+        "totalReturn": -0.010633,
+        "annualReturn": -0.005033,
+        "sharpe": 0.0066,
+        "maxDrawdown": -0.014733
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.7,
+      "qTail": 0.9,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": -0.093427,
+      "avgImprovement": {
+        "totalReturn": -0.02,
+        "annualReturn": -0.008067,
+        "sharpe": -0.003967,
+        "maxDrawdown": -0.0073
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.7,
+      "qTail": 0.95,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": -0.093427,
+      "avgImprovement": {
+        "totalReturn": -0.02,
+        "annualReturn": -0.008067,
+        "sharpe": -0.003967,
+        "maxDrawdown": -0.0073
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.8,
+      "qTail": 0.9,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": -0.093427,
+      "avgImprovement": {
+        "totalReturn": -0.02,
+        "annualReturn": -0.008067,
+        "sharpe": -0.003967,
+        "maxDrawdown": -0.0073
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "trend_smooth",
+      "qHead": 0.8,
+      "qTail": 0.95,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": -0.093427,
+      "avgImprovement": {
+        "totalReturn": -0.02,
+        "annualReturn": -0.008067,
+        "sharpe": -0.003967,
+        "maxDrawdown": -0.0073
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.7,
+      "qTail": 0.9,
+      "eta": 0.35,
+      "stocks": 3,
+      "avgScore": -0.119453,
+      "avgImprovement": {
+        "totalReturn": -0.010433,
+        "annualReturn": -0.005733,
+        "sharpe": -0.018167,
+        "maxDrawdown": -0.0139
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.8,
+      "qTail": 0.9,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": -0.14319,
+      "avgImprovement": {
+        "totalReturn": -0.011533,
+        "annualReturn": -0.004767,
+        "sharpe": 0.002967,
+        "maxDrawdown": -0.031
+      },
+      "positiveScoreRate": 0.333333
+    },
+    {
+      "mode": "tail_denoise",
+      "qHead": 0.7,
+      "qTail": 0.9,
+      "eta": 0.65,
+      "stocks": 3,
+      "avgScore": -0.25435,
+      "avgImprovement": {
+        "totalReturn": -0.023867,
+        "annualReturn": -0.011533,
+        "sharpe": -0.0229,
+        "maxDrawdown": -0.042433
+      },
+      "positiveScoreRate": 0.333333
+    }
+  ],
+  "sampleFailures": []
+}

@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-23 12:07:04",
+  "updatedAt": "2026-06-23 12:07:16",
+  "dateRange": {
+    "start": "20220101",
+    "end": "20260623"
+  },
+  "dataSource": "tencent+binance",
+  "dataDir": "data",
+  "universe": "all",
+  "cryptoUniverse": "binance-usdt",
+  "counts": {
+    "requested": 3,
+    "successful": 3,
+    "failed": 0,
+    "processed": 3
+  },
+  "successes": [
+    {
+      "market": "加密货币",
+      "symbol": "USDC-USD",
+      "name": "USDC",
+      "rows": 1450,
+      "path": "data/加密货币_USDC-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BTC-USD",
+      "name": "BTC",
+      "rows": null,
+      "path": "data/加密货币_BTC-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ETH-USD",
+      "name": "ETH",
+      "rows": null,
+      "path": "data/加密货币_ETH-USD.csv",
+      "cached": true
+    }
+  ],
+  "failures": []
+}

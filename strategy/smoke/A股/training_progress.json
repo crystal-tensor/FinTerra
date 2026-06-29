@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "market": "A股",
+  "startedAt": "2026-06-23 15:44:29",
+  "completedAt": "2026-06-23 15:44:31",
+  "totalFiles": 3,
+  "successfulStocks": 3,
+  "failedStocks": 0,
+  "latestModel": "strategy/smoke/A股/latest_model.json",
+  "timestampedModel": "strategy/smoke/A股/model_20260623_154431.json",
+  "parameters": {
+    "mode": "trend_smooth",
+    "qHead": 0.7,
+    "qTail": 0.9,
+    "eta": 0.65,
+    "avgScore": 0.328495,
+    "robustnessScore": 0.848495,
+    "returnImprovedRate": 1.0,
+    "sharpeImprovedRate": 1.0,
+    "drawdownImprovedRate": 1.0,
+    "allObjectivesImprovedRate": 1.0,
+    "avgImprovement": {
+      "totalReturn": 0.10385,
+      "annualReturn": 0.0423,
+      "sharpe": 0.1942,
+      "maxDrawdown": 0.0123
+    },
+    "stocks": 2
+  },
+  "validationEvidence": {
+    "stocks": 1,
+    "avgScore": -0.36727,
+    "positiveScoreRate": 0.0,
+    "returnImprovedRate": 0.0,
+    "sharpeImprovedRate": 0.0,
+    "drawdownImprovedRate": 0.0,
+    "allObjectivesImprovedRate": 0.0,
+    "avgBaseline": {
+      "totalReturn": 0.0084,
+      "annualReturn": 0.0034,
+      "maxDrawdown": -0.4856,
+      "winRate": 0.2048,
+      "sharpe": 0.2303
+    },
+    "avgModel": {
+      "totalReturn": -0.06,
+      "annualReturn": -0.0249,
+      "maxDrawdown": -0.5333,
+      "winRate": 0.2048,
+      "sharpe": 0.1687
+    },
+    "avgImprovement": {
+      "totalReturn": -0.0684,
+      "annualReturn": -0.0283,
+      "sharpe": -0.0616,
+      "maxDrawdown": -0.0477
+    }
+  }
+}

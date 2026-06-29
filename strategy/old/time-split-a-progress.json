@@ -1,0 +1,102 @@
+{
+  "startedAt": "2026-06-16 18:01:04",
+  "updatedAt": "2026-06-16 18:04:14",
+  "status": "complete",
+  "markets": [
+    "A股"
+  ],
+  "totalAssets": 50,
+  "completedAssets": 50,
+  "successAssets": 50,
+  "failedAssets": 0,
+  "percent": 1.0,
+  "latestCompleted": {
+    "market": "A股",
+    "symbol": "688981.SS",
+    "name": "中芯国际"
+  },
+  "failures": [],
+  "partial": {
+    "calibrated": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.001626,
+        "annualReturn": 0.002914,
+        "sharpe": -0.029078,
+        "maxDrawdown": -0.015994
+      },
+      "returnImprovedRate": 0.46,
+      "sharpeImprovedRate": 0.46,
+      "drawdownImprovedRate": 0.32,
+      "allObjectivesImprovedRate": 0.26,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.001626,
+            "annualReturn": 0.002914,
+            "sharpe": -0.029078,
+            "maxDrawdown": -0.015994
+          },
+          "allObjectivesImprovedRate": 0.26
+        }
+      }
+    },
+    "stableSelected": {
+      "assets": 50,
+      "activeRate": 0.98,
+      "avgImprovement": {
+        "totalReturn": 0.005032,
+        "annualReturn": 0.006022,
+        "sharpe": 0.052656,
+        "maxDrawdown": -0.01134
+      },
+      "returnImprovedRate": 0.5,
+      "sharpeImprovedRate": 0.52,
+      "drawdownImprovedRate": 0.46,
+      "allObjectivesImprovedRate": 0.38,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.005032,
+            "annualReturn": 0.006022,
+            "sharpe": 0.052656,
+            "maxDrawdown": -0.01134
+          },
+          "allObjectivesImprovedRate": 0.38
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.10998,
+        "annualReturn": 0.149284,
+        "sharpe": 0.77208,
+        "maxDrawdown": 0.044098
+      },
+      "returnImprovedRate": 1.0,
+      "sharpeImprovedRate": 1.0,
+      "drawdownImprovedRate": 0.86,
+      "allObjectivesImprovedRate": 0.86,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.10998,
+            "annualReturn": 0.149284,
+            "sharpe": 0.77208,
+            "maxDrawdown": 0.044098
+          },
+          "allObjectivesImprovedRate": 0.86
+        }
+      }
+    }
+  }
+}

@@ -1,74 +1,85 @@
 import React from "react";
-import { ArrowRight, CheckCircle2, Clock3, Code2, DatabaseZap, KeyRound, LockKeyhole, ServerCog, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, BarChart3, CheckCircle2, Code2, Download, FileText, KeyRound, LockKeyhole, Mail, ServerCog, ShieldCheck, Sparkles } from "lucide-react";
 import { SiteTopNav } from "./portalHome.jsx";
-
-const endpoints = [
-  ["POST", "/v1/signals/rank", "返回指定市场的模型排序与风险标签"],
-  ["POST", "/v1/market/minute", "读取分钟级行情并生成实时特征"],
-  ["POST", "/v1/market/tick", "读取更细粒度 tick 数据能力"],
-  ["POST", "/v1/model/infer", "提交标的池，返回模型推理结果"]
-];
 
 const plans = [
   {
-    name: "展示版",
+    name: "Free",
     price: "免费",
-    cadence: "公开网站访问",
-    desc: "只能查看页面效果、样例图谱和延迟展示结果。",
-    features: ["无需 API Key", "不提供模型参数", "不开放最新分钟或 tick 数据", "不承诺实时可用性"]
+    cadence: "公开研究层",
+    desc: "适合先看基础行情、回测和少量 PT 摘要的个人用户。",
+    features: [
+      "全市场股票搜索与基础日线回测",
+      "每天 3 次 PT 深度报告摘要",
+      "摘要只展示尾部风险等级、重尾强度、策略稳健性评分",
+      "可查看 MiroFish 金融资讯推演结果",
+      "不提供详细参数、批量筛选、报告下载或投资建议"
+    ]
   },
   {
-    name: "API Basic",
+    name: "Pro",
     price: "¥299",
-    cadence: "/ 月",
-    desc: "适合个人研究和低频自动化调用。",
-    features: ["10,000 次/月", "年付 8 折：¥2,870/年", "日线与小时级数据", "标准模型推理接口", "邮件技术支持"]
+    cadence: "/ 月起",
+    desc: "适合个人量化研究者查看完整单股风险诊断。",
+    featured: true,
+    features: [
+      "完整 PT 重尾风险诊断报告",
+      "VaR / CVaR、极端回撤情景、重尾 regime 解释",
+      "单股历史模型对比与报告导出",
+      "MiroFish 推演报告下载",
+      "仅作研究与风控分析，不提供荐股、择时或收益承诺"
+    ]
   },
   {
-    name: "API Pro",
-    price: "¥1,299",
-    cadence: "/ 月",
-    desc: "适合需要随时调用模型和分钟数据的团队。",
-    features: ["200,000 次/月", "年付 8 折：¥12,470/年", "分钟级数据接口", "批量标的池推理", "优先队列与调用审计"]
-  },
-  {
-    name: "Enterprise",
+    name: "Research / API",
     price: "定制",
-    cadence: "私有协议",
-    desc: "适合机构部署、专线接入和更细 tick 数据需求。",
-    features: ["独立额度与限速", "tick 数据接入", "私有网络白名单", "SLA 与合规留痕"]
+    cadence: "机构与私有部署",
+    desc: "适合量化团队、研究机构、数据团队和合规私有环境。",
+    features: [
+      "批量 PT 尾部风险扫描与 API 调用",
+      "自有行情数据接入，避免转售原始行情授权问题",
+      "私有化部署、白名单、调用审计和额度管理",
+      "模型服务、应用服务可同机部署，也可未来拆到伦敦/新加坡",
+      "合同明确用于研究、风控和模型评估"
+    ]
   }
 ];
 
-const boundaries = [
+const useCases = [
   {
-    icon: LockKeyhole,
-    title: "展示站不暴露模型",
-    text: "公开网页只展示效果与历史样例，不下发模型参数、权重、实时特征或可复用的最新数据。"
+    icon: BarChart3,
+    title: "基础行情免费开放",
+    text: "用户可以搜索全部股票，查看日线、基础回测和量子5-20对照。普通看盘用户不被拦住，让传播和试用成本足够低。"
   },
   {
-    icon: ServerCog,
-    title: "模型服务独立部署",
-    text: "模型运行在伦敦节点，应用与 API 网关在新加坡承接访问、鉴权、限速和审计。"
+    icon: Sparkles,
+    title: "深度报告付费解锁",
+    text: "真正收费的是 PT 重尾模型解释：尾部风险、厚尾强度、极端情景、稳健性评分、历史 regime 与报告导出。"
   },
   {
-    icon: DatabaseZap,
-    title: "实时数据只走 API",
-    text: "分钟图、更细 tick 数据和最新推理结果需要付费 Key，按套餐获得不同粒度和调用额度。"
+    icon: ShieldCheck,
+    title: "合规边界清晰",
+    text: "页面不出现买入、卖出、目标价、机会榜等表达。所有输出定位为研究工具和风险诊断，不构成投资建议。"
   }
+];
+
+const endpoints = [
+  ["POST", "/api/backtest", "基础单股回测，公开展示层可用"],
+  ["GET", "/api/model-overview", "模型总览与全市场候选列表"],
+  ["POST", "/api/pt-risk-report", "Pro/Research：完整 PT 风险报告"],
+  ["POST", "/api/research/batch-scan", "Research/API：批量尾部风险扫描"]
 ];
 
 function CodeBlock() {
   return (
     <pre className="api-code-block">
-      <code>{`curl https://api.finterra.ai/v1/model/infer \\
+      <code>{`curl https://your-domain.com/api/pt-risk-report \\
   -H "Authorization: Bearer ft_live_xxx" \\
   -H "Content-Type: application/json" \\
   -d '{
     "market": "US",
-    "symbols": ["AAPL", "NVDA", "TSLA"],
-    "interval": "1m",
-    "features": ["rank", "risk", "regime"]
+    "symbol": "NVDA",
+    "report": ["tail_risk", "cvar", "regime", "robustness"]
   }'`}</code>
     </pre>
   );
@@ -81,74 +92,61 @@ export function ModelApiPage() {
 
       <section className="api-hero">
         <div className="api-hero-copy">
-          <p className="site-kicker">Model API Pricing</p>
-          <h1>付费 API 才能调用模型和实时数据</h1>
+          <p className="site-kicker">PT Tail Risk Research</p>
+          <h1>把普通回测看不见的尾部风险，变成可购买的研究报告和 API。</h1>
           <p>
-            展示网站负责让用户看到效果；付费 API 负责随时随地调用伦敦模型服务，并按权限访问最新数据、分钟图和更细粒度 tick 数据。
+            FinTerra 免费开放基础日线与回测。收费部分不是荐股，也不是预测价格，
+            而是 PT 重尾分布模型生成的风险诊断、完整报告、批量研究 API 和私有部署。
           </p>
+          <div className="api-hero-actions">
+            <a className="site-primary" href="mailto:wavefunction61@gmail.com?subject=FinTerra%20Pro%20Access">
+              申请 Pro / API
+              <ArrowRight size={17} />
+            </a>
+            <a className="site-secondary" href="/model.html">
+              先看模型总览
+            </a>
+          </div>
         </div>
 
-        <aside className="api-status-panel" aria-label="API 部署状态">
+        <aside className="api-status-panel" aria-label="商业化边界">
           <div className="terminal-head">
             <span />
             <span />
             <span />
-            <strong>finterra-api-gateway</strong>
+            <strong>finterra-commercial-boundary</strong>
           </div>
           <div className="api-status-body">
             <div>
-              <Clock3 size={18} />
-              <span>App Region</span>
-              <strong>Singapore</strong>
+              <ServerCog size={18} />
+              <span>Deploy</span>
+              <strong>App + Model Together</strong>
             </div>
             <div>
-              <Zap size={18} />
-              <span>Model Region</span>
-              <strong>London</strong>
+              <FileText size={18} />
+              <span>Free Quota</span>
+              <strong>3 summaries / day</strong>
             </div>
             <div>
-              <ShieldCheck size={18} />
-              <span>Access</span>
-              <strong>Paid Key Only</strong>
+              <LockKeyhole size={18} />
+              <span>Paid Unlock</span>
+              <strong>Full Report + API</strong>
             </div>
           </div>
         </aside>
       </section>
 
-      <section className="api-section api-doc-layout">
-        <div>
-          <p className="site-kicker">How To Call</p>
-          <h2>三步接入 API</h2>
-          <div className="api-step-list">
-            <article>
-              <KeyRound size={20} />
-              <h3>1. 购买套餐并获取 Key</h3>
-              <p>每个 Key 绑定套餐、额度、市场权限和数据粒度。</p>
-            </article>
-            <article>
-              <Code2 size={20} />
-              <h3>2. 请求模型接口</h3>
-              <p>通过 HTTPS POST 传入市场、标的池、周期和需要返回的字段。</p>
-            </article>
-            <article>
-              <CheckCircle2 size={20} />
-              <h3>3. 记录审计结果</h3>
-              <p>每次调用都会生成时间戳、额度消耗、数据粒度和响应状态。</p>
-            </article>
-          </div>
-        </div>
-        <CodeBlock />
-      </section>
-
       <section className="api-section">
         <div className="section-copy">
           <p className="site-kicker">Plans</p>
-          <h2>收费标准</h2>
-          <p>公开页面免费，但不会提供模型参数或最新实时数据。需要稳定调用模型时，使用付费 API Key。</p>
+          <h2>Free、Pro、Research/API</h2>
+          <p>
+            免费层负责建立信任和传播；Pro 卖完整 PT 深度报告；Research/API 卖批量计算、私有部署和机构研究能力。
+          </p>
         </div>
-        <div className="api-pricing-grid">
+        <div className="api-pricing-grid api-pricing-grid-3">
           {plans.map((plan) => (
-            <article className="api-price-card" key={plan.name}>
+            <article className={plan.featured ? "api-price-card featured" : "api-price-card"} key={plan.name}>
               <div className="api-price-head">
                 <h3>{plan.name}</h3>
                 <div>
@@ -171,7 +169,7 @@ export function ModelApiPage() {
       </section>
 
       <section className="api-section api-boundary-grid">
-        {boundaries.map(({ icon: Icon, title, text }) => (
+        {useCases.map(({ icon: Icon, title, text }) => (
           <article className="api-boundary-card" key={title}>
             <Icon size={22} />
             <h3>{title}</h3>
@@ -180,10 +178,36 @@ export function ModelApiPage() {
         ))}
       </section>
 
+      <section className="api-section api-doc-layout">
+        <div>
+          <p className="site-kicker">Paid Details</p>
+          <h2>为什么用户会付费</h2>
+          <div className="api-step-list">
+            <article>
+              <FileText size={20} />
+              <h3>1. 免费摘要只给结论层</h3>
+              <p>尾部风险等级、重尾强度、策略稳健性评分足够让用户理解价值，但不会泄露完整模型细节。</p>
+            </article>
+            <article>
+              <Download size={20} />
+              <h3>2. 下载和完整解释进入 Pro</h3>
+              <p>MiroFish 资讯推演可以在线查看；导出 PDF、复制完整证据链和下载研究包进入付费页。</p>
+            </article>
+            <article>
+              <KeyRound size={20} />
+              <h3>3. 批量和 API 面向机构</h3>
+              <p>机构客户通常关心全市场扫描、审计、稳定接口和私有部署，按研究 API 或项目制报价。</p>
+            </article>
+          </div>
+        </div>
+        <CodeBlock />
+      </section>
+
       <section className="api-section api-endpoints">
         <div>
-          <p className="site-kicker">Endpoints</p>
+          <p className="site-kicker">Interface</p>
           <h2>接口目录</h2>
+          <p>公开接口只承载展示；付费接口需要 Key、额度和用途审核。</p>
         </div>
         <div className="api-endpoint-list">
           {endpoints.map(([method, path, desc]) => (
@@ -198,18 +222,20 @@ export function ModelApiPage() {
 
       <section className="api-cta">
         <div>
-          <p className="site-kicker">Start</p>
-          <h2>申请付费 API Key</h2>
-          <p>发送使用场景、需要的市场、数据粒度和预计调用量，我们会按套餐开通权限。</p>
+          <p className="site-kicker">Compliance First</p>
+          <h2>我们卖研究工具，不卖荐股结论。</h2>
+          <p>
+            FinTerra 不提供买卖建议、目标价、收益承诺或自动交易指令。商业合作请说明使用场景、市场范围、数据来源和是否需要私有部署。
+          </p>
         </div>
-        <a className="site-primary" href="mailto:wavefunction61@gmail.com?subject=FinTerra%20API%20Key">
+        <a className="site-primary" href="mailto:wavefunction61@gmail.com?subject=FinTerra%20Research%20API">
+          <Mail size={17} />
           联系开通
-          <ArrowRight size={17} />
         </a>
       </section>
 
       <footer className="site-footer">
-        <span>Free website shows results only. Model parameters and live data require paid API access.</span>
+        <span>For research, risk analysis and model evaluation only. Not investment advice.</span>
         <a href="mailto:wavefunction61@gmail.com">wavefunction61@gmail.com</a>
       </footer>
     </main>

@@ -1,0 +1,12 @@
+{
+  "status": "running",
+  "market": "A股",
+  "startedAt": "2026-06-23 15:44:53",
+  "updatedAt": "2026-06-23 15:44:53",
+  "totalFiles": 5527,
+  "alreadyCompleted": 0,
+  "remainingJobs": 5527,
+  "successfulStocks": 0,
+  "failedStocks": 0,
+  "gridCombinations": 163
+}

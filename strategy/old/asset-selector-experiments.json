@@ -1,0 +1,2586 @@
+[
+  {
+    "generatedAt": "2026-06-16 15:49:24",
+    "experimentName": "asset-selector-hgb-cross-asset-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "资产级选择器在 5 折跨标的验证中取得小幅正改善，但仍未达到四市场绝大多数资产稳定提升的交付标准。",
+    "sourceModelPath": ".tmp/live-four-market-gated-combined-model.json",
+    "assetCount": 200,
+    "sampleCount": 80200,
+    "featureCount": 20,
+    "bestConfig": {
+      "model": "HistGradientBoostingRegressor",
+      "objective": 0.029937,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": -0.01,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.005,
+        "allObjectivesProbabilityMin": 0.5
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.225,
+        "avgImprovement": {
+          "totalReturn": 0.00904,
+          "annualReturn": 0.003717,
+          "sharpe": 0.019387,
+          "maxDrawdown": 0.000721
+        },
+        "returnImprovedRate": 0.145,
+        "sharpeImprovedRate": 0.175,
+        "drawdownImprovedRate": 0.12,
+        "allObjectivesImprovedRate": 0.115,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.007218,
+              "annualReturn": 0.003026,
+              "sharpe": 0.017456,
+              "maxDrawdown": 0.003806
+            },
+            "allObjectivesImprovedRate": 0.18
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.06,
+            "avgImprovement": {
+              "totalReturn": -0.00021,
+              "annualReturn": -0.000122,
+              "sharpe": 0.002476,
+              "maxDrawdown": 0.001074
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": 0.00877,
+              "annualReturn": 0.003054,
+              "sharpe": 0.014788,
+              "maxDrawdown": 0.001648
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.020384,
+              "annualReturn": 0.00891,
+              "sharpe": 0.042828,
+              "maxDrawdown": -0.003646
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "no_transform": 155,
+          "vol_squeeze": 16,
+          "trend_smooth": 7,
+          "downside_guard": 9,
+          "pt_amplify": 12,
+          "tail_denoise": 1
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 15:54:33",
+    "experimentName": "asset-selector-hgb-cross-asset-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "资产级选择器在 5 折跨标的验证中取得小幅正改善，但仍未达到四市场绝大多数资产稳定提升的交付标准。",
+    "sourceModelPath": "/Users/avalok/work/Awesome/.tmp/live-four-market-gated-combined-model.json",
+    "assetCount": 200,
+    "sampleCount": 80200,
+    "featureCount": 20,
+    "bestConfig": {
+      "model": "HistGradientBoostingRegressor",
+      "objective": 0.029937,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": -0.01,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.005,
+        "allObjectivesProbabilityMin": 0.5
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.225,
+        "avgImprovement": {
+          "totalReturn": 0.00904,
+          "annualReturn": 0.003717,
+          "sharpe": 0.019387,
+          "maxDrawdown": 0.000721
+        },
+        "returnImprovedRate": 0.145,
+        "sharpeImprovedRate": 0.175,
+        "drawdownImprovedRate": 0.12,
+        "allObjectivesImprovedRate": 0.115,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.007218,
+              "annualReturn": 0.003026,
+              "sharpe": 0.017456,
+              "maxDrawdown": 0.003806
+            },
+            "allObjectivesImprovedRate": 0.18
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.06,
+            "avgImprovement": {
+              "totalReturn": -0.00021,
+              "annualReturn": -0.000122,
+              "sharpe": 0.002476,
+              "maxDrawdown": 0.001074
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": 0.00877,
+              "annualReturn": 0.003054,
+              "sharpe": 0.014788,
+              "maxDrawdown": 0.001648
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.020384,
+              "annualReturn": 0.00891,
+              "sharpe": 0.042828,
+              "maxDrawdown": -0.003646
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "no_transform": 155,
+          "vol_squeeze": 16,
+          "trend_smooth": 7,
+          "downside_guard": 9,
+          "pt_amplify": 12,
+          "tail_denoise": 1
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 15:58:11",
+    "experimentName": "asset-selector-hgb-market-features-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "资产级选择器在 5 折跨标的验证中取得小幅正改善，但仍未达到四市场绝大多数资产稳定提升的交付标准。",
+    "sourceModelPath": ".tmp/live-four-market-gated-combined-model.json",
+    "assetCount": 200,
+    "sampleCount": 80200,
+    "featureCount": 44,
+    "bestConfig": {
+      "model": "HistGradientBoostingRegressor",
+      "objective": 0.059416,
+      "thresholds": {
+        "scoreMin": -0.02,
+        "totalReturnMin": 0.03,
+        "sharpeMin": 0.03,
+        "drawdownMin": -0.005,
+        "allObjectivesProbabilityMin": 0.25
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.185,
+        "avgImprovement": {
+          "totalReturn": 0.020557,
+          "annualReturn": 0.006613,
+          "sharpe": 0.031502,
+          "maxDrawdown": 0.002798
+        },
+        "returnImprovedRate": 0.14,
+        "sharpeImprovedRate": 0.135,
+        "drawdownImprovedRate": 0.12,
+        "allObjectivesImprovedRate": 0.11,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.4,
+            "avgImprovement": {
+              "totalReturn": 0.024674,
+              "annualReturn": 0.011028,
+              "sharpe": 0.067522,
+              "maxDrawdown": 0.000228
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.0,
+            "avgImprovement": {
+              "totalReturn": 0.0,
+              "annualReturn": 0.0,
+              "sharpe": 0.0,
+              "maxDrawdown": 0.0
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.013624,
+              "annualReturn": 0.003614,
+              "sharpe": 0.012822,
+              "maxDrawdown": 0.003128
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.04393,
+              "annualReturn": 0.011808,
+              "sharpe": 0.045664,
+              "maxDrawdown": 0.007836
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 10,
+          "trend_smooth": 7,
+          "no_transform": 163,
+          "downside_guard": 8,
+          "vol_squeeze": 10,
+          "tail_denoise": 2
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 16:07:08",
+    "experimentName": "asset-selector-hgb-market-features-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "增强行情特征后的资产选择器在四个市场平均不再产生负贡献，但改善覆盖率仍偏低，暂不推广为正式交付模型。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 200,
+    "sampleCount": 84200,
+    "featureCount": 45,
+    "bestConfig": {
+      "model": "HistGradientBoostingRegressor",
+      "objective": 0.058571,
+      "thresholds": {
+        "scoreMin": -0.02,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.03,
+        "drawdownMin": -0.005,
+        "allObjectivesProbabilityMin": 0.25
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.235,
+        "avgImprovement": {
+          "totalReturn": 0.018393,
+          "annualReturn": 0.006015,
+          "sharpe": 0.031235,
+          "maxDrawdown": 0.002742
+        },
+        "returnImprovedRate": 0.165,
+        "sharpeImprovedRate": 0.17,
+        "drawdownImprovedRate": 0.135,
+        "allObjectivesImprovedRate": 0.12,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.030592,
+              "annualReturn": 0.012886,
+              "sharpe": 0.070434,
+              "maxDrawdown": 0.00502
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.000276,
+              "annualReturn": 0.00035,
+              "sharpe": 0.00188,
+              "maxDrawdown": 0.0002
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.010726,
+              "annualReturn": 0.00262,
+              "sharpe": 0.014056,
+              "maxDrawdown": 0.001528
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.031978,
+              "annualReturn": 0.008204,
+              "sharpe": 0.038572,
+              "maxDrawdown": 0.004218
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 17,
+          "trend_smooth": 7,
+          "no_transform": 153,
+          "downside_guard": 9,
+          "tail_denoise": 1,
+          "vol_squeeze": 13
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 16:13:03",
+    "experimentName": "asset-selector-hgb-market-features-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "增强行情特征后的资产选择器在四个市场平均不再产生负贡献，但改善覆盖率仍偏低，暂不推广为正式交付模型。",
+    "sourceModelPath": "/Users/avalok/work/Awesome/.tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 200,
+    "sampleCount": 84200,
+    "featureCount": 45,
+    "bestConfig": {
+      "model": "HistGradientBoostingRegressor",
+      "objective": 0.058571,
+      "thresholds": {
+        "scoreMin": -0.02,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.03,
+        "drawdownMin": -0.005,
+        "allObjectivesProbabilityMin": 0.25
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.235,
+        "avgImprovement": {
+          "totalReturn": 0.018393,
+          "annualReturn": 0.006015,
+          "sharpe": 0.031235,
+          "maxDrawdown": 0.002742
+        },
+        "returnImprovedRate": 0.165,
+        "sharpeImprovedRate": 0.17,
+        "drawdownImprovedRate": 0.135,
+        "allObjectivesImprovedRate": 0.12,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.030592,
+              "annualReturn": 0.012886,
+              "sharpe": 0.070434,
+              "maxDrawdown": 0.00502
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.000276,
+              "annualReturn": 0.00035,
+              "sharpe": 0.00188,
+              "maxDrawdown": 0.0002
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.010726,
+              "annualReturn": 0.00262,
+              "sharpe": 0.014056,
+              "maxDrawdown": 0.001528
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.031978,
+              "annualReturn": 0.008204,
+              "sharpe": 0.038572,
+              "maxDrawdown": 0.004218
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 17,
+          "trend_smooth": 7,
+          "no_transform": 153,
+          "downside_guard": 9,
+          "tail_denoise": 1,
+          "vol_squeeze": 13
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 16:26:03",
+    "experimentName": "asset-selector-hgb-market-features-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "资产级选择器在 5 折跨标的验证中取得小幅正改善，但仍未达到四市场绝大多数资产稳定提升的交付标准。",
+    "sourceModelPath": "/Users/avalok/work/Awesome/.tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 200,
+    "sampleCount": 84200,
+    "featureCount": 45,
+    "bestConfig": {
+      "model": "hgb-global",
+      "objective": 0.120071,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.4,
+        "avgImprovement": {
+          "totalReturn": 0.023784,
+          "annualReturn": 0.007529,
+          "sharpe": 0.037545,
+          "maxDrawdown": 0.003097
+        },
+        "returnImprovedRate": 0.25,
+        "sharpeImprovedRate": 0.255,
+        "drawdownImprovedRate": 0.23,
+        "allObjectivesImprovedRate": 0.185,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.64,
+            "avgImprovement": {
+              "totalReturn": 0.032834,
+              "annualReturn": 0.013516,
+              "sharpe": 0.073114,
+              "maxDrawdown": 0.00652
+            },
+            "allObjectivesImprovedRate": 0.28
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.003046,
+              "annualReturn": -0.0013,
+              "sharpe": -0.002218,
+              "maxDrawdown": -0.001862
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.018312,
+              "annualReturn": 0.00448,
+              "sharpe": 0.022904,
+              "maxDrawdown": 0.002002
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 34,
+          "no_transform": 120,
+          "pt_amplify": 15,
+          "trend_smooth": 15,
+          "tail_denoise": 3,
+          "momentum_regime": 2
+        }
+      }
+    },
+    "bestCoverageConfig": {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 200,
+      "activeRate": 0.995,
+      "avgImprovement": {
+        "totalReturn": 0.55712,
+        "annualReturn": 0.093833,
+        "sharpe": 0.273932,
+        "maxDrawdown": 0.049423
+      },
+      "returnImprovedRate": 0.995,
+      "sharpeImprovedRate": 0.995,
+      "drawdownImprovedRate": 0.83,
+      "allObjectivesImprovedRate": 0.83,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.380014,
+            "annualReturn": 0.108792,
+            "sharpe": 0.348076,
+            "maxDrawdown": 0.037594
+          },
+          "allObjectivesImprovedRate": 0.84
+        },
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.675356,
+            "annualReturn": 0.07972,
+            "sharpe": 0.15635,
+            "maxDrawdown": 0.057782
+          },
+          "allObjectivesImprovedRate": 0.84
+        },
+        "港股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.439362,
+            "annualReturn": 0.076022,
+            "sharpe": 0.263562,
+            "maxDrawdown": 0.045526
+          },
+          "allObjectivesImprovedRate": 0.86
+        },
+        "美股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.733748,
+            "annualReturn": 0.110798,
+            "sharpe": 0.32774,
+            "maxDrawdown": 0.05679
+          },
+          "allObjectivesImprovedRate": 0.78
+        }
+      },
+      "selectedModeCounts": {
+        "downside_guard": 43,
+        "vol_squeeze": 67,
+        "tail_denoise": 35,
+        "trend_smooth": 13,
+        "pt_amplify": 33,
+        "momentum_regime": 8,
+        "no_transform": 1
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 16:28:58",
+    "experimentName": "asset-selector-hgb-market-features-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "增强行情特征后的资产选择器在四个市场平均不再产生负贡献，但改善覆盖率仍偏低，暂不推广为正式交付模型。",
+    "sourceModelPath": "/Users/avalok/work/Awesome/.tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 200,
+    "sampleCount": 84200,
+    "featureCount": 45,
+    "bestConfig": {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    "bestPerformanceConfig": {
+      "model": "hgb-global",
+      "objective": 0.120071,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.4,
+        "avgImprovement": {
+          "totalReturn": 0.023784,
+          "annualReturn": 0.007529,
+          "sharpe": 0.037545,
+          "maxDrawdown": 0.003097
+        },
+        "returnImprovedRate": 0.25,
+        "sharpeImprovedRate": 0.255,
+        "drawdownImprovedRate": 0.23,
+        "allObjectivesImprovedRate": 0.185,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.64,
+            "avgImprovement": {
+              "totalReturn": 0.032834,
+              "annualReturn": 0.013516,
+              "sharpe": 0.073114,
+              "maxDrawdown": 0.00652
+            },
+            "allObjectivesImprovedRate": 0.28
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.003046,
+              "annualReturn": -0.0013,
+              "sharpe": -0.002218,
+              "maxDrawdown": -0.001862
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.018312,
+              "annualReturn": 0.00448,
+              "sharpe": 0.022904,
+              "maxDrawdown": 0.002002
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 34,
+          "no_transform": 120,
+          "pt_amplify": 15,
+          "trend_smooth": 15,
+          "tail_denoise": 3,
+          "momentum_regime": 2
+        }
+      }
+    },
+    "bestCoverageConfig": {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 200,
+      "activeRate": 0.995,
+      "avgImprovement": {
+        "totalReturn": 0.55712,
+        "annualReturn": 0.093833,
+        "sharpe": 0.273932,
+        "maxDrawdown": 0.049423
+      },
+      "returnImprovedRate": 0.995,
+      "sharpeImprovedRate": 0.995,
+      "drawdownImprovedRate": 0.83,
+      "allObjectivesImprovedRate": 0.83,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.380014,
+            "annualReturn": 0.108792,
+            "sharpe": 0.348076,
+            "maxDrawdown": 0.037594
+          },
+          "allObjectivesImprovedRate": 0.84
+        },
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.675356,
+            "annualReturn": 0.07972,
+            "sharpe": 0.15635,
+            "maxDrawdown": 0.057782
+          },
+          "allObjectivesImprovedRate": 0.84
+        },
+        "港股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.439362,
+            "annualReturn": 0.076022,
+            "sharpe": 0.263562,
+            "maxDrawdown": 0.045526
+          },
+          "allObjectivesImprovedRate": 0.86
+        },
+        "美股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.733748,
+            "annualReturn": 0.110798,
+            "sharpe": 0.32774,
+            "maxDrawdown": 0.05679
+          },
+          "allObjectivesImprovedRate": 0.78
+        }
+      },
+      "selectedModeCounts": {
+        "downside_guard": 43,
+        "vol_squeeze": 67,
+        "tail_denoise": 35,
+        "trend_smooth": 13,
+        "pt_amplify": 33,
+        "momentum_regime": 8,
+        "no_transform": 1
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 16:34:34",
+    "experimentName": "asset-selector-hgb-market-features-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "增强行情特征后的资产选择器在四个市场平均不再产生负贡献，但改善覆盖率仍偏低，暂不推广为正式交付模型。",
+    "sourceModelPath": "/Users/avalok/work/Awesome/.tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 200,
+    "sampleCount": 84200,
+    "featureCount": 45,
+    "bestConfig": {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    "bestPerformanceConfig": {
+      "model": "hgb-global",
+      "objective": 0.120071,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.4,
+        "avgImprovement": {
+          "totalReturn": 0.023784,
+          "annualReturn": 0.007529,
+          "sharpe": 0.037545,
+          "maxDrawdown": 0.003097
+        },
+        "returnImprovedRate": 0.25,
+        "sharpeImprovedRate": 0.255,
+        "drawdownImprovedRate": 0.23,
+        "allObjectivesImprovedRate": 0.185,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.64,
+            "avgImprovement": {
+              "totalReturn": 0.032834,
+              "annualReturn": 0.013516,
+              "sharpe": 0.073114,
+              "maxDrawdown": 0.00652
+            },
+            "allObjectivesImprovedRate": 0.28
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.003046,
+              "annualReturn": -0.0013,
+              "sharpe": -0.002218,
+              "maxDrawdown": -0.001862
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.018312,
+              "annualReturn": 0.00448,
+              "sharpe": 0.022904,
+              "maxDrawdown": 0.002002
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 34,
+          "no_transform": 120,
+          "pt_amplify": 15,
+          "trend_smooth": 15,
+          "tail_denoise": 3,
+          "momentum_regime": 2
+        }
+      }
+    },
+    "bestCoverageConfig": {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 200,
+      "activeRate": 0.995,
+      "avgImprovement": {
+        "totalReturn": 0.55712,
+        "annualReturn": 0.093833,
+        "sharpe": 0.273932,
+        "maxDrawdown": 0.049423
+      },
+      "returnImprovedRate": 0.995,
+      "sharpeImprovedRate": 0.995,
+      "drawdownImprovedRate": 0.83,
+      "allObjectivesImprovedRate": 0.83,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.380014,
+            "annualReturn": 0.108792,
+            "sharpe": 0.348076,
+            "maxDrawdown": 0.037594
+          },
+          "allObjectivesImprovedRate": 0.84
+        },
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.675356,
+            "annualReturn": 0.07972,
+            "sharpe": 0.15635,
+            "maxDrawdown": 0.057782
+          },
+          "allObjectivesImprovedRate": 0.84
+        },
+        "港股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.439362,
+            "annualReturn": 0.076022,
+            "sharpe": 0.263562,
+            "maxDrawdown": 0.045526
+          },
+          "allObjectivesImprovedRate": 0.86
+        },
+        "美股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.733748,
+            "annualReturn": 0.110798,
+            "sharpe": 0.32774,
+            "maxDrawdown": 0.05679
+          },
+          "allObjectivesImprovedRate": 0.78
+        }
+      },
+      "selectedModeCounts": {
+        "downside_guard": 43,
+        "vol_squeeze": 67,
+        "tail_denoise": 35,
+        "trend_smooth": 13,
+        "pt_amplify": 33,
+        "momentum_regime": 8,
+        "no_transform": 1
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 17:18:31",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration",
+      "objective": 0.163662,
+      "thresholds": {
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.96,
+        "avgImprovement": {
+          "totalReturn": -0.07767,
+          "annualReturn": -0.040516,
+          "sharpe": -0.078648,
+          "maxDrawdown": -0.02002
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.48,
+        "allObjectivesImprovedRate": 0.34,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.96,
+            "avgImprovement": {
+              "totalReturn": -0.07767,
+              "annualReturn": -0.040516,
+              "sharpe": -0.078648,
+              "maxDrawdown": -0.02002
+            },
+            "allObjectivesImprovedRate": 0.34
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": 0.323556,
+        "annualReturn": 0.161096,
+        "sharpe": 0.451082,
+        "maxDrawdown": 0.07462
+      },
+      "returnImprovedRate": 0.96,
+      "sharpeImprovedRate": 0.96,
+      "drawdownImprovedRate": 0.88,
+      "allObjectivesImprovedRate": 0.88,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": 0.323556,
+            "annualReturn": 0.161096,
+            "sharpe": 0.451082,
+            "maxDrawdown": 0.07462
+          },
+          "allObjectivesImprovedRate": 0.88
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 17:22:58",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": 0.323556,
+        "annualReturn": 0.161096,
+        "sharpe": 0.451082,
+        "maxDrawdown": 0.07462
+      },
+      "returnImprovedRate": 0.96,
+      "sharpeImprovedRate": 0.96,
+      "drawdownImprovedRate": 0.88,
+      "allObjectivesImprovedRate": 0.88,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": 0.323556,
+            "annualReturn": 0.161096,
+            "sharpe": 0.451082,
+            "maxDrawdown": 0.07462
+          },
+          "allObjectivesImprovedRate": 0.88
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 17:26:21",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -1.13766,
+      "thresholds": {
+        "trainScoreMin": -0.2,
+        "trainTotalReturnMin": 0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0,
+        "splitFraction": 0.5
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.92,
+        "avgImprovement": {
+          "totalReturn": -0.249188,
+          "annualReturn": -0.055984,
+          "sharpe": -0.116016,
+          "maxDrawdown": -0.038172
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.26,
+        "drawdownImprovedRate": 0.34,
+        "allObjectivesImprovedRate": 0.22,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.92,
+            "avgImprovement": {
+              "totalReturn": -0.249188,
+              "annualReturn": -0.055984,
+              "sharpe": -0.116016,
+              "maxDrawdown": -0.038172
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.92,
+      "avgImprovement": {
+        "totalReturn": 0.379268,
+        "annualReturn": 0.094696,
+        "sharpe": 0.2201,
+        "maxDrawdown": 0.063756
+      },
+      "returnImprovedRate": 0.92,
+      "sharpeImprovedRate": 0.92,
+      "drawdownImprovedRate": 0.84,
+      "allObjectivesImprovedRate": 0.84,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.92,
+          "avgImprovement": {
+            "totalReturn": 0.379268,
+            "annualReturn": 0.094696,
+            "sharpe": 0.2201,
+            "maxDrawdown": 0.063756
+          },
+          "allObjectivesImprovedRate": 0.84
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 17:34:30",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": 0.323556,
+        "annualReturn": 0.161096,
+        "sharpe": 0.451082,
+        "maxDrawdown": 0.07462
+      },
+      "returnImprovedRate": 0.96,
+      "sharpeImprovedRate": 0.96,
+      "drawdownImprovedRate": 0.88,
+      "allObjectivesImprovedRate": 0.88,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": 0.323556,
+            "annualReturn": 0.161096,
+            "sharpe": 0.451082,
+            "maxDrawdown": 0.07462
+          },
+          "allObjectivesImprovedRate": 0.88
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 17:41:21",
+    "experimentName": "crypto-regime-gate-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "加密货币状态门控在交叉验证中保持平均不为负，但覆盖率仍未达到多数资产。",
+    "sourceModelPath": ".tmp/time-split-crypto-stability-latest.json",
+    "assetCount": 50,
+    "sampleCount": 100,
+    "featureCount": 56,
+    "bestConfig": {
+      "model": "crypto-regime-gate-hgb",
+      "objective": 0.06979,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.01,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.1,
+        "avgImprovement": {
+          "totalReturn": 0.002416,
+          "annualReturn": 0.00142,
+          "sharpe": 0.005652,
+          "maxDrawdown": 0.004722
+        },
+        "returnImprovedRate": 0.06,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.1,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.1,
+            "avgImprovement": {
+              "totalReturn": 0.002416,
+              "annualReturn": 0.00142,
+              "sharpe": 0.005652,
+              "maxDrawdown": 0.004722
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": 0.323556,
+        "annualReturn": 0.161096,
+        "sharpe": 0.451082,
+        "maxDrawdown": 0.07462
+      },
+      "returnImprovedRate": 0.96,
+      "sharpeImprovedRate": 0.96,
+      "drawdownImprovedRate": 0.88,
+      "allObjectivesImprovedRate": 0.88,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": 0.323556,
+            "annualReturn": 0.161096,
+            "sharpe": 0.451082,
+            "maxDrawdown": 0.07462
+          },
+          "allObjectivesImprovedRate": 0.88
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:04:14",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": 0.160925,
+      "thresholds": {
+        "trainScoreMin": -0.2,
+        "trainTotalReturnMin": 0.05,
+        "trainSharpeMin": 0.05,
+        "trainDrawdownMin": -0.05,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.88,
+        "avgImprovement": {
+          "totalReturn": 0.001838,
+          "annualReturn": 0.002784,
+          "sharpe": -0.017898,
+          "maxDrawdown": -0.010426
+        },
+        "returnImprovedRate": 0.4,
+        "sharpeImprovedRate": 0.42,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.88,
+            "avgImprovement": {
+              "totalReturn": 0.001838,
+              "annualReturn": 0.002784,
+              "sharpe": -0.017898,
+              "maxDrawdown": -0.010426
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.10998,
+        "annualReturn": 0.149284,
+        "sharpe": 0.77208,
+        "maxDrawdown": 0.044098
+      },
+      "returnImprovedRate": 1.0,
+      "sharpeImprovedRate": 1.0,
+      "drawdownImprovedRate": 0.86,
+      "allObjectivesImprovedRate": 0.86,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.10998,
+            "annualReturn": 0.149284,
+            "sharpe": 0.77208,
+            "maxDrawdown": 0.044098
+          },
+          "allObjectivesImprovedRate": 0.86
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:10:52",
+    "experimentName": "time-split-regime-gate-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "A股 状态门控在交叉验证中保持平均不为负，但覆盖率仍未达到多数资产。",
+    "sourceModelPath": ".tmp/time-split-a-share-latest.json",
+    "assetCount": 50,
+    "sampleCount": 100,
+    "featureCount": 56,
+    "bestConfig": {
+      "model": "time-split-regime-gate-extra_trees",
+      "objective": 0.353942,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": 0.004556,
+          "annualReturn": 0.004278,
+          "sharpe": 0.031852,
+          "maxDrawdown": 0.003534
+        },
+        "returnImprovedRate": 0.44,
+        "sharpeImprovedRate": 0.42,
+        "drawdownImprovedRate": 0.42,
+        "allObjectivesImprovedRate": 0.32,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": 0.004556,
+              "annualReturn": 0.004278,
+              "sharpe": 0.031852,
+              "maxDrawdown": 0.003534
+            },
+            "allObjectivesImprovedRate": 0.32
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.10998,
+        "annualReturn": 0.149284,
+        "sharpe": 0.77208,
+        "maxDrawdown": 0.044098
+      },
+      "returnImprovedRate": 1.0,
+      "sharpeImprovedRate": 1.0,
+      "drawdownImprovedRate": 0.86,
+      "allObjectivesImprovedRate": 0.86,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.10998,
+            "annualReturn": 0.149284,
+            "sharpe": 0.77208,
+            "maxDrawdown": 0.044098
+          },
+          "allObjectivesImprovedRate": 0.86
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:19:53",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": 0.240895,
+      "thresholds": {
+        "trainScoreMin": 0.1,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": -0.05,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.86,
+        "avgImprovement": {
+          "totalReturn": -0.006746,
+          "annualReturn": -0.000486,
+          "sharpe": 0.02936,
+          "maxDrawdown": -0.015172
+        },
+        "returnImprovedRate": 0.46,
+        "sharpeImprovedRate": 0.48,
+        "drawdownImprovedRate": 0.44,
+        "allObjectivesImprovedRate": 0.32,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.86,
+            "avgImprovement": {
+              "totalReturn": -0.006746,
+              "annualReturn": -0.000486,
+              "sharpe": 0.02936,
+              "maxDrawdown": -0.015172
+            },
+            "allObjectivesImprovedRate": 0.32
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.338284,
+        "annualReturn": 0.233896,
+        "sharpe": 0.644366,
+        "maxDrawdown": 0.050532
+      },
+      "returnImprovedRate": 1.0,
+      "sharpeImprovedRate": 1.0,
+      "drawdownImprovedRate": 0.86,
+      "allObjectivesImprovedRate": 0.86,
+      "byMarket": {
+        "美股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.338284,
+            "annualReturn": 0.233896,
+            "sharpe": 0.644366,
+            "maxDrawdown": 0.050532
+          },
+          "allObjectivesImprovedRate": 0.86
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:22:40",
+    "experimentName": "time-split-regime-gate-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "美股 状态门控仍无法避免验证期负贡献。",
+    "sourceModelPath": ".tmp/time-split-us-latest.json",
+    "assetCount": 50,
+    "sampleCount": 100,
+    "featureCount": 56,
+    "bestConfig": {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.524628,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.54,
+        "avgImprovement": {
+          "totalReturn": 0.086814,
+          "annualReturn": 0.060932,
+          "sharpe": 0.181358,
+          "maxDrawdown": -0.00332
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.4,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.086814,
+              "annualReturn": 0.060932,
+              "sharpe": 0.181358,
+              "maxDrawdown": -0.00332
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.338284,
+        "annualReturn": 0.233896,
+        "sharpe": 0.644366,
+        "maxDrawdown": 0.050532
+      },
+      "returnImprovedRate": 1.0,
+      "sharpeImprovedRate": 1.0,
+      "drawdownImprovedRate": 0.86,
+      "allObjectivesImprovedRate": 0.86,
+      "byMarket": {
+        "美股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.338284,
+            "annualReturn": 0.233896,
+            "sharpe": 0.644366,
+            "maxDrawdown": 0.050532
+          },
+          "allObjectivesImprovedRate": 0.86
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:28:05",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": 0.312561,
+      "thresholds": {
+        "trainScoreMin": -0.2,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": -0.05,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.96,
+        "avgImprovement": {
+          "totalReturn": -0.014324,
+          "annualReturn": -0.00939,
+          "sharpe": 0.01135,
+          "maxDrawdown": -0.008804
+        },
+        "returnImprovedRate": 0.56,
+        "sharpeImprovedRate": 0.56,
+        "drawdownImprovedRate": 0.5,
+        "allObjectivesImprovedRate": 0.44,
+        "byMarket": {
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.96,
+            "avgImprovement": {
+              "totalReturn": -0.014324,
+              "annualReturn": -0.00939,
+              "sharpe": 0.01135,
+              "maxDrawdown": -0.008804
+            },
+            "allObjectivesImprovedRate": 0.44
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.98,
+      "avgImprovement": {
+        "totalReturn": 0.199608,
+        "annualReturn": 0.150702,
+        "sharpe": 0.553996,
+        "maxDrawdown": 0.040302
+      },
+      "returnImprovedRate": 0.98,
+      "sharpeImprovedRate": 0.98,
+      "drawdownImprovedRate": 0.82,
+      "allObjectivesImprovedRate": 0.82,
+      "byMarket": {
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.199608,
+            "annualReturn": 0.150702,
+            "sharpe": 0.553996,
+            "maxDrawdown": 0.040302
+          },
+          "allObjectivesImprovedRate": 0.82
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:32:06",
+    "experimentName": "time-split-regime-gate-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "港股 状态门控在交叉验证中保持平均不为负，但覆盖率仍未达到多数资产。",
+    "sourceModelPath": ".tmp/time-split-hk-latest.json",
+    "assetCount": 50,
+    "sampleCount": 100,
+    "featureCount": 56,
+    "bestConfig": {
+      "model": "time-split-regime-gate-random_forest",
+      "objective": 0.382132,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.66,
+        "avgImprovement": {
+          "totalReturn": 0.009858,
+          "annualReturn": 0.008932,
+          "sharpe": 0.058162,
+          "maxDrawdown": 0.002512
+        },
+        "returnImprovedRate": 0.48,
+        "sharpeImprovedRate": 0.46,
+        "drawdownImprovedRate": 0.34,
+        "allObjectivesImprovedRate": 0.32,
+        "byMarket": {
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.66,
+            "avgImprovement": {
+              "totalReturn": 0.009858,
+              "annualReturn": 0.008932,
+              "sharpe": 0.058162,
+              "maxDrawdown": 0.002512
+            },
+            "allObjectivesImprovedRate": 0.32
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.98,
+      "avgImprovement": {
+        "totalReturn": 0.199608,
+        "annualReturn": 0.150702,
+        "sharpe": 0.553996,
+        "maxDrawdown": 0.040302
+      },
+      "returnImprovedRate": 0.98,
+      "sharpeImprovedRate": 0.98,
+      "drawdownImprovedRate": 0.82,
+      "allObjectivesImprovedRate": 0.82,
+      "byMarket": {
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.199608,
+            "annualReturn": 0.150702,
+            "sharpe": 0.553996,
+            "maxDrawdown": 0.040302
+          },
+          "allObjectivesImprovedRate": 0.82
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:46:37",
+    "experimentName": "time-split-per-asset-calibration",
+    "status": "candidate_not_promoted",
+    "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+    "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+    "assetCount": 50,
+    "sampleCount": 24050,
+    "featureCount": 0,
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": 0.323556,
+        "annualReturn": 0.161096,
+        "sharpe": 0.451082,
+        "maxDrawdown": 0.07462
+      },
+      "returnImprovedRate": 0.96,
+      "sharpeImprovedRate": 0.96,
+      "drawdownImprovedRate": 0.88,
+      "allObjectivesImprovedRate": 0.88,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": 0.323556,
+            "annualReturn": 0.161096,
+            "sharpe": 0.451082,
+            "maxDrawdown": 0.07462
+          },
+          "allObjectivesImprovedRate": 0.88
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 18:57:34",
+    "experimentName": "crypto-regime-gate-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "加密货币状态门控仍无法避免验证期负贡献。",
+    "sourceModelPath": ".tmp/time-split-crypto-pool-latest.json",
+    "assetCount": 50,
+    "sampleCount": 1095,
+    "featureCount": 57,
+    "bestConfig": {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.068687,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.2,
+        "avgImprovement": {
+          "totalReturn": -0.002614,
+          "annualReturn": -0.00168,
+          "sharpe": 0.001722,
+          "maxDrawdown": -0.000614
+        },
+        "returnImprovedRate": 0.1,
+        "sharpeImprovedRate": 0.12,
+        "drawdownImprovedRate": 0.1,
+        "allObjectivesImprovedRate": 0.08,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": -0.002614,
+              "annualReturn": -0.00168,
+              "sharpe": 0.001722,
+              "maxDrawdown": -0.000614
+            },
+            "allObjectivesImprovedRate": 0.08
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": 0.323556,
+        "annualReturn": 0.161096,
+        "sharpe": 0.451082,
+        "maxDrawdown": 0.07462
+      },
+      "returnImprovedRate": 0.96,
+      "sharpeImprovedRate": 0.96,
+      "drawdownImprovedRate": 0.88,
+      "allObjectivesImprovedRate": 0.88,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": 0.323556,
+            "annualReturn": 0.161096,
+            "sharpe": 0.451082,
+            "maxDrawdown": 0.07462
+          },
+          "allObjectivesImprovedRate": 0.88
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 19:03:32",
+    "experimentName": "crypto-walk-forward-regime-cv",
+    "status": "candidate_not_promoted",
+    "conclusion": "加密货币滚动窗口状态模型仍未稳定转正。",
+    "sourceModelPath": ".tmp/time-split-crypto-pool-latest.json",
+    "assetCount": 12,
+    "sampleCount": 570,
+    "featureCount": 47,
+    "bestConfig": {
+      "model": "crypto-walk-forward-extra_trees",
+      "objective": -0.028474,
+      "thresholds": {
+        "predictedScoreMin": -0.2,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 12,
+        "activeRate": 0.166667,
+        "avgImprovement": {
+          "totalReturn": -0.002875,
+          "annualReturn": -0.005667,
+          "sharpe": -0.004825,
+          "maxDrawdown": -0.001608
+        },
+        "returnImprovedRate": 0.083333,
+        "sharpeImprovedRate": 0.0,
+        "drawdownImprovedRate": 0.083333,
+        "allObjectivesImprovedRate": 0.0,
+        "byMarket": {
+          "加密货币": {
+            "assets": 12,
+            "activeRate": 0.166667,
+            "avgImprovement": {
+              "totalReturn": -0.002875,
+              "annualReturn": -0.005667,
+              "sharpe": -0.004825,
+              "maxDrawdown": -0.001608
+            },
+            "allObjectivesImprovedRate": 0.0
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 12,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": -0.002817,
+        "annualReturn": 0.003025,
+        "sharpe": 0.330067,
+        "maxDrawdown": -0.003142
+      },
+      "returnImprovedRate": 0.666667,
+      "sharpeImprovedRate": 0.666667,
+      "drawdownImprovedRate": 0.5,
+      "allObjectivesImprovedRate": 0.5,
+      "byMarket": {
+        "加密货币": {
+          "assets": 12,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": -0.002817,
+            "annualReturn": 0.003025,
+            "sharpe": 0.330067,
+            "maxDrawdown": -0.003142
+          },
+          "allObjectivesImprovedRate": 0.5
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 19:06:17",
+    "experimentName": "crypto-walk-forward-regime-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "加密货币滚动窗口状态模型验证期平均不为负，但覆盖率仍需提升。",
+    "sourceModelPath": ".tmp/time-split-crypto-pool-latest.json",
+    "assetCount": 20,
+    "sampleCount": 684,
+    "featureCount": 47,
+    "bestConfig": {
+      "model": "crypto-walk-forward-extra_trees",
+      "objective": 0.043858,
+      "thresholds": {
+        "predictedScoreMin": -0.2,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 19,
+        "activeRate": 0.052632,
+        "avgImprovement": {
+          "totalReturn": 0.0006,
+          "annualReturn": 0.000637,
+          "sharpe": 0.001295,
+          "maxDrawdown": 0.000384
+        },
+        "returnImprovedRate": 0.052632,
+        "sharpeImprovedRate": 0.052632,
+        "drawdownImprovedRate": 0.052632,
+        "allObjectivesImprovedRate": 0.052632,
+        "byMarket": {
+          "加密货币": {
+            "assets": 19,
+            "activeRate": 0.052632,
+            "avgImprovement": {
+              "totalReturn": 0.0006,
+              "annualReturn": 0.000637,
+              "sharpe": 0.001295,
+              "maxDrawdown": 0.000384
+            },
+            "allObjectivesImprovedRate": 0.052632
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 19,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.063263,
+        "annualReturn": 0.065405,
+        "sharpe": 0.216032,
+        "maxDrawdown": 0.032411
+      },
+      "returnImprovedRate": 0.736842,
+      "sharpeImprovedRate": 0.789474,
+      "drawdownImprovedRate": 0.631579,
+      "allObjectivesImprovedRate": 0.578947,
+      "byMarket": {
+        "加密货币": {
+          "assets": 19,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.063263,
+            "annualReturn": 0.065405,
+            "sharpe": 0.216032,
+            "maxDrawdown": 0.032411
+          },
+          "allObjectivesImprovedRate": 0.578947
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 19:08:32",
+    "experimentName": "crypto-walk-forward-regime-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "加密货币滚动窗口状态模型验证期平均不为负，但覆盖率仍需提升。",
+    "sourceModelPath": ".tmp/time-split-crypto-pool-latest.json",
+    "assetCount": 20,
+    "sampleCount": 1262,
+    "featureCount": 47,
+    "bestConfig": {
+      "model": "crypto-walk-forward-extra_trees",
+      "objective": 0.043858,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": -0.03
+      },
+      "summary": {
+        "assets": 19,
+        "activeRate": 0.052632,
+        "avgImprovement": {
+          "totalReturn": 0.0006,
+          "annualReturn": 0.000637,
+          "sharpe": 0.001295,
+          "maxDrawdown": 0.000384
+        },
+        "returnImprovedRate": 0.052632,
+        "sharpeImprovedRate": 0.052632,
+        "drawdownImprovedRate": 0.052632,
+        "allObjectivesImprovedRate": 0.052632,
+        "byMarket": {
+          "加密货币": {
+            "assets": 19,
+            "activeRate": 0.052632,
+            "avgImprovement": {
+              "totalReturn": 0.0006,
+              "annualReturn": 0.000637,
+              "sharpe": 0.001295,
+              "maxDrawdown": 0.000384
+            },
+            "allObjectivesImprovedRate": 0.052632
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 19,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.084147,
+        "annualReturn": 0.086979,
+        "sharpe": 0.261558,
+        "maxDrawdown": 0.052732
+      },
+      "returnImprovedRate": 0.736842,
+      "sharpeImprovedRate": 0.789474,
+      "drawdownImprovedRate": 0.736842,
+      "allObjectivesImprovedRate": 0.631579,
+      "byMarket": {
+        "加密货币": {
+          "assets": 19,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.084147,
+            "annualReturn": 0.086979,
+            "sharpe": 0.261558,
+            "maxDrawdown": 0.052732
+          },
+          "allObjectivesImprovedRate": 0.631579
+        }
+      }
+    }
+  },
+  {
+    "generatedAt": "2026-06-16 19:40:05",
+    "experimentName": "crypto-walk-forward-regime-cv",
+    "status": "candidate_safer_not_promoted",
+    "conclusion": "加密货币滚动窗口状态模型验证期平均不为负，但覆盖率仍需提升。",
+    "sourceModelPath": ".tmp/time-split-crypto-pool-latest.json",
+    "assetCount": 20,
+    "sampleCount": 1262,
+    "featureCount": 77,
+    "bestConfig": {
+      "model": "crypto-walk-forward-extra_trees",
+      "objective": 0.043858,
+      "thresholds": {
+        "predictedScoreMin": -0.2,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": -0.005
+      },
+      "summary": {
+        "assets": 19,
+        "activeRate": 0.052632,
+        "avgImprovement": {
+          "totalReturn": 0.0006,
+          "annualReturn": 0.000637,
+          "sharpe": 0.001295,
+          "maxDrawdown": 0.000384
+        },
+        "returnImprovedRate": 0.052632,
+        "sharpeImprovedRate": 0.052632,
+        "drawdownImprovedRate": 0.052632,
+        "allObjectivesImprovedRate": 0.052632,
+        "byMarket": {
+          "加密货币": {
+            "assets": 19,
+            "activeRate": 0.052632,
+            "avgImprovement": {
+              "totalReturn": 0.0006,
+              "annualReturn": 0.000637,
+              "sharpe": 0.001295,
+              "maxDrawdown": 0.000384
+            },
+            "allObjectivesImprovedRate": 0.052632
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 19,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": 0.084147,
+        "annualReturn": 0.086979,
+        "sharpe": 0.261558,
+        "maxDrawdown": 0.052732
+      },
+      "returnImprovedRate": 0.736842,
+      "sharpeImprovedRate": 0.789474,
+      "drawdownImprovedRate": 0.736842,
+      "allObjectivesImprovedRate": 0.631579,
+      "byMarket": {
+        "加密货币": {
+          "assets": 19,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": 0.084147,
+            "annualReturn": 0.086979,
+            "sharpe": 0.261558,
+            "maxDrawdown": 0.052732
+          },
+          "allObjectivesImprovedRate": 0.631579
+        }
+      }
+    }
+  }
+]

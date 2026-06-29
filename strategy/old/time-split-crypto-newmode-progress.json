@@ -1,0 +1,16 @@
+{
+  "startedAt": "2026-06-16 20:03:42",
+  "updatedAt": "2026-06-16 20:03:42",
+  "status": "aborted",
+  "markets": [
+    "加密货币"
+  ],
+  "totalAssets": 12,
+  "completedAssets": 0,
+  "successAssets": 0,
+  "failedAssets": 0,
+  "percent": 0.0,
+  "latestCompleted": null,
+  "failures": [],
+  "note": "用户要求停止本轮 crypto 新模式小规模训练，未纳入正式结果。"
+}

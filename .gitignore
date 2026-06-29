@@ -12,6 +12,9 @@ FinTerra/
 # Large/private market data and generated research artifacts.
 data/
 model-api/data/
+strategy/**/stock_results*.jsonl
+strategy/**/stock_results*_progress.json
+strategy/**/stock_results*_failures.jsonl
 *.log
 output.log
 batch_backtest_results.csv
@@ -19,12 +22,7 @@ batch_backtest_results.xlsx
 batch_backtest_summary.csv
 screencapture-*.pdf
 
-# Model parameters and training outputs stay on the model server.
-strategy/**/*.json
-strategy/**/*.jsonl
-strategy/**/*.csv
-strategy/**/*.xlsx
-!strategy/code/**
+# Large binary model weights stay off GitHub.
 *.pkl
 *.joblib
 *.pt

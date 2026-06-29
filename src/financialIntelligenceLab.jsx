@@ -6,6 +6,7 @@ import {
   Bot,
   CheckSquare,
   CircleHelp,
+  Download,
   Eye,
   EyeOff,
   KeyRound,
@@ -1343,6 +1344,16 @@ export function FinancialIntelligenceLab() {
                   </div>
                   <div className="lab-disclaimer" role="note">
                     免责提醒：以上推演基于当前 news 目录、公开行情和本地图谱关系生成，仅用于研究和情景分析，不构成投资建议、交易指令或收益承诺。市场存在延迟、缺失和突发变化，请结合自身风险承受能力独立判断。
+                  </div>
+                  <div className="lab-premium-report">
+                    <div>
+                      <strong>完整推演报告下载</strong>
+                      <span>在线查看免费；导出 PDF、复制完整证据链、下载研究包进入 Pro。</span>
+                    </div>
+                    <a href="/model-api/?intent=mirofish-report-download">
+                      <Download size={14} />
+                      下载报告
+                    </a>
                   </div>
                 </>
               )}

@@ -1,0 +1,3525 @@
+{
+  "generatedAt": "2026-06-16 16:34:34",
+  "experimentName": "asset-selector-hgb-market-features-cv",
+  "status": "candidate_safer_not_promoted",
+  "conclusion": "增强行情特征后的资产选择器在四个市场平均不再产生负贡献，但改善覆盖率仍偏低，暂不推广为正式交付模型。",
+  "sourceModelPath": "/Users/avalok/work/Awesome/.tmp/live-four-market-with-crypto-momentum-model.json",
+  "dataDir": "data",
+  "folds": 5,
+  "splitSeed": "pt-trading-v1",
+  "assetCount": 200,
+  "candidateCountPerAsset": 401,
+  "sampleCount": 84200,
+  "featureCount": 45,
+  "modes": [
+    "downside_guard",
+    "momentum_regime",
+    "no_transform",
+    "pt_amplify",
+    "tail_denoise",
+    "trend_smooth",
+    "vol_squeeze"
+  ],
+  "markets": [
+    "A股",
+    "加密货币",
+    "港股",
+    "美股"
+  ],
+  "bestConfig": {
+    "model": "hgb-global",
+    "objective": 0.069862,
+    "thresholds": {
+      "scoreMin": 0.03,
+      "totalReturnMin": -0.02,
+      "sharpeMin": -0.02,
+      "drawdownMin": -0.01,
+      "allObjectivesProbabilityMin": 0
+    },
+    "summary": {
+      "assets": 200,
+      "activeRate": 0.29,
+      "avgImprovement": {
+        "totalReturn": 0.022676,
+        "annualReturn": 0.007382,
+        "sharpe": 0.035297,
+        "maxDrawdown": 0.003349
+      },
+      "returnImprovedRate": 0.19,
+      "sharpeImprovedRate": 0.195,
+      "drawdownImprovedRate": 0.175,
+      "allObjectivesImprovedRate": 0.135,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 0.5,
+          "avgImprovement": {
+            "totalReturn": 0.02929,
+            "annualReturn": 0.012478,
+            "sharpe": 0.069514,
+            "maxDrawdown": 0.007116
+          },
+          "allObjectivesImprovedRate": 0.22
+        },
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.04,
+          "avgImprovement": {
+            "totalReturn": 0.012196,
+            "annualReturn": 0.001366,
+            "sharpe": 0.003452,
+            "maxDrawdown": 0.000326
+          },
+          "allObjectivesImprovedRate": 0.02
+        },
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.26,
+          "avgImprovement": {
+            "totalReturn": 0.010444,
+            "annualReturn": 0.002812,
+            "sharpe": 0.014426,
+            "maxDrawdown": 0.00257
+          },
+          "allObjectivesImprovedRate": 0.14
+        },
+        "美股": {
+          "assets": 50,
+          "activeRate": 0.36,
+          "avgImprovement": {
+            "totalReturn": 0.038772,
+            "annualReturn": 0.012874,
+            "sharpe": 0.053796,
+            "maxDrawdown": 0.003384
+          },
+          "allObjectivesImprovedRate": 0.16
+        }
+      },
+      "selectedModeCounts": {
+        "downside_guard": 11,
+        "vol_squeeze": 19,
+        "no_transform": 142,
+        "pt_amplify": 11,
+        "trend_smooth": 11,
+        "tail_denoise": 5,
+        "momentum_regime": 1
+      }
+    }
+  },
+  "bestPerformanceConfig": {
+    "model": "hgb-global",
+    "objective": 0.120071,
+    "thresholds": {
+      "scoreMin": -0.05,
+      "totalReturnMin": -0.02,
+      "sharpeMin": -0.02,
+      "drawdownMin": -0.01,
+      "allObjectivesProbabilityMin": 0
+    },
+    "summary": {
+      "assets": 200,
+      "activeRate": 0.4,
+      "avgImprovement": {
+        "totalReturn": 0.023784,
+        "annualReturn": 0.007529,
+        "sharpe": 0.037545,
+        "maxDrawdown": 0.003097
+      },
+      "returnImprovedRate": 0.25,
+      "sharpeImprovedRate": 0.255,
+      "drawdownImprovedRate": 0.23,
+      "allObjectivesImprovedRate": 0.185,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 0.64,
+          "avgImprovement": {
+            "totalReturn": 0.032834,
+            "annualReturn": 0.013516,
+            "sharpe": 0.073114,
+            "maxDrawdown": 0.00652
+          },
+          "allObjectivesImprovedRate": 0.28
+        },
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.14,
+          "avgImprovement": {
+            "totalReturn": 0.003046,
+            "annualReturn": -0.0013,
+            "sharpe": -0.002218,
+            "maxDrawdown": -0.001862
+          },
+          "allObjectivesImprovedRate": 0.02
+        },
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.36,
+          "avgImprovement": {
+            "totalReturn": 0.018312,
+            "annualReturn": 0.00448,
+            "sharpe": 0.022904,
+            "maxDrawdown": 0.002002
+          },
+          "allObjectivesImprovedRate": 0.22
+        },
+        "美股": {
+          "assets": 50,
+          "activeRate": 0.46,
+          "avgImprovement": {
+            "totalReturn": 0.040942,
+            "annualReturn": 0.013418,
+            "sharpe": 0.05638,
+            "maxDrawdown": 0.005728
+          },
+          "allObjectivesImprovedRate": 0.22
+        }
+      },
+      "selectedModeCounts": {
+        "downside_guard": 11,
+        "vol_squeeze": 34,
+        "no_transform": 120,
+        "pt_amplify": 15,
+        "trend_smooth": 15,
+        "tail_denoise": 3,
+        "momentum_regime": 2
+      }
+    }
+  },
+  "bestCoverageConfig": {
+    "model": "hgb-global",
+    "objective": 0.069862,
+    "thresholds": {
+      "scoreMin": 0.03,
+      "totalReturnMin": -0.02,
+      "sharpeMin": -0.02,
+      "drawdownMin": -0.01,
+      "allObjectivesProbabilityMin": 0
+    },
+    "summary": {
+      "assets": 200,
+      "activeRate": 0.29,
+      "avgImprovement": {
+        "totalReturn": 0.022676,
+        "annualReturn": 0.007382,
+        "sharpe": 0.035297,
+        "maxDrawdown": 0.003349
+      },
+      "returnImprovedRate": 0.19,
+      "sharpeImprovedRate": 0.195,
+      "drawdownImprovedRate": 0.175,
+      "allObjectivesImprovedRate": 0.135,
+      "byMarket": {
+        "A股": {
+          "assets": 50,
+          "activeRate": 0.5,
+          "avgImprovement": {
+            "totalReturn": 0.02929,
+            "annualReturn": 0.012478,
+            "sharpe": 0.069514,
+            "maxDrawdown": 0.007116
+          },
+          "allObjectivesImprovedRate": 0.22
+        },
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.04,
+          "avgImprovement": {
+            "totalReturn": 0.012196,
+            "annualReturn": 0.001366,
+            "sharpe": 0.003452,
+            "maxDrawdown": 0.000326
+          },
+          "allObjectivesImprovedRate": 0.02
+        },
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.26,
+          "avgImprovement": {
+            "totalReturn": 0.010444,
+            "annualReturn": 0.002812,
+            "sharpe": 0.014426,
+            "maxDrawdown": 0.00257
+          },
+          "allObjectivesImprovedRate": 0.14
+        },
+        "美股": {
+          "assets": 50,
+          "activeRate": 0.36,
+          "avgImprovement": {
+            "totalReturn": 0.038772,
+            "annualReturn": 0.012874,
+            "sharpe": 0.053796,
+            "maxDrawdown": 0.003384
+          },
+          "allObjectivesImprovedRate": 0.16
+        }
+      },
+      "selectedModeCounts": {
+        "downside_guard": 11,
+        "vol_squeeze": 19,
+        "no_transform": 142,
+        "pt_amplify": 11,
+        "trend_smooth": 11,
+        "tail_denoise": 5,
+        "momentum_regime": 1
+      }
+    }
+  },
+  "oracleUpperBound": {
+    "assets": 200,
+    "activeRate": 0.995,
+    "avgImprovement": {
+      "totalReturn": 0.55712,
+      "annualReturn": 0.093833,
+      "sharpe": 0.273932,
+      "maxDrawdown": 0.049423
+    },
+    "returnImprovedRate": 0.995,
+    "sharpeImprovedRate": 0.995,
+    "drawdownImprovedRate": 0.83,
+    "allObjectivesImprovedRate": 0.83,
+    "byMarket": {
+      "A股": {
+        "assets": 50,
+        "activeRate": 1.0,
+        "avgImprovement": {
+          "totalReturn": 0.380014,
+          "annualReturn": 0.108792,
+          "sharpe": 0.348076,
+          "maxDrawdown": 0.037594
+        },
+        "allObjectivesImprovedRate": 0.84
+      },
+      "加密货币": {
+        "assets": 50,
+        "activeRate": 0.98,
+        "avgImprovement": {
+          "totalReturn": 0.675356,
+          "annualReturn": 0.07972,
+          "sharpe": 0.15635,
+          "maxDrawdown": 0.057782
+        },
+        "allObjectivesImprovedRate": 0.84
+      },
+      "港股": {
+        "assets": 50,
+        "activeRate": 1.0,
+        "avgImprovement": {
+          "totalReturn": 0.439362,
+          "annualReturn": 0.076022,
+          "sharpe": 0.263562,
+          "maxDrawdown": 0.045526
+        },
+        "allObjectivesImprovedRate": 0.86
+      },
+      "美股": {
+        "assets": 50,
+        "activeRate": 1.0,
+        "avgImprovement": {
+          "totalReturn": 0.733748,
+          "annualReturn": 0.110798,
+          "sharpe": 0.32774,
+          "maxDrawdown": 0.05679
+        },
+        "allObjectivesImprovedRate": 0.78
+      }
+    },
+    "selectedModeCounts": {
+      "downside_guard": 43,
+      "vol_squeeze": 67,
+      "tail_denoise": 35,
+      "trend_smooth": 13,
+      "pt_amplify": 33,
+      "momentum_regime": 8,
+      "no_transform": 1
+    }
+  },
+  "topConfigs": [
+    {
+      "model": "hgb-global",
+      "objective": 0.120071,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.4,
+        "avgImprovement": {
+          "totalReturn": 0.023784,
+          "annualReturn": 0.007529,
+          "sharpe": 0.037545,
+          "maxDrawdown": 0.003097
+        },
+        "returnImprovedRate": 0.25,
+        "sharpeImprovedRate": 0.255,
+        "drawdownImprovedRate": 0.23,
+        "allObjectivesImprovedRate": 0.185,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.64,
+            "avgImprovement": {
+              "totalReturn": 0.032834,
+              "annualReturn": 0.013516,
+              "sharpe": 0.073114,
+              "maxDrawdown": 0.00652
+            },
+            "allObjectivesImprovedRate": 0.28
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.003046,
+              "annualReturn": -0.0013,
+              "sharpe": -0.002218,
+              "maxDrawdown": -0.001862
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.018312,
+              "annualReturn": 0.00448,
+              "sharpe": 0.022904,
+              "maxDrawdown": 0.002002
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 34,
+          "no_transform": 120,
+          "pt_amplify": 15,
+          "trend_smooth": 15,
+          "tail_denoise": 3,
+          "momentum_regime": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.11446,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.4,
+        "avgImprovement": {
+          "totalReturn": 0.023297,
+          "annualReturn": 0.007379,
+          "sharpe": 0.037053,
+          "maxDrawdown": 0.003003
+        },
+        "returnImprovedRate": 0.245,
+        "sharpeImprovedRate": 0.25,
+        "drawdownImprovedRate": 0.23,
+        "allObjectivesImprovedRate": 0.18,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.64,
+            "avgImprovement": {
+              "totalReturn": 0.030888,
+              "annualReturn": 0.012918,
+              "sharpe": 0.071146,
+              "maxDrawdown": 0.006144
+            },
+            "allObjectivesImprovedRate": 0.26
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.003046,
+              "annualReturn": -0.0013,
+              "sharpe": -0.002218,
+              "maxDrawdown": -0.001862
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.018312,
+              "annualReturn": 0.00448,
+              "sharpe": 0.022904,
+              "maxDrawdown": 0.002002
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 35,
+          "no_transform": 120,
+          "pt_amplify": 15,
+          "trend_smooth": 14,
+          "tail_denoise": 3,
+          "momentum_regime": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.109903,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.375,
+        "avgImprovement": {
+          "totalReturn": 0.023449,
+          "annualReturn": 0.007608,
+          "sharpe": 0.037344,
+          "maxDrawdown": 0.003085
+        },
+        "returnImprovedRate": 0.235,
+        "sharpeImprovedRate": 0.24,
+        "drawdownImprovedRate": 0.215,
+        "allObjectivesImprovedRate": 0.17,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.6,
+            "avgImprovement": {
+              "totalReturn": 0.031762,
+              "annualReturn": 0.013126,
+              "sharpe": 0.071974,
+              "maxDrawdown": 0.006176
+            },
+            "allObjectivesImprovedRate": 0.26
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": 0.005054,
+              "annualReturn": -5.6e-05,
+              "sharpe": 0.000852,
+              "maxDrawdown": -0.001102
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.016036,
+              "annualReturn": 0.003944,
+              "sharpe": 0.02017,
+              "maxDrawdown": 0.00154
+            },
+            "allObjectivesImprovedRate": 0.18
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 31,
+          "no_transform": 125,
+          "pt_amplify": 14,
+          "trend_smooth": 15,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.104294,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.375,
+        "avgImprovement": {
+          "totalReturn": 0.022962,
+          "annualReturn": 0.007458,
+          "sharpe": 0.036852,
+          "maxDrawdown": 0.002992
+        },
+        "returnImprovedRate": 0.23,
+        "sharpeImprovedRate": 0.235,
+        "drawdownImprovedRate": 0.215,
+        "allObjectivesImprovedRate": 0.165,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.6,
+            "avgImprovement": {
+              "totalReturn": 0.029816,
+              "annualReturn": 0.012528,
+              "sharpe": 0.070006,
+              "maxDrawdown": 0.0058
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": 0.005054,
+              "annualReturn": -5.6e-05,
+              "sharpe": 0.000852,
+              "maxDrawdown": -0.001102
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.016036,
+              "annualReturn": 0.003944,
+              "sharpe": 0.02017,
+              "maxDrawdown": 0.00154
+            },
+            "allObjectivesImprovedRate": 0.18
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.040942,
+              "annualReturn": 0.013418,
+              "sharpe": 0.05638,
+              "maxDrawdown": 0.005728
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 32,
+          "no_transform": 125,
+          "pt_amplify": 14,
+          "trend_smooth": 14,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.099493,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.36,
+        "avgImprovement": {
+          "totalReturn": 0.023143,
+          "annualReturn": 0.007327,
+          "sharpe": 0.03616,
+          "maxDrawdown": 0.002814
+        },
+        "returnImprovedRate": 0.23,
+        "sharpeImprovedRate": 0.24,
+        "drawdownImprovedRate": 0.2,
+        "allObjectivesImprovedRate": 0.17,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.031802,
+              "annualReturn": 0.013038,
+              "sharpe": 0.070248,
+              "maxDrawdown": 0.004894
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.14,
+            "avgImprovement": {
+              "totalReturn": 0.003046,
+              "annualReturn": -0.0013,
+              "sharpe": -0.002218,
+              "maxDrawdown": -0.001862
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.013786,
+              "annualReturn": 0.003692,
+              "sharpe": 0.018744,
+              "maxDrawdown": 0.001902
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.043938,
+              "annualReturn": 0.013876,
+              "sharpe": 0.057864,
+              "maxDrawdown": 0.006324
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 31,
+          "no_transform": 128,
+          "pt_amplify": 14,
+          "trend_smooth": 12,
+          "tail_denoise": 3,
+          "momentum_regime": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.089234,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.34,
+        "avgImprovement": {
+          "totalReturn": 0.022752,
+          "annualReturn": 0.007385,
+          "sharpe": 0.035806,
+          "maxDrawdown": 0.002717
+        },
+        "returnImprovedRate": 0.215,
+        "sharpeImprovedRate": 0.225,
+        "drawdownImprovedRate": 0.185,
+        "allObjectivesImprovedRate": 0.155,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.52,
+            "avgImprovement": {
+              "totalReturn": 0.030504,
+              "annualReturn": 0.012564,
+              "sharpe": 0.068498,
+              "maxDrawdown": 0.004204
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": 0.005054,
+              "annualReturn": -5.6e-05,
+              "sharpe": 0.000852,
+              "maxDrawdown": -0.001102
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.01151,
+              "annualReturn": 0.003156,
+              "sharpe": 0.01601,
+              "maxDrawdown": 0.00144
+            },
+            "allObjectivesImprovedRate": 0.16
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.043938,
+              "annualReturn": 0.013876,
+              "sharpe": 0.057864,
+              "maxDrawdown": 0.006324
+            },
+            "allObjectivesImprovedRate": 0.22
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 28,
+          "no_transform": 132,
+          "pt_amplify": 14,
+          "trend_smooth": 12,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.085709,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.33,
+        "avgImprovement": {
+          "totalReturn": 0.022904,
+          "annualReturn": 0.007501,
+          "sharpe": 0.036033,
+          "maxDrawdown": 0.001953
+        },
+        "returnImprovedRate": 0.215,
+        "sharpeImprovedRate": 0.22,
+        "drawdownImprovedRate": 0.19,
+        "allObjectivesImprovedRate": 0.15,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.58,
+            "avgImprovement": {
+              "totalReturn": 0.030186,
+              "annualReturn": 0.012532,
+              "sharpe": 0.070516,
+              "maxDrawdown": 0.004792
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.06,
+            "avgImprovement": {
+              "totalReturn": -0.000112,
+              "annualReturn": -0.00013,
+              "sharpe": 0.000934,
+              "maxDrawdown": -0.000468
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.3,
+            "avgImprovement": {
+              "totalReturn": 0.017498,
+              "annualReturn": 0.004624,
+              "sharpe": 0.022492,
+              "maxDrawdown": 0.00265
+            },
+            "allObjectivesImprovedRate": 0.18
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.38,
+            "avgImprovement": {
+              "totalReturn": 0.044042,
+              "annualReturn": 0.012976,
+              "sharpe": 0.05019,
+              "maxDrawdown": 0.000836
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 27,
+          "no_transform": 134,
+          "pt_amplify": 14,
+          "trend_smooth": 11,
+          "tail_denoise": 3
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.085594,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.325,
+        "avgImprovement": {
+          "totalReturn": 0.02243,
+          "annualReturn": 0.007215,
+          "sharpe": 0.035964,
+          "maxDrawdown": 0.003004
+        },
+        "returnImprovedRate": 0.205,
+        "sharpeImprovedRate": 0.21,
+        "drawdownImprovedRate": 0.19,
+        "allObjectivesImprovedRate": 0.15,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.028306,
+              "annualReturn": 0.011988,
+              "sharpe": 0.067984,
+              "maxDrawdown": 0.004588
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": 0.004666,
+              "annualReturn": -0.000242,
+              "sharpe": 0.000838,
+              "maxDrawdown": -0.000332
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.015888,
+              "annualReturn": 0.003926,
+              "sharpe": 0.0197,
+              "maxDrawdown": 0.002182
+            },
+            "allObjectivesImprovedRate": 0.16
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.4,
+            "avgImprovement": {
+              "totalReturn": 0.040858,
+              "annualReturn": 0.013188,
+              "sharpe": 0.055334,
+              "maxDrawdown": 0.005578
+            },
+            "allObjectivesImprovedRate": 0.18
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 24,
+          "no_transform": 135,
+          "pt_amplify": 11,
+          "trend_smooth": 14,
+          "tail_denoise": 4,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.080097,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.33,
+        "avgImprovement": {
+          "totalReturn": 0.022417,
+          "annualReturn": 0.007351,
+          "sharpe": 0.035541,
+          "maxDrawdown": 0.001858
+        },
+        "returnImprovedRate": 0.21,
+        "sharpeImprovedRate": 0.215,
+        "drawdownImprovedRate": 0.19,
+        "allObjectivesImprovedRate": 0.145,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.58,
+            "avgImprovement": {
+              "totalReturn": 0.02824,
+              "annualReturn": 0.011934,
+              "sharpe": 0.068548,
+              "maxDrawdown": 0.004416
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.06,
+            "avgImprovement": {
+              "totalReturn": -0.000112,
+              "annualReturn": -0.00013,
+              "sharpe": 0.000934,
+              "maxDrawdown": -0.000468
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.3,
+            "avgImprovement": {
+              "totalReturn": 0.017498,
+              "annualReturn": 0.004624,
+              "sharpe": 0.022492,
+              "maxDrawdown": 0.00265
+            },
+            "allObjectivesImprovedRate": 0.18
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.38,
+            "avgImprovement": {
+              "totalReturn": 0.044042,
+              "annualReturn": 0.012976,
+              "sharpe": 0.05019,
+              "maxDrawdown": 0.000836
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 28,
+          "no_transform": 134,
+          "pt_amplify": 14,
+          "trend_smooth": 10,
+          "tail_denoise": 3
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.079984,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.325,
+        "avgImprovement": {
+          "totalReturn": 0.021943,
+          "annualReturn": 0.007065,
+          "sharpe": 0.035472,
+          "maxDrawdown": 0.00291
+        },
+        "returnImprovedRate": 0.2,
+        "sharpeImprovedRate": 0.205,
+        "drawdownImprovedRate": 0.19,
+        "allObjectivesImprovedRate": 0.145,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.02636,
+              "annualReturn": 0.01139,
+              "sharpe": 0.066016,
+              "maxDrawdown": 0.004212
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": 0.004666,
+              "annualReturn": -0.000242,
+              "sharpe": 0.000838,
+              "maxDrawdown": -0.000332
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.015888,
+              "annualReturn": 0.003926,
+              "sharpe": 0.0197,
+              "maxDrawdown": 0.002182
+            },
+            "allObjectivesImprovedRate": 0.16
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.4,
+            "avgImprovement": {
+              "totalReturn": 0.040858,
+              "annualReturn": 0.013188,
+              "sharpe": 0.055334,
+              "maxDrawdown": 0.005578
+            },
+            "allObjectivesImprovedRate": 0.18
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 25,
+          "no_transform": 135,
+          "pt_amplify": 11,
+          "trend_smooth": 13,
+          "tail_denoise": 4,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.079474,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.32,
+        "avgImprovement": {
+          "totalReturn": 0.021965,
+          "annualReturn": 0.007103,
+          "sharpe": 0.035429,
+          "maxDrawdown": 0.002994
+        },
+        "returnImprovedRate": 0.2,
+        "sharpeImprovedRate": 0.205,
+        "drawdownImprovedRate": 0.185,
+        "allObjectivesImprovedRate": 0.145,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.028306,
+              "annualReturn": 0.011988,
+              "sharpe": 0.067984,
+              "maxDrawdown": 0.004588
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": 0.004666,
+              "annualReturn": -0.000242,
+              "sharpe": 0.000838,
+              "maxDrawdown": -0.000332
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.01403,
+              "annualReturn": 0.003476,
+              "sharpe": 0.017558,
+              "maxDrawdown": 0.002142
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.4,
+            "avgImprovement": {
+              "totalReturn": 0.040858,
+              "annualReturn": 0.013188,
+              "sharpe": 0.055334,
+              "maxDrawdown": 0.005578
+            },
+            "allObjectivesImprovedRate": 0.18
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 23,
+          "no_transform": 136,
+          "pt_amplify": 11,
+          "trend_smooth": 14,
+          "tail_denoise": 4,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.079215,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.345,
+        "avgImprovement": {
+          "totalReturn": 0.022809,
+          "annualReturn": 0.007281,
+          "sharpe": 0.035648,
+          "maxDrawdown": 0.001686
+        },
+        "returnImprovedRate": 0.22,
+        "sharpeImprovedRate": 0.225,
+        "drawdownImprovedRate": 0.195,
+        "allObjectivesImprovedRate": 0.155,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.6,
+            "avgImprovement": {
+              "totalReturn": 0.02996,
+              "annualReturn": 0.012448,
+              "sharpe": 0.069906,
+              "maxDrawdown": 0.004446
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": -0.00212,
+              "annualReturn": -0.001374,
+              "sharpe": -0.002136,
+              "maxDrawdown": -0.001228
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.019356,
+              "annualReturn": 0.005074,
+              "sharpe": 0.024634,
+              "maxDrawdown": 0.00269
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.38,
+            "avgImprovement": {
+              "totalReturn": 0.044042,
+              "annualReturn": 0.012976,
+              "sharpe": 0.05019,
+              "maxDrawdown": 0.000836
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 28,
+          "no_transform": 131,
+          "pt_amplify": 15,
+          "trend_smooth": 11,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.077088,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.3,
+        "avgImprovement": {
+          "totalReturn": 0.022409,
+          "annualReturn": 0.007199,
+          "sharpe": 0.035114,
+          "maxDrawdown": 0.002984
+        },
+        "returnImprovedRate": 0.195,
+        "sharpeImprovedRate": 0.205,
+        "drawdownImprovedRate": 0.17,
+        "allObjectivesImprovedRate": 0.145,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.028624,
+              "annualReturn": 0.01202,
+              "sharpe": 0.065966,
+              "maxDrawdown": 0.004
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": 0.004666,
+              "annualReturn": -0.000242,
+              "sharpe": 0.000838,
+              "maxDrawdown": -0.000332
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.012492,
+              "annualReturn": 0.003372,
+              "sharpe": 0.016834,
+              "maxDrawdown": 0.002092
+            },
+            "allObjectivesImprovedRate": 0.16
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.38,
+            "avgImprovement": {
+              "totalReturn": 0.043854,
+              "annualReturn": 0.013646,
+              "sharpe": 0.056818,
+              "maxDrawdown": 0.006174
+            },
+            "allObjectivesImprovedRate": 0.18
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 23,
+          "no_transform": 140,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 4,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.073864,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.32,
+        "avgImprovement": {
+          "totalReturn": 0.021479,
+          "annualReturn": 0.006953,
+          "sharpe": 0.034937,
+          "maxDrawdown": 0.0029
+        },
+        "returnImprovedRate": 0.195,
+        "sharpeImprovedRate": 0.2,
+        "drawdownImprovedRate": 0.185,
+        "allObjectivesImprovedRate": 0.14,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.02636,
+              "annualReturn": 0.01139,
+              "sharpe": 0.066016,
+              "maxDrawdown": 0.004212
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": 0.004666,
+              "annualReturn": -0.000242,
+              "sharpe": 0.000838,
+              "maxDrawdown": -0.000332
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.01403,
+              "annualReturn": 0.003476,
+              "sharpe": 0.017558,
+              "maxDrawdown": 0.002142
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.4,
+            "avgImprovement": {
+              "totalReturn": 0.040858,
+              "annualReturn": 0.013188,
+              "sharpe": 0.055334,
+              "maxDrawdown": 0.005578
+            },
+            "allObjectivesImprovedRate": 0.18
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 24,
+          "no_transform": 136,
+          "pt_amplify": 11,
+          "trend_smooth": 13,
+          "tail_denoise": 4,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.073606,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.345,
+        "avgImprovement": {
+          "totalReturn": 0.022323,
+          "annualReturn": 0.007131,
+          "sharpe": 0.035157,
+          "maxDrawdown": 0.001592
+        },
+        "returnImprovedRate": 0.215,
+        "sharpeImprovedRate": 0.22,
+        "drawdownImprovedRate": 0.195,
+        "allObjectivesImprovedRate": 0.15,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.6,
+            "avgImprovement": {
+              "totalReturn": 0.028014,
+              "annualReturn": 0.01185,
+              "sharpe": 0.067938,
+              "maxDrawdown": 0.00407
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": -0.00212,
+              "annualReturn": -0.001374,
+              "sharpe": -0.002136,
+              "maxDrawdown": -0.001228
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.019356,
+              "annualReturn": 0.005074,
+              "sharpe": 0.024634,
+              "maxDrawdown": 0.00269
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.38,
+            "avgImprovement": {
+              "totalReturn": 0.044042,
+              "annualReturn": 0.012976,
+              "sharpe": 0.05019,
+              "maxDrawdown": 0.000836
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 29,
+          "no_transform": 131,
+          "pt_amplify": 15,
+          "trend_smooth": 10,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.071318,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.305,
+        "avgImprovement": {
+          "totalReturn": 0.022063,
+          "annualReturn": 0.007197,
+          "sharpe": 0.03477,
+          "maxDrawdown": 0.002197
+        },
+        "returnImprovedRate": 0.195,
+        "sharpeImprovedRate": 0.2,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.14,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.028244,
+              "annualReturn": 0.011968,
+              "sharpe": 0.0678,
+              "maxDrawdown": 0.005188
+            },
+            "allObjectivesImprovedRate": 0.24
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": -0.000554,
+              "annualReturn": -0.000314,
+              "sharpe": 0.0006,
+              "maxDrawdown": 0.000234
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.015888,
+              "annualReturn": 0.003926,
+              "sharpe": 0.0197,
+              "maxDrawdown": 0.002182
+            },
+            "allObjectivesImprovedRate": 0.16
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.044674,
+              "annualReturn": 0.01321,
+              "sharpe": 0.05098,
+              "maxDrawdown": 0.001184
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 24,
+          "no_transform": 139,
+          "pt_amplify": 13,
+          "trend_smooth": 9,
+          "tail_denoise": 4
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.070967,
+      "thresholds": {
+        "scoreMin": 0,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.295,
+        "avgImprovement": {
+          "totalReturn": 0.021945,
+          "annualReturn": 0.007086,
+          "sharpe": 0.034578,
+          "maxDrawdown": 0.002974
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.2,
+        "drawdownImprovedRate": 0.165,
+        "allObjectivesImprovedRate": 0.14,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.028624,
+              "annualReturn": 0.01202,
+              "sharpe": 0.065966,
+              "maxDrawdown": 0.004
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.08,
+            "avgImprovement": {
+              "totalReturn": 0.004666,
+              "annualReturn": -0.000242,
+              "sharpe": 0.000838,
+              "maxDrawdown": -0.000332
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.010634,
+              "annualReturn": 0.002922,
+              "sharpe": 0.014692,
+              "maxDrawdown": 0.002052
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.38,
+            "avgImprovement": {
+              "totalReturn": 0.043854,
+              "annualReturn": 0.013646,
+              "sharpe": 0.056818,
+              "maxDrawdown": 0.006174
+            },
+            "allObjectivesImprovedRate": 0.18
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 22,
+          "no_transform": 141,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 4,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.069097,
+      "thresholds": {
+        "scoreMin": -0.05,
+        "totalReturnMin": 0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.335,
+        "avgImprovement": {
+          "totalReturn": 0.021176,
+          "annualReturn": 0.006944,
+          "sharpe": 0.034309,
+          "maxDrawdown": 0.002249
+        },
+        "returnImprovedRate": 0.2,
+        "sharpeImprovedRate": 0.205,
+        "drawdownImprovedRate": 0.19,
+        "allObjectivesImprovedRate": 0.14,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.54,
+            "avgImprovement": {
+              "totalReturn": 0.030078,
+              "annualReturn": 0.012536,
+              "sharpe": 0.070674,
+              "maxDrawdown": 0.005812
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.1,
+            "avgImprovement": {
+              "totalReturn": 0.00467,
+              "annualReturn": -0.000448,
+              "sharpe": -0.000854,
+              "maxDrawdown": -0.001476
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.009812,
+              "annualReturn": 0.002602,
+              "sharpe": 0.013588,
+              "maxDrawdown": 0.000294
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.040144,
+              "annualReturn": 0.013086,
+              "sharpe": 0.053828,
+              "maxDrawdown": 0.004368
+            },
+            "allObjectivesImprovedRate": 0.2
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "no_transform": 133,
+          "pt_amplify": 13,
+          "trend_smooth": 14,
+          "vol_squeeze": 25,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    }
+  ],
+  "topCoverageConfigs": [
+    {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.069862,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.29,
+        "avgImprovement": {
+          "totalReturn": 0.022676,
+          "annualReturn": 0.007382,
+          "sharpe": 0.035297,
+          "maxDrawdown": 0.003349
+        },
+        "returnImprovedRate": 0.19,
+        "sharpeImprovedRate": 0.195,
+        "drawdownImprovedRate": 0.175,
+        "allObjectivesImprovedRate": 0.135,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 142,
+          "pt_amplify": 11,
+          "trend_smooth": 11,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.064195,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.285,
+        "avgImprovement": {
+          "totalReturn": 0.022543,
+          "annualReturn": 0.007342,
+          "sharpe": 0.035166,
+          "maxDrawdown": 0.003234
+        },
+        "returnImprovedRate": 0.185,
+        "sharpeImprovedRate": 0.19,
+        "drawdownImprovedRate": 0.17,
+        "allObjectivesImprovedRate": 0.13,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.028758,
+              "annualReturn": 0.012316,
+              "sharpe": 0.068988,
+              "maxDrawdown": 0.006656
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 143,
+          "pt_amplify": 11,
+          "trend_smooth": 10,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.064195,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.285,
+        "avgImprovement": {
+          "totalReturn": 0.022543,
+          "annualReturn": 0.007342,
+          "sharpe": 0.035166,
+          "maxDrawdown": 0.003234
+        },
+        "returnImprovedRate": 0.185,
+        "sharpeImprovedRate": 0.19,
+        "drawdownImprovedRate": 0.17,
+        "allObjectivesImprovedRate": 0.13,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.028758,
+              "annualReturn": 0.012316,
+              "sharpe": 0.068988,
+              "maxDrawdown": 0.006656
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.36,
+            "avgImprovement": {
+              "totalReturn": 0.038772,
+              "annualReturn": 0.012874,
+              "sharpe": 0.053796,
+              "maxDrawdown": 0.003384
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 19,
+          "no_transform": 143,
+          "pt_amplify": 11,
+          "trend_smooth": 10,
+          "tail_denoise": 5,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.064131,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.28,
+        "avgImprovement": {
+          "totalReturn": 0.022318,
+          "annualReturn": 0.007529,
+          "sharpe": 0.035792,
+          "maxDrawdown": 0.003034
+        },
+        "returnImprovedRate": 0.185,
+        "sharpeImprovedRate": 0.19,
+        "drawdownImprovedRate": 0.17,
+        "allObjectivesImprovedRate": 0.13,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.049152,
+              "annualReturn": 0.014432,
+              "sharpe": 0.057524,
+              "maxDrawdown": 0.002074
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 20,
+          "no_transform": 144,
+          "pt_amplify": 11,
+          "trend_smooth": 10,
+          "tail_denoise": 4
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.064131,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.28,
+        "avgImprovement": {
+          "totalReturn": 0.022318,
+          "annualReturn": 0.007529,
+          "sharpe": 0.035792,
+          "maxDrawdown": 0.003034
+        },
+        "returnImprovedRate": 0.185,
+        "sharpeImprovedRate": 0.19,
+        "drawdownImprovedRate": 0.17,
+        "allObjectivesImprovedRate": 0.13,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.5,
+            "avgImprovement": {
+              "totalReturn": 0.02929,
+              "annualReturn": 0.012478,
+              "sharpe": 0.069514,
+              "maxDrawdown": 0.007116
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.049152,
+              "annualReturn": 0.014432,
+              "sharpe": 0.057524,
+              "maxDrawdown": 0.002074
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 20,
+          "no_transform": 144,
+          "pt_amplify": 11,
+          "trend_smooth": 10,
+          "tail_denoise": 4
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.058464,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.275,
+        "avgImprovement": {
+          "totalReturn": 0.022184,
+          "annualReturn": 0.007488,
+          "sharpe": 0.035661,
+          "maxDrawdown": 0.002919
+        },
+        "returnImprovedRate": 0.18,
+        "sharpeImprovedRate": 0.185,
+        "drawdownImprovedRate": 0.165,
+        "allObjectivesImprovedRate": 0.125,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.028758,
+              "annualReturn": 0.012316,
+              "sharpe": 0.068988,
+              "maxDrawdown": 0.006656
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.049152,
+              "annualReturn": 0.014432,
+              "sharpe": 0.057524,
+              "maxDrawdown": 0.002074
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 20,
+          "no_transform": 145,
+          "pt_amplify": 11,
+          "trend_smooth": 9,
+          "tail_denoise": 4
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.058464,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.275,
+        "avgImprovement": {
+          "totalReturn": 0.022184,
+          "annualReturn": 0.007488,
+          "sharpe": 0.035661,
+          "maxDrawdown": 0.002919
+        },
+        "returnImprovedRate": 0.18,
+        "sharpeImprovedRate": 0.185,
+        "drawdownImprovedRate": 0.165,
+        "allObjectivesImprovedRate": 0.125,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.028758,
+              "annualReturn": 0.012316,
+              "sharpe": 0.068988,
+              "maxDrawdown": 0.006656
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.26,
+            "avgImprovement": {
+              "totalReturn": 0.010444,
+              "annualReturn": 0.002812,
+              "sharpe": 0.014426,
+              "maxDrawdown": 0.00257
+            },
+            "allObjectivesImprovedRate": 0.14
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.049152,
+              "annualReturn": 0.014432,
+              "sharpe": 0.057524,
+              "maxDrawdown": 0.002074
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 20,
+          "no_transform": 145,
+          "pt_amplify": 11,
+          "trend_smooth": 9,
+          "tail_denoise": 4
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.056754,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.26,
+        "avgImprovement": {
+          "totalReturn": 0.023365,
+          "annualReturn": 0.007496,
+          "sharpe": 0.035054,
+          "maxDrawdown": 0.003074
+        },
+        "returnImprovedRate": 0.175,
+        "sharpeImprovedRate": 0.185,
+        "drawdownImprovedRate": 0.15,
+        "allObjectivesImprovedRate": 0.125,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.029608,
+              "annualReturn": 0.01251,
+              "sharpe": 0.067496,
+              "maxDrawdown": 0.006528
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.00989,
+              "annualReturn": 0.002774,
+              "sharpe": 0.013986,
+              "maxDrawdown": 0.001464
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.041768,
+              "annualReturn": 0.013332,
+              "sharpe": 0.05528,
+              "maxDrawdown": 0.00398
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 19,
+          "no_transform": 148,
+          "pt_amplify": 11,
+          "trend_smooth": 8,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.056754,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": -0.02,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.26,
+        "avgImprovement": {
+          "totalReturn": 0.023365,
+          "annualReturn": 0.007496,
+          "sharpe": 0.035054,
+          "maxDrawdown": 0.003074
+        },
+        "returnImprovedRate": 0.175,
+        "sharpeImprovedRate": 0.185,
+        "drawdownImprovedRate": 0.15,
+        "allObjectivesImprovedRate": 0.125,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.029608,
+              "annualReturn": 0.01251,
+              "sharpe": 0.067496,
+              "maxDrawdown": 0.006528
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.04,
+            "avgImprovement": {
+              "totalReturn": 0.012196,
+              "annualReturn": 0.001366,
+              "sharpe": 0.003452,
+              "maxDrawdown": 0.000326
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.00989,
+              "annualReturn": 0.002774,
+              "sharpe": 0.013986,
+              "maxDrawdown": 0.001464
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.34,
+            "avgImprovement": {
+              "totalReturn": 0.041768,
+              "annualReturn": 0.013332,
+              "sharpe": 0.05528,
+              "maxDrawdown": 0.00398
+            },
+            "allObjectivesImprovedRate": 0.16
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 19,
+          "no_transform": 148,
+          "pt_amplify": 11,
+          "trend_smooth": 8,
+          "tail_denoise": 3,
+          "momentum_regime": 1
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.047571,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.245,
+        "avgImprovement": {
+          "totalReturn": 0.020163,
+          "annualReturn": 0.007226,
+          "sharpe": 0.034511,
+          "maxDrawdown": 0.003109
+        },
+        "returnImprovedRate": 0.165,
+        "sharpeImprovedRate": 0.175,
+        "drawdownImprovedRate": 0.145,
+        "allObjectivesImprovedRate": 0.12,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.029608,
+              "annualReturn": 0.01251,
+              "sharpe": 0.067496,
+              "maxDrawdown": 0.006528
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.00989,
+              "annualReturn": 0.002774,
+              "sharpe": 0.013986,
+              "maxDrawdown": 0.001464
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.3,
+            "avgImprovement": {
+              "totalReturn": 0.04077,
+              "annualReturn": 0.013226,
+              "sharpe": 0.054856,
+              "maxDrawdown": 0.00407
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 19,
+          "no_transform": 151,
+          "pt_amplify": 11,
+          "trend_smooth": 7,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.047571,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.3
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.245,
+        "avgImprovement": {
+          "totalReturn": 0.020163,
+          "annualReturn": 0.007226,
+          "sharpe": 0.034511,
+          "maxDrawdown": 0.003109
+        },
+        "returnImprovedRate": 0.165,
+        "sharpeImprovedRate": 0.175,
+        "drawdownImprovedRate": 0.145,
+        "allObjectivesImprovedRate": 0.12,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.029608,
+              "annualReturn": 0.01251,
+              "sharpe": 0.067496,
+              "maxDrawdown": 0.006528
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.00989,
+              "annualReturn": 0.002774,
+              "sharpe": 0.013986,
+              "maxDrawdown": 0.001464
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.3,
+            "avgImprovement": {
+              "totalReturn": 0.04077,
+              "annualReturn": 0.013226,
+              "sharpe": 0.054856,
+              "maxDrawdown": 0.00407
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 10,
+          "vol_squeeze": 19,
+          "no_transform": 151,
+          "pt_amplify": 11,
+          "trend_smooth": 7,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.043533,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.03,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.25,
+        "avgImprovement": {
+          "totalReturn": 0.019919,
+          "annualReturn": 0.007138,
+          "sharpe": 0.035104,
+          "maxDrawdown": 0.002886
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.175,
+        "drawdownImprovedRate": 0.145,
+        "allObjectivesImprovedRate": 0.115,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.03088,
+              "annualReturn": 0.013012,
+              "sharpe": 0.07203,
+              "maxDrawdown": 0.00708
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.007996,
+              "annualReturn": 0.002052,
+              "sharpe": 0.012244,
+              "maxDrawdown": 6.4e-05
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.040416,
+              "annualReturn": 0.013098,
+              "sharpe": 0.054436,
+              "maxDrawdown": 0.004026
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 17,
+          "no_transform": 150,
+          "pt_amplify": 12,
+          "trend_smooth": 8,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.043533,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.03,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.25,
+        "avgImprovement": {
+          "totalReturn": 0.019919,
+          "annualReturn": 0.007138,
+          "sharpe": 0.035104,
+          "maxDrawdown": 0.002886
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.175,
+        "drawdownImprovedRate": 0.145,
+        "allObjectivesImprovedRate": 0.115,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.48,
+            "avgImprovement": {
+              "totalReturn": 0.03088,
+              "annualReturn": 0.013012,
+              "sharpe": 0.07203,
+              "maxDrawdown": 0.00708
+            },
+            "allObjectivesImprovedRate": 0.22
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.007996,
+              "annualReturn": 0.002052,
+              "sharpe": 0.012244,
+              "maxDrawdown": 6.4e-05
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.040416,
+              "annualReturn": 0.013098,
+              "sharpe": 0.054436,
+              "maxDrawdown": 0.004026
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 17,
+          "no_transform": 150,
+          "pt_amplify": 12,
+          "trend_smooth": 8,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.040343,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.245,
+        "avgImprovement": {
+          "totalReturn": 0.018461,
+          "annualReturn": 0.006816,
+          "sharpe": 0.033245,
+          "maxDrawdown": 0.002963
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.165,
+        "drawdownImprovedRate": 0.15,
+        "allObjectivesImprovedRate": 0.115,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.44,
+            "avgImprovement": {
+              "totalReturn": 0.029674,
+              "annualReturn": 0.01265,
+              "sharpe": 0.070036,
+              "maxDrawdown": 0.00687
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.0,
+            "avgImprovement": {
+              "totalReturn": 0.0,
+              "annualReturn": 0.0,
+              "sharpe": 0.0,
+              "maxDrawdown": 0.0
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.00535,
+              "annualReturn": 0.001704,
+              "sharpe": 0.009138,
+              "maxDrawdown": 0.001334
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.32,
+            "avgImprovement": {
+              "totalReturn": 0.03882,
+              "annualReturn": 0.012912,
+              "sharpe": 0.053808,
+              "maxDrawdown": 0.003646
+            },
+            "allObjectivesImprovedRate": 0.14
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "no_transform": 151,
+          "pt_amplify": 10,
+          "trend_smooth": 9,
+          "vol_squeeze": 15,
+          "tail_denoise": 4
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.031162,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": 0,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.225,
+        "avgImprovement": {
+          "totalReturn": 0.017919,
+          "annualReturn": 0.006069,
+          "sharpe": 0.029708,
+          "maxDrawdown": 0.002875
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.165,
+        "drawdownImprovedRate": 0.14,
+        "allObjectivesImprovedRate": 0.11,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.016414,
+              "annualReturn": 0.007766,
+              "sharpe": 0.051324,
+              "maxDrawdown": 0.006708
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.0,
+            "avgImprovement": {
+              "totalReturn": 0.0,
+              "annualReturn": 0.0,
+              "sharpe": 0.0,
+              "maxDrawdown": 0.0
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.008782,
+              "annualReturn": 0.002614,
+              "sharpe": 0.012508,
+              "maxDrawdown": 0.001916
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.046482,
+              "annualReturn": 0.013894,
+              "sharpe": 0.055,
+              "maxDrawdown": 0.002876
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 9,
+          "vol_squeeze": 19,
+          "no_transform": 155,
+          "downside_guard": 9,
+          "trend_smooth": 6,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.031162,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.01,
+        "drawdownMin": 0,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.225,
+        "avgImprovement": {
+          "totalReturn": 0.017919,
+          "annualReturn": 0.006069,
+          "sharpe": 0.029708,
+          "maxDrawdown": 0.002875
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.165,
+        "drawdownImprovedRate": 0.14,
+        "allObjectivesImprovedRate": 0.11,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.016414,
+              "annualReturn": 0.007766,
+              "sharpe": 0.051324,
+              "maxDrawdown": 0.006708
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.0,
+            "avgImprovement": {
+              "totalReturn": 0.0,
+              "annualReturn": 0.0,
+              "sharpe": 0.0,
+              "maxDrawdown": 0.0
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.008782,
+              "annualReturn": 0.002614,
+              "sharpe": 0.012508,
+              "maxDrawdown": 0.001916
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.046482,
+              "annualReturn": 0.013894,
+              "sharpe": 0.055,
+              "maxDrawdown": 0.002876
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 9,
+          "vol_squeeze": 19,
+          "no_transform": 155,
+          "downside_guard": 9,
+          "trend_smooth": 6,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.031162,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": 0,
+        "allObjectivesProbabilityMin": 0
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.225,
+        "avgImprovement": {
+          "totalReturn": 0.017919,
+          "annualReturn": 0.006069,
+          "sharpe": 0.029708,
+          "maxDrawdown": 0.002875
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.165,
+        "drawdownImprovedRate": 0.14,
+        "allObjectivesImprovedRate": 0.11,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.016414,
+              "annualReturn": 0.007766,
+              "sharpe": 0.051324,
+              "maxDrawdown": 0.006708
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.0,
+            "avgImprovement": {
+              "totalReturn": 0.0,
+              "annualReturn": 0.0,
+              "sharpe": 0.0,
+              "maxDrawdown": 0.0
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.008782,
+              "annualReturn": 0.002614,
+              "sharpe": 0.012508,
+              "maxDrawdown": 0.001916
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.046482,
+              "annualReturn": 0.013894,
+              "sharpe": 0.055,
+              "maxDrawdown": 0.002876
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 9,
+          "vol_squeeze": 19,
+          "no_transform": 155,
+          "downside_guard": 9,
+          "trend_smooth": 6,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.031162,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": 0,
+        "sharpeMin": 0.01,
+        "drawdownMin": 0,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.225,
+        "avgImprovement": {
+          "totalReturn": 0.017919,
+          "annualReturn": 0.006069,
+          "sharpe": 0.029708,
+          "maxDrawdown": 0.002875
+        },
+        "returnImprovedRate": 0.16,
+        "sharpeImprovedRate": 0.165,
+        "drawdownImprovedRate": 0.14,
+        "allObjectivesImprovedRate": 0.11,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.016414,
+              "annualReturn": 0.007766,
+              "sharpe": 0.051324,
+              "maxDrawdown": 0.006708
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.0,
+            "avgImprovement": {
+              "totalReturn": 0.0,
+              "annualReturn": 0.0,
+              "sharpe": 0.0,
+              "maxDrawdown": 0.0
+            },
+            "allObjectivesImprovedRate": 0.0
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": 0.008782,
+              "annualReturn": 0.002614,
+              "sharpe": 0.012508,
+              "maxDrawdown": 0.001916
+            },
+            "allObjectivesImprovedRate": 0.12
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.24,
+            "avgImprovement": {
+              "totalReturn": 0.046482,
+              "annualReturn": 0.013894,
+              "sharpe": 0.055,
+              "maxDrawdown": 0.002876
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "pt_amplify": 9,
+          "vol_squeeze": 19,
+          "no_transform": 155,
+          "downside_guard": 9,
+          "trend_smooth": 6,
+          "tail_denoise": 2
+        }
+      }
+    },
+    {
+      "model": "hgb-global",
+      "objective": 0.037867,
+      "thresholds": {
+        "scoreMin": 0.03,
+        "totalReturnMin": -0.02,
+        "sharpeMin": 0.03,
+        "drawdownMin": -0.01,
+        "allObjectivesProbabilityMin": 0.15
+      },
+      "summary": {
+        "assets": 200,
+        "activeRate": 0.245,
+        "avgImprovement": {
+          "totalReturn": 0.019786,
+          "annualReturn": 0.007098,
+          "sharpe": 0.034973,
+          "maxDrawdown": 0.002771
+        },
+        "returnImprovedRate": 0.155,
+        "sharpeImprovedRate": 0.17,
+        "drawdownImprovedRate": 0.14,
+        "allObjectivesImprovedRate": 0.11,
+        "byMarket": {
+          "A股": {
+            "assets": 50,
+            "activeRate": 0.46,
+            "avgImprovement": {
+              "totalReturn": 0.030348,
+              "annualReturn": 0.01285,
+              "sharpe": 0.071504,
+              "maxDrawdown": 0.00662
+            },
+            "allObjectivesImprovedRate": 0.2
+          },
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.02,
+            "avgImprovement": {
+              "totalReturn": 0.000384,
+              "annualReturn": 0.000392,
+              "sharpe": 0.001706,
+              "maxDrawdown": 0.000374
+            },
+            "allObjectivesImprovedRate": 0.02
+          },
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.22,
+            "avgImprovement": {
+              "totalReturn": 0.007996,
+              "annualReturn": 0.002052,
+              "sharpe": 0.012244,
+              "maxDrawdown": 6.4e-05
+            },
+            "allObjectivesImprovedRate": 0.1
+          },
+          "美股": {
+            "assets": 50,
+            "activeRate": 0.28,
+            "avgImprovement": {
+              "totalReturn": 0.040416,
+              "annualReturn": 0.013098,
+              "sharpe": 0.054436,
+              "maxDrawdown": 0.004026
+            },
+            "allObjectivesImprovedRate": 0.12
+          }
+        },
+        "selectedModeCounts": {
+          "downside_guard": 11,
+          "vol_squeeze": 17,
+          "no_transform": 151,
+          "pt_amplify": 12,
+          "trend_smooth": 7,
+          "tail_denoise": 2
+        }
+      }
+    }
+  ]
+}

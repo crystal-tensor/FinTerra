@@ -17,6 +17,53 @@ function num(value, digits = 2) {
   return Number(value).toFixed(digits);
 }
 
+const PT_REPORT_DAILY_LIMIT = 3;
+const MODEL_API_PATH = "/model-api/";
+
+function todayKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function readPtReportQuota() {
+  try {
+    const raw = window.localStorage.getItem("finterraPtReportQuota");
+    const parsed = raw ? JSON.parse(raw) : null;
+    if (parsed?.date === todayKey()) return parsed;
+  } catch {}
+  return { date: todayKey(), used: 0 };
+}
+
+function consumePtReportQuota() {
+  const quota = readPtReportQuota();
+  if (quota.used >= PT_REPORT_DAILY_LIMIT) return { ok: false, quota };
+  const next = { date: todayKey(), used: quota.used + 1 };
+  window.localStorage.setItem("finterraPtReportQuota", JSON.stringify(next));
+  return { ok: true, quota: next };
+}
+
+function ptReportRemaining() {
+  return Math.max(0, PT_REPORT_DAILY_LIMIT - readPtReportQuota().used);
+}
+
+function calculatePtReportSummary(result) {
+  const uniform = result?.metrics?.uniform || {};
+  const pt = result?.metrics?.pt || {};
+  const drawdown = Math.abs(Number(pt["最大回撤"] ?? uniform["最大回撤"] ?? 0));
+  const sharpe = Number(pt["夏普比率"] ?? 0);
+  const baselineDrawdown = Math.abs(Number(uniform["最大回撤"] ?? 0));
+  const drawdownRelief = baselineDrawdown ? Math.max(-1, Math.min(1, (baselineDrawdown - drawdown) / baselineDrawdown)) : 0;
+  const returnLift = Number(pt["累计收益率"] ?? 0) - Number(uniform["累计收益率"] ?? 0);
+  const tailRiskLevel = drawdown >= 0.42 ? "高" : drawdown >= 0.24 ? "中" : "低";
+  const heavyTailStrength = Math.min(100, Math.max(0, drawdown * 120 + Math.max(0, returnLift) * 25 + Math.max(0, 1 - sharpe) * 12));
+  const robustnessScore = Math.round(Math.min(100, Math.max(0, 58 + sharpe * 12 + drawdownRelief * 22 + returnLift * 18 - drawdown * 18)));
+  return {
+    tailRiskLevel,
+    heavyTailStrength: Math.round(heavyTailStrength),
+    robustnessScore,
+    note: "免费摘要只展示风险等级和评分。完整报告会展开 PT 分布参数、VaR/CVaR、极端情景、历史 regime 和可下载证据链。"
+  };
+}
+
 function useChart(option, deps) {
   const ref = useRef(null);
   const chartRef = useRef(null);
@@ -282,6 +329,67 @@ function TradePreview({ title, trades, quantum }) {
   );
 }
 
+function PTReportSummaryPanel({ result, stock }) {
+  const [summary, setSummary] = useState(null);
+  const [remaining, setRemaining] = useState(() => ptReportRemaining());
+  const reportKey = stock?.symbol || "";
+
+  useEffect(() => {
+    setSummary(null);
+    setRemaining(ptReportRemaining());
+  }, [reportKey]);
+
+  const generateSummary = () => {
+    const consumed = consumePtReportQuota();
+    setRemaining(Math.max(0, PT_REPORT_DAILY_LIMIT - consumed.quota.used));
+    if (!consumed.ok) {
+      window.location.href = new URL(MODEL_API_PATH, window.location.origin).toString();
+      return;
+    }
+    setSummary(calculatePtReportSummary(result));
+  };
+
+  return (
+    <article className="stock-pt-summary-card">
+      <div>
+        <p className="eyebrow">Free PT Deep Report</p>
+        <h4>PT 深度风险诊断摘要</h4>
+        <p>每天免费生成 3 次摘要；完整报告、参数解释、VaR/CVaR、极端情景和下载能力进入 Pro。</p>
+      </div>
+      <div className="pt-report-actions">
+        <span>今日剩余 {remaining}/{PT_REPORT_DAILY_LIMIT}</span>
+        <button className="small-run-button" type="button" onClick={generateSummary}>
+          <Sparkles size={15} />
+          生成免费摘要
+        </button>
+        <a className="small-run-button paid-link" href={MODEL_API_PATH}>查看详细报告</a>
+      </div>
+      {summary ? (
+        <div className="pt-summary-grid">
+          <article>
+            <small>尾部风险等级</small>
+            <strong>{summary.tailRiskLevel}</strong>
+          </article>
+          <article>
+            <small>重尾强度</small>
+            <strong>{summary.heavyTailStrength}/100</strong>
+          </article>
+          <article>
+            <small>策略稳健性评分</small>
+            <strong>{summary.robustnessScore}/100</strong>
+          </article>
+          <p>{summary.note}</p>
+        </div>
+      ) : (
+        <div className="pt-report-locked">
+          <ShieldCheck size={20} />
+          <span>免费层只展示摘要，不提供荐股、买卖点、目标价或收益承诺。</span>
+        </div>
+      )}
+    </article>
+  );
+}
+
 function StockBacktestDetail({ stock, result, loading, error }) {
   if (!stock) {
     return (
@@ -335,6 +443,7 @@ function StockBacktestDetail({ stock, result, loading, error }) {
               </dl>
             </article>
           </div>
+          <PTReportSummaryPanel result={result} stock={stock} />
           <BacktestCurve result={result} />
           <div className="stock-kline-grid">
             <BacktestKlineChart result={result} seriesKey="uniform" title="真实历史 K 线与5-20均线买卖点" />

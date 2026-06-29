@@ -1,0 +1,6806 @@
+{
+  "generatedAt": "2026-06-16 17:22:58",
+  "experimentName": "time-split-per-asset-calibration",
+  "status": "candidate_not_promoted",
+  "conclusion": "时间切分校准验证期仍存在市场负贡献，不能推广。",
+  "sourceModelPath": ".tmp/live-four-market-with-crypto-momentum-model.json",
+  "dataDir": "data",
+  "splitFraction": 0.7,
+  "assetCount": 50,
+  "sampleCount": 24050,
+  "featureCount": 0,
+  "bestConfig": {
+    "model": "per-asset-time-split-calibration-with-gate",
+    "objective": -0.060018,
+    "thresholds": {
+      "trainScoreMin": 0.35,
+      "trainTotalReturnMin": -0.05,
+      "trainSharpeMin": -0.05,
+      "trainDrawdownMin": 0.02,
+      "splitFraction": 0.7
+    },
+    "summary": {
+      "assets": 50,
+      "activeRate": 0.68,
+      "avgImprovement": {
+        "totalReturn": -0.03086,
+        "annualReturn": -0.02229,
+        "sharpe": -0.046992,
+        "maxDrawdown": -0.012482
+      },
+      "returnImprovedRate": 0.3,
+      "sharpeImprovedRate": 0.3,
+      "drawdownImprovedRate": 0.32,
+      "allObjectivesImprovedRate": 0.26,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.68,
+          "avgImprovement": {
+            "totalReturn": -0.03086,
+            "annualReturn": -0.02229,
+            "sharpe": -0.046992,
+            "maxDrawdown": -0.012482
+          },
+          "allObjectivesImprovedRate": 0.26
+        }
+      }
+    }
+  },
+  "rawCalibrationConfig": {
+    "model": "per-asset-time-split-calibration-no-gate",
+    "objective": 0,
+    "thresholds": {
+      "splitFraction": 0.7
+    },
+    "summary": {
+      "assets": 50,
+      "activeRate": 0.96,
+      "avgImprovement": {
+        "totalReturn": -0.07767,
+        "annualReturn": -0.040516,
+        "sharpe": -0.078648,
+        "maxDrawdown": -0.02002
+      },
+      "returnImprovedRate": 0.4,
+      "sharpeImprovedRate": 0.4,
+      "drawdownImprovedRate": 0.48,
+      "allObjectivesImprovedRate": 0.34,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.96,
+          "avgImprovement": {
+            "totalReturn": -0.07767,
+            "annualReturn": -0.040516,
+            "sharpe": -0.078648,
+            "maxDrawdown": -0.02002
+          },
+          "allObjectivesImprovedRate": 0.34
+        }
+      }
+    }
+  },
+  "topConfigs": [
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.05,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.060018,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.68,
+        "avgImprovement": {
+          "totalReturn": -0.03086,
+          "annualReturn": -0.02229,
+          "sharpe": -0.046992,
+          "maxDrawdown": -0.012482
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.68,
+            "avgImprovement": {
+              "totalReturn": -0.03086,
+              "annualReturn": -0.02229,
+              "sharpe": -0.046992,
+              "maxDrawdown": -0.012482
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.05,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.075393,
+      "thresholds": {
+        "trainScoreMin": 0.35,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.7,
+        "avgImprovement": {
+          "totalReturn": -0.031916,
+          "annualReturn": -0.023174,
+          "sharpe": -0.05001,
+          "maxDrawdown": -0.013594
+        },
+        "returnImprovedRate": 0.3,
+        "sharpeImprovedRate": 0.3,
+        "drawdownImprovedRate": 0.32,
+        "allObjectivesImprovedRate": 0.26,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.7,
+            "avgImprovement": {
+              "totalReturn": -0.031916,
+              "annualReturn": -0.023174,
+              "sharpe": -0.05001,
+              "maxDrawdown": -0.013594
+            },
+            "allObjectivesImprovedRate": 0.26
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.080492,
+      "thresholds": {
+        "trainScoreMin": -0.2,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.78,
+        "avgImprovement": {
+          "totalReturn": -0.052616,
+          "annualReturn": -0.023724,
+          "sharpe": -0.042844,
+          "maxDrawdown": -0.01058
+        },
+        "returnImprovedRate": 0.34,
+        "sharpeImprovedRate": 0.34,
+        "drawdownImprovedRate": 0.4,
+        "allObjectivesImprovedRate": 0.3,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.78,
+            "avgImprovement": {
+              "totalReturn": -0.052616,
+              "annualReturn": -0.023724,
+              "sharpe": -0.042844,
+              "maxDrawdown": -0.01058
+            },
+            "allObjectivesImprovedRate": 0.3
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.080492,
+      "thresholds": {
+        "trainScoreMin": -0.2,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.78,
+        "avgImprovement": {
+          "totalReturn": -0.052616,
+          "annualReturn": -0.023724,
+          "sharpe": -0.042844,
+          "maxDrawdown": -0.01058
+        },
+        "returnImprovedRate": 0.34,
+        "sharpeImprovedRate": 0.34,
+        "drawdownImprovedRate": 0.4,
+        "allObjectivesImprovedRate": 0.3,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.78,
+            "avgImprovement": {
+              "totalReturn": -0.052616,
+              "annualReturn": -0.023724,
+              "sharpe": -0.042844,
+              "maxDrawdown": -0.01058
+            },
+            "allObjectivesImprovedRate": 0.3
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.080492,
+      "thresholds": {
+        "trainScoreMin": 0,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.78,
+        "avgImprovement": {
+          "totalReturn": -0.052616,
+          "annualReturn": -0.023724,
+          "sharpe": -0.042844,
+          "maxDrawdown": -0.01058
+        },
+        "returnImprovedRate": 0.34,
+        "sharpeImprovedRate": 0.34,
+        "drawdownImprovedRate": 0.4,
+        "allObjectivesImprovedRate": 0.3,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.78,
+            "avgImprovement": {
+              "totalReturn": -0.052616,
+              "annualReturn": -0.023724,
+              "sharpe": -0.042844,
+              "maxDrawdown": -0.01058
+            },
+            "allObjectivesImprovedRate": 0.3
+          }
+        }
+      }
+    },
+    {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": -0.080492,
+      "thresholds": {
+        "trainScoreMin": 0,
+        "trainTotalReturnMin": 0.1,
+        "trainSharpeMin": 0,
+        "trainDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.78,
+        "avgImprovement": {
+          "totalReturn": -0.052616,
+          "annualReturn": -0.023724,
+          "sharpe": -0.042844,
+          "maxDrawdown": -0.01058
+        },
+        "returnImprovedRate": 0.34,
+        "sharpeImprovedRate": 0.34,
+        "drawdownImprovedRate": 0.4,
+        "allObjectivesImprovedRate": 0.3,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.78,
+            "avgImprovement": {
+              "totalReturn": -0.052616,
+              "annualReturn": -0.023724,
+              "sharpe": -0.042844,
+              "maxDrawdown": -0.01058
+            },
+            "allObjectivesImprovedRate": 0.3
+          }
+        }
+      }
+    }
+  ],
+  "oracleUpperBound": {
+    "assets": 50,
+    "activeRate": 0.96,
+    "avgImprovement": {
+      "totalReturn": 0.323556,
+      "annualReturn": 0.161096,
+      "sharpe": 0.451082,
+      "maxDrawdown": 0.07462
+    },
+    "returnImprovedRate": 0.96,
+    "sharpeImprovedRate": 0.96,
+    "drawdownImprovedRate": 0.88,
+    "allObjectivesImprovedRate": 0.88,
+    "byMarket": {
+      "加密货币": {
+        "assets": 50,
+        "activeRate": 0.96,
+        "avgImprovement": {
+          "totalReturn": 0.323556,
+          "annualReturn": 0.161096,
+          "sharpe": 0.451082,
+          "maxDrawdown": 0.07462
+        },
+        "allObjectivesImprovedRate": 0.88
+      }
+    }
+  },
+  "stockResults": [
+    {
+      "market": "加密货币",
+      "symbol": "1INCH-USD",
+      "name": "1inch",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.5133,
+        "annualReturn": -0.3132,
+        "maxDrawdown": -0.7121,
+        "winRate": 0.1698,
+        "sharpe": -0.5915
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.0506,
+          "annualReturn": 0.0111,
+          "maxDrawdown": -0.5088,
+          "winRate": 0.2053,
+          "sharpe": 0.2599
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0589,
+          "annualReturn": 0.013,
+          "sharpe": 0.0272,
+          "maxDrawdown": -0.0171
+        },
+        "trainScore": 0.03199,
+        "validationMetrics": {
+          "totalReturn": -0.4673,
+          "annualReturn": -0.2801,
+          "maxDrawdown": -0.7267,
+          "winRate": 0.1698,
+          "sharpe": -0.4614
+        },
+        "validationImprovement": {
+          "totalReturn": 0.046,
+          "annualReturn": 0.0331,
+          "sharpe": 0.1301,
+          "maxDrawdown": -0.0146
+        },
+        "validationScore": 0.14133
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.0083,
+          "annualReturn": -0.0019,
+          "maxDrawdown": -0.4917,
+          "winRate": 0.2044,
+          "sharpe": 0.2327
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.5133,
+          "annualReturn": -0.3132,
+          "maxDrawdown": -0.7121,
+          "winRate": 0.1698,
+          "sharpe": -0.5915
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.6541,
+          "annualReturn": -0.2117,
+          "maxDrawdown": -0.7471,
+          "winRate": 0.2409,
+          "sharpe": -0.1747
+        },
+        "trainImprovement": {
+          "totalReturn": -0.6458,
+          "annualReturn": -0.2098,
+          "sharpe": -0.4074,
+          "maxDrawdown": -0.2554
+        },
+        "trainScore": -2.51888,
+        "validationMetrics": {
+          "totalReturn": -0.364,
+          "annualReturn": -0.2103,
+          "maxDrawdown": -0.6692,
+          "winRate": 0.2298,
+          "sharpe": -0.2096
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1493,
+          "annualReturn": 0.1029,
+          "sharpe": 0.3819,
+          "maxDrawdown": 0.0429
+        },
+        "validationScore": 0.63636
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "AAVE-USD",
+      "name": "Aave",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.3469,
+        "annualReturn": -0.1993,
+        "maxDrawdown": -0.623,
+        "winRate": 0.1636,
+        "sharpe": -0.2735
+      },
+      "calibrated": {
+        "mode": "downside_guard",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 0.3351,
+          "annualReturn": 0.0669,
+          "maxDrawdown": -0.7721,
+          "winRate": 0.4676,
+          "sharpe": 0.4718
+        },
+        "trainImprovement": {
+          "totalReturn": 0.6887,
+          "annualReturn": 0.16,
+          "sharpe": 0.3347,
+          "maxDrawdown": -0.0637
+        },
+        "trainScore": 0.83069,
+        "validationMetrics": {
+          "totalReturn": -0.6313,
+          "annualReturn": -0.4058,
+          "maxDrawdown": -0.7862,
+          "winRate": 0.3892,
+          "sharpe": -0.4819
+        },
+        "validationImprovement": {
+          "totalReturn": -0.2844,
+          "annualReturn": -0.2065,
+          "sharpe": -0.2084,
+          "maxDrawdown": -0.1632
+        },
+        "validationScore": -1.37793
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3536,
+          "annualReturn": -0.0931,
+          "maxDrawdown": -0.7084,
+          "winRate": 0.2133,
+          "sharpe": 0.1371
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.3469,
+          "annualReturn": -0.1993,
+          "maxDrawdown": -0.623,
+          "winRate": 0.1636,
+          "sharpe": -0.2735
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.4965,
+          "annualReturn": -0.1425,
+          "maxDrawdown": -0.7494,
+          "winRate": 0.2151,
+          "sharpe": 0.0548
+        },
+        "trainImprovement": {
+          "totalReturn": -0.1429,
+          "annualReturn": -0.0494,
+          "sharpe": -0.0823,
+          "maxDrawdown": -0.041
+        },
+        "trainScore": -0.49587,
+        "validationMetrics": {
+          "totalReturn": -0.1724,
+          "annualReturn": -0.094,
+          "maxDrawdown": -0.5762,
+          "winRate": 0.1677,
+          "sharpe": 0.0064
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1745,
+          "annualReturn": 0.1053,
+          "sharpe": 0.2799,
+          "maxDrawdown": 0.0468
+        },
+        "validationScore": 0.56448
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ADA-USD",
+      "name": "Cardano",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.5166,
+        "annualReturn": -0.3156,
+        "maxDrawdown": -0.6947,
+        "winRate": 0.1449,
+        "sharpe": -0.8176
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.75,
+        "qTail": 0.93,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 2.8227,
+          "annualReturn": 0.3504,
+          "maxDrawdown": -0.4937,
+          "winRate": 0.2124,
+          "sharpe": 0.8678
+        },
+        "trainImprovement": {
+          "totalReturn": 0.609,
+          "annualReturn": 0.0515,
+          "sharpe": 0.0833,
+          "maxDrawdown": 0.0205
+        },
+        "trainScore": 0.68995,
+        "validationMetrics": {
+          "totalReturn": -0.5202,
+          "annualReturn": -0.3183,
+          "maxDrawdown": -0.6758,
+          "winRate": 0.1366,
+          "sharpe": -0.8874
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0036,
+          "annualReturn": -0.0027,
+          "sharpe": -0.0698,
+          "maxDrawdown": 0.0189
+        },
+        "validationScore": -0.09481
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 2.2137,
+          "annualReturn": 0.2989,
+          "maxDrawdown": -0.5142,
+          "winRate": 0.2116,
+          "sharpe": 0.7845
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.5166,
+          "annualReturn": -0.3156,
+          "maxDrawdown": -0.6947,
+          "winRate": 0.1449,
+          "sharpe": -0.8176
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.4927,
+          "annualReturn": 0.0939,
+          "maxDrawdown": -0.6465,
+          "winRate": 0.2338,
+          "sharpe": 0.4267
+        },
+        "trainImprovement": {
+          "totalReturn": -1.721,
+          "annualReturn": -0.205,
+          "sharpe": -0.3578,
+          "maxDrawdown": -0.1323
+        },
+        "trainScore": -3.54352,
+        "validationMetrics": {
+          "totalReturn": -0.3453,
+          "annualReturn": -0.1983,
+          "maxDrawdown": -0.6525,
+          "winRate": 0.1925,
+          "sharpe": -0.3065
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1713,
+          "annualReturn": 0.1173,
+          "sharpe": 0.5111,
+          "maxDrawdown": 0.0422
+        },
+        "validationScore": 0.79144
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ALGO-USD",
+      "name": "Algorand",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.6515,
+        "annualReturn": -0.4231,
+        "maxDrawdown": -0.7372,
+        "winRate": 0.1573,
+        "sharpe": -0.9663
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.7639,
+          "annualReturn": 0.1356,
+          "maxDrawdown": -0.5927,
+          "winRate": 0.2284,
+          "sharpe": 0.5042
+        },
+        "trainImprovement": {
+          "totalReturn": 0.9099,
+          "annualReturn": 0.1703,
+          "sharpe": 0.2974,
+          "maxDrawdown": 0.1661
+        },
+        "trainScore": 1.46722,
+        "validationMetrics": {
+          "totalReturn": -0.4624,
+          "annualReturn": -0.2766,
+          "maxDrawdown": -0.6295,
+          "winRate": 0.1366,
+          "sharpe": -0.5603
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1891,
+          "annualReturn": 0.1465,
+          "sharpe": 0.406,
+          "maxDrawdown": 0.1077
+        },
+        "validationScore": 0.82176
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.146,
+          "annualReturn": -0.0347,
+          "maxDrawdown": -0.7588,
+          "winRate": 0.2169,
+          "sharpe": 0.2068
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.6515,
+          "annualReturn": -0.4231,
+          "maxDrawdown": -0.7372,
+          "winRate": 0.1573,
+          "sharpe": -0.9663
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.0394,
+          "annualReturn": -0.009,
+          "maxDrawdown": -0.7113,
+          "winRate": 0.2267,
+          "sharpe": 0.269
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1066,
+          "annualReturn": 0.0257,
+          "sharpe": 0.0622,
+          "maxDrawdown": 0.0475
+        },
+        "trainScore": 0.24699,
+        "validationMetrics": {
+          "totalReturn": -0.3232,
+          "annualReturn": -0.1843,
+          "maxDrawdown": -0.5725,
+          "winRate": 0.1615,
+          "sharpe": -0.2366
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3283,
+          "annualReturn": 0.2388,
+          "sharpe": 0.7297,
+          "maxDrawdown": 0.1647
+        },
+        "validationScore": 1.40809
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "APT-USD",
+      "name": "Aptos",
+      "rows": 1317,
+      "splitRows": {
+        "train": 921,
+        "validation": 396
+      },
+      "baseline": {
+        "totalReturn": -0.5926,
+        "annualReturn": -0.4353,
+        "maxDrawdown": -0.6172,
+        "winRate": 0.149,
+        "sharpe": -1.1274
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.35,
+        "trainMetrics": {
+          "totalReturn": 1.6055,
+          "annualReturn": 0.2996,
+          "maxDrawdown": -0.5479,
+          "winRate": 0.215,
+          "sharpe": 0.7002
+        },
+        "trainImprovement": {
+          "totalReturn": 0.6712,
+          "annualReturn": 0.1018,
+          "sharpe": 0.1233,
+          "maxDrawdown": 0.0413
+        },
+        "trainScore": 0.84436,
+        "validationMetrics": {
+          "totalReturn": -0.6037,
+          "annualReturn": -0.4451,
+          "maxDrawdown": -0.6276,
+          "winRate": 0.1389,
+          "sharpe": -1.329
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0111,
+          "annualReturn": -0.0098,
+          "sharpe": -0.2016,
+          "maxDrawdown": -0.0104
+        },
+        "validationScore": -0.39644
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.9343,
+          "annualReturn": 0.1978,
+          "maxDrawdown": -0.5892,
+          "winRate": 0.2128,
+          "sharpe": 0.5769
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.5926,
+          "annualReturn": -0.4353,
+          "maxDrawdown": -0.6172,
+          "winRate": 0.149,
+          "sharpe": -1.1274
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.3938,
+          "annualReturn": 0.0951,
+          "maxDrawdown": -0.6939,
+          "winRate": 0.1944,
+          "sharpe": 0.4418
+        },
+        "trainImprovement": {
+          "totalReturn": -0.5405,
+          "annualReturn": -0.1027,
+          "sharpe": -0.1351,
+          "maxDrawdown": -0.1047
+        },
+        "trainScore": -1.37276,
+        "validationMetrics": {
+          "totalReturn": -0.3756,
+          "annualReturn": -0.259,
+          "maxDrawdown": -0.4576,
+          "winRate": 0.1465,
+          "sharpe": -0.5592
+        },
+        "validationImprovement": {
+          "totalReturn": 0.217,
+          "annualReturn": 0.1763,
+          "sharpe": 0.5682,
+          "maxDrawdown": 0.1596
+        },
+        "validationScore": 1.10701
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ARB-USD",
+      "name": "Arbitrum",
+      "rows": 1162,
+      "splitRows": {
+        "train": 813,
+        "validation": 349
+      },
+      "baseline": {
+        "totalReturn": -0.4376,
+        "annualReturn": -0.34,
+        "maxDrawdown": -0.503,
+        "winRate": 0.1146,
+        "sharpe": -0.7233
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.2745,
+          "annualReturn": -0.0947,
+          "maxDrawdown": -0.5376,
+          "winRate": 0.1747,
+          "sharpe": 0.0454
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0851,
+          "annualReturn": 0.0343,
+          "sharpe": 0.082,
+          "maxDrawdown": 0.0347
+        },
+        "trainScore": 0.23126,
+        "validationMetrics": {
+          "totalReturn": -0.4243,
+          "annualReturn": -0.3288,
+          "maxDrawdown": -0.4913,
+          "winRate": 0.1318,
+          "sharpe": -0.6708
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0133,
+          "annualReturn": 0.0112,
+          "sharpe": 0.0525,
+          "maxDrawdown": 0.0117
+        },
+        "validationScore": 0.08879
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3596,
+          "annualReturn": -0.129,
+          "maxDrawdown": -0.5723,
+          "winRate": 0.1661,
+          "sharpe": -0.0366
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4376,
+          "annualReturn": -0.34,
+          "maxDrawdown": -0.503,
+          "winRate": 0.1146,
+          "sharpe": -0.7233
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.75,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.5883,
+          "annualReturn": -0.2405,
+          "maxDrawdown": -0.7271,
+          "winRate": 0.1587,
+          "sharpe": -0.3529
+        },
+        "trainImprovement": {
+          "totalReturn": -0.2287,
+          "annualReturn": -0.1115,
+          "sharpe": -0.3163,
+          "maxDrawdown": -0.1548
+        },
+        "trainScore": -1.409,
+        "validationMetrics": {
+          "totalReturn": -0.2448,
+          "annualReturn": -0.1835,
+          "maxDrawdown": -0.3134,
+          "winRate": 0.1232,
+          "sharpe": -0.2543
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1928,
+          "annualReturn": 0.1565,
+          "sharpe": 0.469,
+          "maxDrawdown": 0.1896
+        },
+        "validationScore": 1.02413
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ATOM-USD",
+      "name": "Cosmos",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.2833,
+        "annualReturn": -0.1595,
+        "maxDrawdown": -0.3485,
+        "winRate": 0.1863,
+        "sharpe": -0.3752
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 1.2384,
+          "annualReturn": 0.1978,
+          "maxDrawdown": -0.3954,
+          "winRate": 0.1876,
+          "sharpe": 0.6083
+        },
+        "trainImprovement": {
+          "totalReturn": 0.8759,
+          "annualReturn": 0.1261,
+          "sharpe": 0.2233,
+          "maxDrawdown": 0.091
+        },
+        "trainScore": 1.22026,
+        "validationMetrics": {
+          "totalReturn": -0.5843,
+          "annualReturn": -0.3674,
+          "maxDrawdown": -0.6316,
+          "winRate": 0.176,
+          "sharpe": -1.0316
+        },
+        "validationImprovement": {
+          "totalReturn": -0.301,
+          "annualReturn": -0.2079,
+          "sharpe": -0.6564,
+          "maxDrawdown": -0.2831
+        },
+        "validationScore": -2.54715
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.3625,
+          "annualReturn": 0.0717,
+          "maxDrawdown": -0.4864,
+          "winRate": 0.184,
+          "sharpe": 0.385
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.2833,
+          "annualReturn": -0.1595,
+          "maxDrawdown": -0.3485,
+          "winRate": 0.1863,
+          "sharpe": -0.3752
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.4289,
+          "annualReturn": 0.0832,
+          "maxDrawdown": -0.5031,
+          "winRate": 0.1947,
+          "sharpe": 0.4075
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0664,
+          "annualReturn": 0.0115,
+          "sharpe": 0.0225,
+          "maxDrawdown": -0.0167
+        },
+        "trainScore": 0.03457,
+        "validationMetrics": {
+          "totalReturn": -0.2037,
+          "annualReturn": -0.1121,
+          "maxDrawdown": -0.3205,
+          "winRate": 0.207,
+          "sharpe": -0.17
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0796,
+          "annualReturn": 0.0474,
+          "sharpe": 0.2052,
+          "maxDrawdown": 0.028
+        },
+        "validationScore": 0.34534
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "AVAX-USD",
+      "name": "Avalanche",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": 0.1861,
+        "annualReturn": 0.0931,
+        "maxDrawdown": -0.2531,
+        "winRate": 0.1946,
+        "sharpe": 0.4212
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 1.3997,
+          "annualReturn": 0.2166,
+          "maxDrawdown": -0.5632,
+          "winRate": 0.2338,
+          "sharpe": 0.6221
+        },
+        "trainImprovement": {
+          "totalReturn": 1.0682,
+          "annualReturn": 0.1504,
+          "sharpe": 0.2341,
+          "maxDrawdown": 0.1214
+        },
+        "trainScore": 1.46492,
+        "validationMetrics": {
+          "totalReturn": -0.1662,
+          "annualReturn": -0.0905,
+          "maxDrawdown": -0.4206,
+          "winRate": 0.236,
+          "sharpe": -0.0142
+        },
+        "validationImprovement": {
+          "totalReturn": -0.3523,
+          "annualReturn": -0.1836,
+          "sharpe": -0.4354,
+          "maxDrawdown": -0.1675
+        },
+        "validationScore": -1.8612
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.3315,
+          "annualReturn": 0.0662,
+          "maxDrawdown": -0.6846,
+          "winRate": 0.208,
+          "sharpe": 0.388
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.1861,
+          "annualReturn": 0.0931,
+          "maxDrawdown": -0.2531,
+          "winRate": 0.1946,
+          "sharpe": 0.4212
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 0.8464,
+          "annualReturn": 0.1472,
+          "maxDrawdown": -0.5727,
+          "winRate": 0.2133,
+          "sharpe": 0.5195
+        },
+        "trainImprovement": {
+          "totalReturn": 0.5149,
+          "annualReturn": 0.081,
+          "sharpe": 0.1315,
+          "maxDrawdown": 0.1119
+        },
+        "trainScore": 0.81445,
+        "validationMetrics": {
+          "totalReturn": 0.2865,
+          "annualReturn": 0.1405,
+          "maxDrawdown": -0.2639,
+          "winRate": 0.1925,
+          "sharpe": 0.5298
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1004,
+          "annualReturn": 0.0474,
+          "sharpe": 0.1086,
+          "maxDrawdown": -0.0108
+        },
+        "validationScore": 0.1881
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "AXS-USD",
+      "name": "Axie Infinity",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.2363,
+        "annualReturn": -0.1312,
+        "maxDrawdown": -0.6382,
+        "winRate": 0.1346,
+        "sharpe": 0.0929
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.224,
+          "annualReturn": -0.0552,
+          "maxDrawdown": -0.6791,
+          "winRate": 0.192,
+          "sharpe": 0.176
+        },
+        "trainImprovement": {
+          "totalReturn": 0.2852,
+          "annualReturn": 0.0922,
+          "sharpe": 0.1854,
+          "maxDrawdown": 0.0378
+        },
+        "trainScore": 0.54866,
+        "validationMetrics": {
+          "totalReturn": -0.394,
+          "annualReturn": -0.23,
+          "maxDrawdown": -0.6553,
+          "winRate": 0.1325,
+          "sharpe": -0.0907
+        },
+        "validationImprovement": {
+          "totalReturn": -0.1577,
+          "annualReturn": -0.0988,
+          "sharpe": -0.1836,
+          "maxDrawdown": -0.0171
+        },
+        "validationScore": -0.63702
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.5092,
+          "annualReturn": -0.1474,
+          "maxDrawdown": -0.7169,
+          "winRate": 0.1893,
+          "sharpe": -0.0094
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.2363,
+          "annualReturn": -0.1312,
+          "maxDrawdown": -0.6382,
+          "winRate": 0.1346,
+          "sharpe": 0.0929
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.3833,
+          "annualReturn": -0.1026,
+          "maxDrawdown": -0.7188,
+          "winRate": 0.1929,
+          "sharpe": 0.0874
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1259,
+          "annualReturn": 0.0448,
+          "sharpe": 0.0968,
+          "maxDrawdown": -0.0019
+        },
+        "trainScore": 0.22643,
+        "validationMetrics": {
+          "totalReturn": -0.1887,
+          "annualReturn": -0.1034,
+          "maxDrawdown": -0.5758,
+          "winRate": 0.1325,
+          "sharpe": 0.1719
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0476,
+          "annualReturn": 0.0278,
+          "sharpe": 0.079,
+          "maxDrawdown": 0.0624
+        },
+        "validationScore": 0.23558
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BAT-USD",
+      "name": "Basic Attention Token",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.8103,
+        "annualReturn": -0.5799,
+        "maxDrawdown": -0.8124,
+        "winRate": 0.1781,
+        "sharpe": -1.3222
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.2833,
+          "annualReturn": -0.0719,
+          "maxDrawdown": -0.5638,
+          "winRate": 0.2284,
+          "sharpe": 0.0684
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1293,
+          "annualReturn": 0.0404,
+          "sharpe": 0.1125,
+          "maxDrawdown": 0.0254
+        },
+        "trainScore": 0.28971,
+        "validationMetrics": {
+          "totalReturn": -0.6747,
+          "annualReturn": -0.4434,
+          "maxDrawdown": -0.6799,
+          "winRate": 0.1718,
+          "sharpe": -0.9196
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1356,
+          "annualReturn": 0.1365,
+          "sharpe": 0.4026,
+          "maxDrawdown": 0.1325
+        },
+        "validationScore": 0.80489
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.4126,
+          "annualReturn": -0.1123,
+          "maxDrawdown": -0.5892,
+          "winRate": 0.2124,
+          "sharpe": -0.0441
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.8103,
+          "annualReturn": -0.5799,
+          "maxDrawdown": -0.8124,
+          "winRate": 0.1781,
+          "sharpe": -1.3222
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.854,
+          "annualReturn": -0.3501,
+          "maxDrawdown": -0.854,
+          "winRate": 0.4649,
+          "sharpe": -0.352
+        },
+        "trainImprovement": {
+          "totalReturn": -0.4414,
+          "annualReturn": -0.2378,
+          "sharpe": -0.3079,
+          "maxDrawdown": -0.2648
+        },
+        "trainScore": -2.10765,
+        "validationMetrics": {
+          "totalReturn": -0.2922,
+          "annualReturn": -0.165,
+          "maxDrawdown": -0.6685,
+          "winRate": 0.4389,
+          "sharpe": 0.1148
+        },
+        "validationImprovement": {
+          "totalReturn": 0.5181,
+          "annualReturn": 0.4149,
+          "sharpe": 1.437,
+          "maxDrawdown": 0.1439
+        },
+        "validationScore": 2.34098
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BCH-USD",
+      "name": "Bitcoin Cash",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.1671,
+        "annualReturn": -0.091,
+        "maxDrawdown": -0.4878,
+        "winRate": 0.2629,
+        "sharpe": -0.0675
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 0.5511,
+          "annualReturn": 0.1033,
+          "maxDrawdown": -0.5421,
+          "winRate": 0.1956,
+          "sharpe": 0.4288
+        },
+        "trainImprovement": {
+          "totalReturn": 0.5276,
+          "annualReturn": 0.0981,
+          "sharpe": 0.1722,
+          "maxDrawdown": 0.0387
+        },
+        "trainScore": 0.75801,
+        "validationMetrics": {
+          "totalReturn": -0.46,
+          "annualReturn": -0.2749,
+          "maxDrawdown": -0.5912,
+          "winRate": 0.234,
+          "sharpe": -0.7463
+        },
+        "validationImprovement": {
+          "totalReturn": -0.2929,
+          "annualReturn": -0.1839,
+          "sharpe": -0.6788,
+          "maxDrawdown": -0.1034
+        },
+        "validationScore": -1.98685
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.0235,
+          "annualReturn": 0.0052,
+          "maxDrawdown": -0.5808,
+          "winRate": 0.1938,
+          "sharpe": 0.2566
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.1671,
+          "annualReturn": -0.091,
+          "maxDrawdown": -0.4878,
+          "winRate": 0.2629,
+          "sharpe": -0.0675
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.2151,
+          "annualReturn": -0.0528,
+          "maxDrawdown": -0.7578,
+          "winRate": 0.4507,
+          "sharpe": 0.2648
+        },
+        "trainImprovement": {
+          "totalReturn": -0.2386,
+          "annualReturn": -0.058,
+          "sharpe": 0.0082,
+          "maxDrawdown": -0.177
+        },
+        "trainScore": -0.92124,
+        "validationMetrics": {
+          "totalReturn": 0.0602,
+          "annualReturn": 0.031,
+          "maxDrawdown": -0.4609,
+          "winRate": 0.4286,
+          "sharpe": 0.321
+        },
+        "validationImprovement": {
+          "totalReturn": 0.2273,
+          "annualReturn": 0.122,
+          "sharpe": 0.3885,
+          "maxDrawdown": 0.0269
+        },
+        "validationScore": 0.69711
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BNB-USD",
+      "name": "BNB",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": 0.2874,
+        "annualReturn": 0.1409,
+        "maxDrawdown": -0.3091,
+        "winRate": 0.2671,
+        "sharpe": 0.5894
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.8203,
+          "annualReturn": 0.1436,
+          "maxDrawdown": -0.3042,
+          "winRate": 0.32,
+          "sharpe": 0.5455
+        },
+        "trainImprovement": {
+          "totalReturn": 0.2503,
+          "annualReturn": 0.0373,
+          "sharpe": 0.0825,
+          "maxDrawdown": 0.049
+        },
+        "trainScore": 0.40482,
+        "validationMetrics": {
+          "totalReturn": 0.2154,
+          "annualReturn": 0.1072,
+          "maxDrawdown": -0.372,
+          "winRate": 0.3395,
+          "sharpe": 0.4729
+        },
+        "validationImprovement": {
+          "totalReturn": -0.072,
+          "annualReturn": -0.0337,
+          "sharpe": -0.1165,
+          "maxDrawdown": -0.0629
+        },
+        "validationScore": -0.51698
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.57,
+          "annualReturn": 0.1063,
+          "maxDrawdown": -0.3532,
+          "winRate": 0.2524,
+          "sharpe": 0.463
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.2874,
+          "annualReturn": 0.1409,
+          "maxDrawdown": -0.3091,
+          "winRate": 0.2671,
+          "sharpe": 0.5894
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.85,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.2804,
+          "annualReturn": 0.0569,
+          "maxDrawdown": -0.3346,
+          "winRate": 0.2436,
+          "sharpe": 0.3319
+        },
+        "trainImprovement": {
+          "totalReturn": -0.2896,
+          "annualReturn": -0.0494,
+          "sharpe": -0.1311,
+          "maxDrawdown": 0.0186
+        },
+        "trainScore": -0.62325,
+        "validationMetrics": {
+          "totalReturn": 0.4177,
+          "annualReturn": 0.1997,
+          "maxDrawdown": -0.1882,
+          "winRate": 0.2422,
+          "sharpe": 0.7865
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1303,
+          "annualReturn": 0.0588,
+          "sharpe": 0.1971,
+          "maxDrawdown": 0.1209
+        },
+        "validationScore": 0.53721
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": 0.028,
+        "annualReturn": 0.0145,
+        "maxDrawdown": -0.2904,
+        "winRate": 0.2402,
+        "sharpe": 0.1708
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.8858,
+          "annualReturn": 0.1527,
+          "maxDrawdown": -0.5065,
+          "winRate": 0.3058,
+          "sharpe": 0.585
+        },
+        "trainImprovement": {
+          "totalReturn": 0.7114,
+          "annualReturn": 0.116,
+          "sharpe": 0.3134,
+          "maxDrawdown": 0.0622
+        },
+        "trainScore": 1.11118,
+        "validationMetrics": {
+          "totalReturn": 0.1194,
+          "annualReturn": 0.0606,
+          "maxDrawdown": -0.2417,
+          "winRate": 0.2878,
+          "sharpe": 0.3703
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0914,
+          "annualReturn": 0.0461,
+          "sharpe": 0.1995,
+          "maxDrawdown": 0.0487
+        },
+        "validationScore": 0.38273
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.1744,
+          "annualReturn": 0.0367,
+          "maxDrawdown": -0.5687,
+          "winRate": 0.256,
+          "sharpe": 0.2716
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.028,
+          "annualReturn": 0.0145,
+          "maxDrawdown": -0.2904,
+          "winRate": 0.2402,
+          "sharpe": 0.1708
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.3787,
+          "annualReturn": 0.0746,
+          "maxDrawdown": -0.5831,
+          "winRate": 0.2898,
+          "sharpe": 0.3825
+        },
+        "trainImprovement": {
+          "totalReturn": 0.2043,
+          "annualReturn": 0.0379,
+          "sharpe": 0.1109,
+          "maxDrawdown": -0.0144
+        },
+        "trainScore": 0.26764,
+        "validationMetrics": {
+          "totalReturn": 0.211,
+          "annualReturn": 0.105,
+          "maxDrawdown": -0.1762,
+          "winRate": 0.2754,
+          "sharpe": 0.5605
+        },
+        "validationImprovement": {
+          "totalReturn": 0.183,
+          "annualReturn": 0.0905,
+          "sharpe": 0.3897,
+          "maxDrawdown": 0.1142
+        },
+        "validationScore": 0.78237
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "CHZ-USD",
+      "name": "Chiliz",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.6013,
+        "annualReturn": -0.3811,
+        "maxDrawdown": -0.6227,
+        "winRate": 0.1988,
+        "sharpe": -0.7844
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 0.7915,
+          "annualReturn": 0.1395,
+          "maxDrawdown": -0.5305,
+          "winRate": 0.2329,
+          "sharpe": 0.5171
+        },
+        "trainImprovement": {
+          "totalReturn": 0.4399,
+          "annualReturn": 0.0697,
+          "sharpe": 0.0994,
+          "maxDrawdown": 0.014
+        },
+        "trainScore": 0.55256,
+        "validationMetrics": {
+          "totalReturn": -0.6541,
+          "annualReturn": -0.4253,
+          "maxDrawdown": -0.6783,
+          "winRate": 0.1988,
+          "sharpe": -0.9353
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0528,
+          "annualReturn": -0.0442,
+          "sharpe": -0.1509,
+          "maxDrawdown": -0.0556
+        },
+        "validationScore": -0.53047
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.3516,
+          "annualReturn": 0.0698,
+          "maxDrawdown": -0.5445,
+          "winRate": 0.2276,
+          "sharpe": 0.4177
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.6013,
+          "annualReturn": -0.3811,
+          "maxDrawdown": -0.6227,
+          "winRate": 0.1988,
+          "sharpe": -0.7844
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.95,
+        "eta": 0.35,
+        "trainMetrics": {
+          "totalReturn": -0.6296,
+          "annualReturn": -0.1995,
+          "maxDrawdown": -0.805,
+          "winRate": 0.4213,
+          "sharpe": 0.1069
+        },
+        "trainImprovement": {
+          "totalReturn": -0.9812,
+          "annualReturn": -0.2693,
+          "sharpe": -0.3108,
+          "maxDrawdown": -0.2605
+        },
+        "trainScore": -2.87029,
+        "validationMetrics": {
+          "totalReturn": -0.2566,
+          "annualReturn": -0.1434,
+          "maxDrawdown": -0.4944,
+          "winRate": 0.4576,
+          "sharpe": 0.1137
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3447,
+          "annualReturn": 0.2377,
+          "sharpe": 0.8981,
+          "maxDrawdown": 0.1283
+        },
+        "validationScore": 1.53246
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "COMP-USD",
+      "name": "Compound",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.7253,
+        "annualReturn": -0.4904,
+        "maxDrawdown": -0.7493,
+        "winRate": 0.1718,
+        "sharpe": -1.3596
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 3.402,
+          "annualReturn": 0.3937,
+          "maxDrawdown": -0.5694,
+          "winRate": 0.1858,
+          "sharpe": 0.8372
+        },
+        "trainImprovement": {
+          "totalReturn": 2.7029,
+          "annualReturn": 0.2676,
+          "sharpe": 0.3553,
+          "maxDrawdown": -0.0254
+        },
+        "trainScore": 2.84043,
+        "validationMetrics": {
+          "totalReturn": -0.7227,
+          "annualReturn": -0.4879,
+          "maxDrawdown": -0.7478,
+          "winRate": 0.1636,
+          "sharpe": -1.3279
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0026,
+          "annualReturn": 0.0025,
+          "sharpe": 0.0317,
+          "maxDrawdown": 0.0015
+        },
+        "validationScore": 0.03769
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.6991,
+          "annualReturn": 0.1261,
+          "maxDrawdown": -0.544,
+          "winRate": 0.1902,
+          "sharpe": 0.4819
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.7253,
+          "annualReturn": -0.4904,
+          "maxDrawdown": -0.7493,
+          "winRate": 0.1718,
+          "sharpe": -1.3596
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.7158,
+          "annualReturn": -0.2456,
+          "maxDrawdown": -0.8765,
+          "winRate": 0.4302,
+          "sharpe": 0.0412
+        },
+        "trainImprovement": {
+          "totalReturn": -1.4149,
+          "annualReturn": -0.3717,
+          "sharpe": -0.4407,
+          "maxDrawdown": -0.3325
+        },
+        "trainScore": -3.9799,
+        "validationMetrics": {
+          "totalReturn": -0.6017,
+          "annualReturn": -0.3814,
+          "maxDrawdown": -0.7376,
+          "winRate": 0.4141,
+          "sharpe": -0.4772
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1236,
+          "annualReturn": 0.109,
+          "sharpe": 0.8824,
+          "maxDrawdown": 0.0117
+        },
+        "validationScore": 1.06686
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "CRV-USD",
+      "name": "Curve DAO",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.5844,
+        "annualReturn": -0.3675,
+        "maxDrawdown": -0.7537,
+        "winRate": 0.1553,
+        "sharpe": -0.5442
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.93,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.9695,
+          "annualReturn": 0.164,
+          "maxDrawdown": -0.6058,
+          "winRate": 0.1911,
+          "sharpe": 0.5505
+        },
+        "trainImprovement": {
+          "totalReturn": 0.8759,
+          "annualReturn": 0.1438,
+          "sharpe": 0.2079,
+          "maxDrawdown": 0.0385
+        },
+        "trainScore": 1.12971,
+        "validationMetrics": {
+          "totalReturn": -0.3983,
+          "annualReturn": -0.2328,
+          "maxDrawdown": -0.6419,
+          "winRate": 0.1387,
+          "sharpe": -0.2415
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1861,
+          "annualReturn": 0.1347,
+          "sharpe": 0.3027,
+          "maxDrawdown": 0.1118
+        },
+        "validationScore": 0.71642
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.0936,
+          "annualReturn": 0.0202,
+          "maxDrawdown": -0.6443,
+          "winRate": 0.1884,
+          "sharpe": 0.3426
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.5844,
+          "annualReturn": -0.3675,
+          "maxDrawdown": -0.7537,
+          "winRate": 0.1553,
+          "sharpe": -0.5442
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.8,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.4969,
+          "annualReturn": 0.0946,
+          "maxDrawdown": -0.6347,
+          "winRate": 0.1849,
+          "sharpe": 0.4555
+        },
+        "trainImprovement": {
+          "totalReturn": 0.4033,
+          "annualReturn": 0.0744,
+          "sharpe": 0.1129,
+          "maxDrawdown": 0.0096
+        },
+        "trainScore": 0.52843,
+        "validationMetrics": {
+          "totalReturn": 0.2305,
+          "annualReturn": 0.1143,
+          "maxDrawdown": -0.5845,
+          "winRate": 0.1532,
+          "sharpe": 0.4782
+        },
+        "validationImprovement": {
+          "totalReturn": 0.8149,
+          "annualReturn": 0.4818,
+          "sharpe": 1.0224,
+          "maxDrawdown": 0.1692
+        },
+        "validationScore": 2.26743
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "DASH-USD",
+      "name": "Dash",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": 0.0619,
+        "annualReturn": 0.0318,
+        "maxDrawdown": -0.7398,
+        "winRate": 0.2133,
+        "sharpe": 0.3845
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.4019,
+          "annualReturn": -0.1087,
+          "maxDrawdown": -0.6505,
+          "winRate": 0.2267,
+          "sharpe": -0.0172
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1139,
+          "annualReturn": 0.0413,
+          "sharpe": 0.1257,
+          "maxDrawdown": 0.0419
+        },
+        "trainScore": 0.3159,
+        "validationMetrics": {
+          "totalReturn": -0.0174,
+          "annualReturn": -0.0091,
+          "maxDrawdown": -0.7291,
+          "winRate": 0.2029,
+          "sharpe": 0.3284
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0793,
+          "annualReturn": -0.0409,
+          "sharpe": -0.0561,
+          "maxDrawdown": 0.0107
+        },
+        "validationScore": -0.20972
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.5158,
+          "annualReturn": -0.15,
+          "maxDrawdown": -0.6924,
+          "winRate": 0.2107,
+          "sharpe": -0.1429
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.0619,
+          "annualReturn": 0.0318,
+          "maxDrawdown": -0.7398,
+          "winRate": 0.2133,
+          "sharpe": 0.3845
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.35,
+        "trainMetrics": {
+          "totalReturn": -0.9051,
+          "annualReturn": -0.4099,
+          "maxDrawdown": -0.918,
+          "winRate": 0.4489,
+          "sharpe": -0.496
+        },
+        "trainImprovement": {
+          "totalReturn": -0.3893,
+          "annualReturn": -0.2599,
+          "sharpe": -0.3531,
+          "maxDrawdown": -0.2256
+        },
+        "trainScore": -1.99716,
+        "validationMetrics": {
+          "totalReturn": 0.7184,
+          "annualReturn": 0.3264,
+          "maxDrawdown": -0.7479,
+          "winRate": 0.4389,
+          "sharpe": 0.7509
+        },
+        "validationImprovement": {
+          "totalReturn": 0.6565,
+          "annualReturn": 0.2946,
+          "sharpe": 0.3664,
+          "maxDrawdown": -0.0081
+        },
+        "validationScore": 1.07863
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "DOGE-USD",
+      "name": "Dogecoin",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.345,
+        "annualReturn": -0.1981,
+        "maxDrawdown": -0.6379,
+        "winRate": 0.1656,
+        "sharpe": -0.3148
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 7.1119,
+          "annualReturn": 0.5982,
+          "maxDrawdown": -0.4943,
+          "winRate": 0.2373,
+          "sharpe": 1.0565
+        },
+        "trainImprovement": {
+          "totalReturn": 2.5444,
+          "annualReturn": 0.1292,
+          "sharpe": 0.1354,
+          "maxDrawdown": 0.0298
+        },
+        "trainScore": 2.53764,
+        "validationMetrics": {
+          "totalReturn": -0.2358,
+          "annualReturn": -0.1309,
+          "maxDrawdown": -0.5438,
+          "winRate": 0.1573,
+          "sharpe": -0.1213
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1092,
+          "annualReturn": 0.0672,
+          "sharpe": 0.1935,
+          "maxDrawdown": 0.0941
+        },
+        "validationScore": 0.47594
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 4.5675,
+          "annualReturn": 0.469,
+          "maxDrawdown": -0.5241,
+          "winRate": 0.2249,
+          "sharpe": 0.9211
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.345,
+          "annualReturn": -0.1981,
+          "maxDrawdown": -0.6379,
+          "winRate": 0.1656,
+          "sharpe": -0.3148
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 4.873,
+          "annualReturn": 0.4867,
+          "maxDrawdown": -0.4758,
+          "winRate": 0.2613,
+          "sharpe": 0.9309
+        },
+        "trainImprovement": {
+          "totalReturn": 0.3055,
+          "annualReturn": 0.0177,
+          "sharpe": 0.0098,
+          "maxDrawdown": 0.0483
+        },
+        "trainScore": 0.37088,
+        "validationMetrics": {
+          "totalReturn": -0.0892,
+          "annualReturn": -0.0476,
+          "maxDrawdown": -0.608,
+          "winRate": 0.2008,
+          "sharpe": 0.1239
+        },
+        "validationImprovement": {
+          "totalReturn": 0.2558,
+          "annualReturn": 0.1505,
+          "sharpe": 0.4387,
+          "maxDrawdown": 0.0299
+        },
+        "validationScore": 0.79201
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "DOT-USD",
+      "name": "Polkadot",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.6851,
+        "annualReturn": -0.4527,
+        "maxDrawdown": -0.7136,
+        "winRate": 0.1429,
+        "sharpe": -1.3709
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 0.9516,
+          "annualReturn": 0.1616,
+          "maxDrawdown": -0.4744,
+          "winRate": 0.2062,
+          "sharpe": 0.5531
+        },
+        "trainImprovement": {
+          "totalReturn": 0.8634,
+          "annualReturn": 0.1425,
+          "sharpe": 0.2875,
+          "maxDrawdown": 0.0647
+        },
+        "trainScore": 1.23933,
+        "validationMetrics": {
+          "totalReturn": -0.6281,
+          "annualReturn": -0.4031,
+          "maxDrawdown": -0.652,
+          "winRate": 0.1429,
+          "sharpe": -1.1909
+        },
+        "validationImprovement": {
+          "totalReturn": 0.057,
+          "annualReturn": 0.0496,
+          "sharpe": 0.18,
+          "maxDrawdown": 0.0616
+        },
+        "validationScore": 0.35466
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.0882,
+          "annualReturn": 0.0191,
+          "maxDrawdown": -0.5391,
+          "winRate": 0.1982,
+          "sharpe": 0.2656
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.6851,
+          "annualReturn": -0.4527,
+          "maxDrawdown": -0.7136,
+          "winRate": 0.1429,
+          "sharpe": -1.3709
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.75,
+        "qTail": 0.93,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.7447,
+          "annualReturn": 0.1328,
+          "maxDrawdown": -0.432,
+          "winRate": 0.2062,
+          "sharpe": 0.4973
+        },
+        "trainImprovement": {
+          "totalReturn": 0.6565,
+          "annualReturn": 0.1137,
+          "sharpe": 0.2317,
+          "maxDrawdown": 0.1071
+        },
+        "trainScore": 1.05076,
+        "validationMetrics": {
+          "totalReturn": -0.5558,
+          "annualReturn": -0.3452,
+          "maxDrawdown": -0.6072,
+          "winRate": 0.1325,
+          "sharpe": -0.9307
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1293,
+          "annualReturn": 0.1075,
+          "sharpe": 0.4402,
+          "maxDrawdown": 0.1064
+        },
+        "validationScore": 0.78056
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "DYDX-USD",
+      "name": "dYdX",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.505,
+        "annualReturn": -0.3071,
+        "maxDrawdown": -0.5586,
+        "winRate": 0.1656,
+        "sharpe": -0.4614
+      },
+      "calibrated": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.4772,
+          "annualReturn": 0.0913,
+          "maxDrawdown": -0.6565,
+          "winRate": 0.1982,
+          "sharpe": 0.4501
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.505,
+          "annualReturn": -0.3071,
+          "maxDrawdown": -0.5586,
+          "winRate": 0.1656,
+          "sharpe": -0.4614
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.4772,
+          "annualReturn": 0.0913,
+          "maxDrawdown": -0.6565,
+          "winRate": 0.1982,
+          "sharpe": 0.4501
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.505,
+          "annualReturn": -0.3071,
+          "maxDrawdown": -0.5586,
+          "winRate": 0.1656,
+          "sharpe": -0.4614
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.0291,
+          "annualReturn": 0.0065,
+          "maxDrawdown": -0.7043,
+          "winRate": 0.2107,
+          "sharpe": 0.3408
+        },
+        "trainImprovement": {
+          "totalReturn": -0.4481,
+          "annualReturn": -0.0848,
+          "sharpe": -0.1093,
+          "maxDrawdown": -0.0478
+        },
+        "trainScore": -1.00851,
+        "validationMetrics": {
+          "totalReturn": -0.2931,
+          "annualReturn": -0.1656,
+          "maxDrawdown": -0.5177,
+          "winRate": 0.1801,
+          "sharpe": -0.0519
+        },
+        "validationImprovement": {
+          "totalReturn": 0.2119,
+          "annualReturn": 0.1415,
+          "sharpe": 0.4095,
+          "maxDrawdown": 0.0409
+        },
+        "validationScore": 0.7364
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ENJ-USD",
+      "name": "Enjin Coin",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.2309,
+        "annualReturn": -0.128,
+        "maxDrawdown": -0.6429,
+        "winRate": 0.1366,
+        "sharpe": 0.0818
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.8,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 1.0804,
+          "annualReturn": 0.1783,
+          "maxDrawdown": -0.4486,
+          "winRate": 0.2009,
+          "sharpe": 0.5731
+        },
+        "trainImprovement": {
+          "totalReturn": 0.3977,
+          "annualReturn": 0.0547,
+          "sharpe": 0.0907,
+          "maxDrawdown": 0.0878
+        },
+        "trainScore": 0.61646,
+        "validationMetrics": {
+          "totalReturn": -0.3536,
+          "annualReturn": -0.2036,
+          "maxDrawdown": -0.6608,
+          "winRate": 0.1222,
+          "sharpe": -0.0711
+        },
+        "validationImprovement": {
+          "totalReturn": -0.1227,
+          "annualReturn": -0.0756,
+          "sharpe": -0.1529,
+          "maxDrawdown": -0.0179
+        },
+        "validationScore": -0.52679
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.6827,
+          "annualReturn": 0.1236,
+          "maxDrawdown": -0.5364,
+          "winRate": 0.1884,
+          "sharpe": 0.4824
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.2309,
+          "annualReturn": -0.128,
+          "maxDrawdown": -0.6429,
+          "winRate": 0.1366,
+          "sharpe": 0.0818
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": -0.1613,
+          "annualReturn": -0.0386,
+          "maxDrawdown": -0.6716,
+          "winRate": 0.2258,
+          "sharpe": 0.2061
+        },
+        "trainImprovement": {
+          "totalReturn": -0.844,
+          "annualReturn": -0.1622,
+          "sharpe": -0.2763,
+          "maxDrawdown": -0.1352
+        },
+        "trainScore": -2.16505,
+        "validationMetrics": {
+          "totalReturn": -0.1199,
+          "annualReturn": -0.0645,
+          "maxDrawdown": -0.6083,
+          "winRate": 0.1801,
+          "sharpe": 0.2059
+        },
+        "validationImprovement": {
+          "totalReturn": 0.111,
+          "annualReturn": 0.0635,
+          "sharpe": 0.1241,
+          "maxDrawdown": 0.0346
+        },
+        "validationScore": 0.31111
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "EOS-USD",
+      "name": "EOS",
+      "rows": 1222,
+      "splitRows": {
+        "train": 855,
+        "validation": 367
+      },
+      "baseline": {
+        "totalReturn": 0.8482,
+        "annualReturn": 0.5246,
+        "maxDrawdown": -0.4392,
+        "winRate": 0.2207,
+        "sharpe": 0.9845
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3066,
+          "annualReturn": -0.1023,
+          "maxDrawdown": -0.6026,
+          "winRate": 0.2292,
+          "sharpe": 0.0207
+        },
+        "trainImprovement": {
+          "totalReturn": 0.086,
+          "annualReturn": 0.0343,
+          "sharpe": 0.0802,
+          "maxDrawdown": 0.0385
+        },
+        "trainScore": 0.23635,
+        "validationMetrics": {
+          "totalReturn": 0.63,
+          "annualReturn": 0.3986,
+          "maxDrawdown": -0.5054,
+          "winRate": 0.218,
+          "sharpe": 0.8448
+        },
+        "validationImprovement": {
+          "totalReturn": -0.2182,
+          "annualReturn": -0.126,
+          "sharpe": -0.1397,
+          "maxDrawdown": -0.0662
+        },
+        "validationScore": -0.81781
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3926,
+          "annualReturn": -0.1366,
+          "maxDrawdown": -0.6411,
+          "winRate": 0.2257,
+          "sharpe": -0.0595
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.8482,
+          "annualReturn": 0.5246,
+          "maxDrawdown": -0.4392,
+          "winRate": 0.2207,
+          "sharpe": 0.9845
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3926,
+          "annualReturn": -0.1366,
+          "maxDrawdown": -0.6411,
+          "winRate": 0.2257,
+          "sharpe": -0.0595
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.8482,
+          "annualReturn": 0.5246,
+          "maxDrawdown": -0.4392,
+          "winRate": 0.2207,
+          "sharpe": 0.9845
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ETC-USD",
+      "name": "Ethereum Classic",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.6115,
+        "annualReturn": -0.3894,
+        "maxDrawdown": -0.6955,
+        "winRate": 0.1491,
+        "sharpe": -1.1336
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.0583,
+          "annualReturn": 0.0128,
+          "maxDrawdown": -0.5244,
+          "winRate": 0.2044,
+          "sharpe": 0.2814
+        },
+        "trainImprovement": {
+          "totalReturn": 0.4385,
+          "annualReturn": 0.1144,
+          "sharpe": 0.2273,
+          "maxDrawdown": 0.2146
+        },
+        "trainScore": 1.02251,
+        "validationMetrics": {
+          "totalReturn": -0.5826,
+          "annualReturn": -0.3661,
+          "maxDrawdown": -0.6813,
+          "winRate": 0.1263,
+          "sharpe": -1.1044
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0289,
+          "annualReturn": 0.0233,
+          "sharpe": 0.0292,
+          "maxDrawdown": 0.0142
+        },
+        "validationScore": 0.08958
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3802,
+          "annualReturn": -0.1016,
+          "maxDrawdown": -0.739,
+          "winRate": 0.2009,
+          "sharpe": 0.0541
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.6115,
+          "annualReturn": -0.3894,
+          "maxDrawdown": -0.6955,
+          "winRate": 0.1491,
+          "sharpe": -1.1336
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.8,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.3541,
+          "annualReturn": -0.0933,
+          "maxDrawdown": -0.6737,
+          "winRate": 0.2027,
+          "sharpe": 0.0755
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0261,
+          "annualReturn": 0.0083,
+          "sharpe": 0.0214,
+          "maxDrawdown": 0.0653
+        },
+        "trainScore": 0.15352,
+        "validationMetrics": {
+          "totalReturn": -0.2979,
+          "annualReturn": -0.1685,
+          "maxDrawdown": -0.53,
+          "winRate": 0.1263,
+          "sharpe": -0.3263
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3136,
+          "annualReturn": 0.2209,
+          "sharpe": 0.8073,
+          "maxDrawdown": 0.1655
+        },
+        "validationScore": 1.46479
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ETH-USD",
+      "name": "Ethereum",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.0428,
+        "annualReturn": -0.0226,
+        "maxDrawdown": -0.4497,
+        "winRate": 0.2153,
+        "sharpe": 0.1265
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.8,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.1921,
+          "annualReturn": 0.0402,
+          "maxDrawdown": -0.3588,
+          "winRate": 0.2196,
+          "sharpe": 0.2893
+        },
+        "trainImprovement": {
+          "totalReturn": 0.5379,
+          "annualReturn": 0.1309,
+          "sharpe": 0.3514,
+          "maxDrawdown": 0.1749
+        },
+        "trainScore": 1.1808,
+        "validationMetrics": {
+          "totalReturn": 0.3178,
+          "annualReturn": 0.1549,
+          "maxDrawdown": -0.3263,
+          "winRate": 0.1925,
+          "sharpe": 0.5621
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3606,
+          "annualReturn": 0.1775,
+          "sharpe": 0.4356,
+          "maxDrawdown": 0.1234
+        },
+        "validationScore": 1.04633
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3458,
+          "annualReturn": -0.0907,
+          "maxDrawdown": -0.5337,
+          "winRate": 0.2204,
+          "sharpe": -0.0621
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.0428,
+          "annualReturn": -0.0226,
+          "maxDrawdown": -0.4497,
+          "winRate": 0.2153,
+          "sharpe": 0.1265
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.208,
+          "annualReturn": -0.0509,
+          "maxDrawdown": -0.4222,
+          "winRate": 0.2213,
+          "sharpe": 0.0504
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1378,
+          "annualReturn": 0.0398,
+          "sharpe": 0.1125,
+          "maxDrawdown": 0.1115
+        },
+        "trainScore": 0.43482,
+        "validationMetrics": {
+          "totalReturn": 0.5432,
+          "annualReturn": 0.254,
+          "maxDrawdown": -0.2602,
+          "winRate": 0.2029,
+          "sharpe": 0.7693
+        },
+        "validationImprovement": {
+          "totalReturn": 0.586,
+          "annualReturn": 0.2766,
+          "sharpe": 0.6428,
+          "maxDrawdown": 0.1895
+        },
+        "validationScore": 1.6117
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "FIL-USD",
+      "name": "Filecoin",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.7689,
+        "annualReturn": -0.5344,
+        "maxDrawdown": -0.7928,
+        "winRate": 0.1615,
+        "sharpe": -1.4643
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.8,
+        "qTail": 0.93,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 2.0629,
+          "annualReturn": 0.285,
+          "maxDrawdown": -0.4811,
+          "winRate": 0.1973,
+          "sharpe": 0.7025
+        },
+        "trainImprovement": {
+          "totalReturn": 2.1614,
+          "annualReturn": 0.308,
+          "sharpe": 0.468,
+          "maxDrawdown": 0.1145
+        },
+        "trainScore": 2.75046,
+        "validationMetrics": {
+          "totalReturn": -0.6099,
+          "annualReturn": -0.3881,
+          "maxDrawdown": -0.6884,
+          "winRate": 0.147,
+          "sharpe": -0.3868
+        },
+        "validationImprovement": {
+          "totalReturn": 0.159,
+          "annualReturn": 0.1463,
+          "sharpe": 1.0775,
+          "maxDrawdown": 0.1044
+        },
+        "validationScore": 1.46079
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.0985,
+          "annualReturn": -0.023,
+          "maxDrawdown": -0.5956,
+          "winRate": 0.1911,
+          "sharpe": 0.2345
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.7689,
+          "annualReturn": -0.5344,
+          "maxDrawdown": -0.7928,
+          "winRate": 0.1615,
+          "sharpe": -1.4643
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 1.0496,
+          "annualReturn": 0.1744,
+          "maxDrawdown": -0.5028,
+          "winRate": 0.2018,
+          "sharpe": 0.5583
+        },
+        "trainImprovement": {
+          "totalReturn": 1.1481,
+          "annualReturn": 0.1974,
+          "sharpe": 0.3238,
+          "maxDrawdown": 0.0928
+        },
+        "trainScore": 1.60427,
+        "validationMetrics": {
+          "totalReturn": -0.3465,
+          "annualReturn": -0.1991,
+          "maxDrawdown": -0.6056,
+          "winRate": 0.1636,
+          "sharpe": 0.0264
+        },
+        "validationImprovement": {
+          "totalReturn": 0.4224,
+          "annualReturn": 0.3353,
+          "sharpe": 1.4907,
+          "maxDrawdown": 0.1872
+        },
+        "validationScore": 2.33803
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "FLOW-USD",
+      "name": "Flow",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.4652,
+        "annualReturn": -0.2786,
+        "maxDrawdown": -0.5825,
+        "winRate": 0.1408,
+        "sharpe": -0.3715
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 1.2086,
+          "annualReturn": 0.1942,
+          "maxDrawdown": -0.5958,
+          "winRate": 0.1973,
+          "sharpe": 0.5891
+        },
+        "trainImprovement": {
+          "totalReturn": 1.1311,
+          "annualReturn": 0.1773,
+          "sharpe": 0.2887,
+          "maxDrawdown": 0.0878
+        },
+        "trainScore": 1.53582,
+        "validationMetrics": {
+          "totalReturn": -0.5588,
+          "annualReturn": -0.3475,
+          "maxDrawdown": -0.6687,
+          "winRate": 0.1325,
+          "sharpe": -0.5603
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0936,
+          "annualReturn": -0.0689,
+          "sharpe": -0.1888,
+          "maxDrawdown": -0.0862
+        },
+        "validationScore": -0.76229
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.0775,
+          "annualReturn": 0.0169,
+          "maxDrawdown": -0.6836,
+          "winRate": 0.1858,
+          "sharpe": 0.3004
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4652,
+          "annualReturn": -0.2786,
+          "maxDrawdown": -0.5825,
+          "winRate": 0.1408,
+          "sharpe": -0.3715
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": -0.0048,
+          "annualReturn": -0.0011,
+          "maxDrawdown": -0.6695,
+          "winRate": 0.1849,
+          "sharpe": 0.2659
+        },
+        "trainImprovement": {
+          "totalReturn": -0.0823,
+          "annualReturn": -0.018,
+          "sharpe": -0.0345,
+          "maxDrawdown": 0.0141
+        },
+        "trainScore": -0.16031,
+        "validationMetrics": {
+          "totalReturn": -0.3883,
+          "annualReturn": -0.2262,
+          "maxDrawdown": -0.5085,
+          "winRate": 0.1325,
+          "sharpe": -0.2463
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0769,
+          "annualReturn": 0.0524,
+          "sharpe": 0.1252,
+          "maxDrawdown": 0.074
+        },
+        "validationScore": 0.33901
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "FTM-USD",
+      "name": "Fantom",
+      "rows": 1089,
+      "splitRows": {
+        "train": 762,
+        "validation": 327
+      },
+      "baseline": {
+        "totalReturn": 0.676,
+        "annualReturn": 0.4888,
+        "maxDrawdown": -0.3178,
+        "winRate": 0.2171,
+        "sharpe": 0.9248
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.85,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 1.1859,
+          "annualReturn": 0.2951,
+          "maxDrawdown": -0.5059,
+          "winRate": 0.1942,
+          "sharpe": 0.7352
+        },
+        "trainImprovement": {
+          "totalReturn": 0.7308,
+          "annualReturn": 0.163,
+          "sharpe": 0.2306,
+          "maxDrawdown": 0.1702
+        },
+        "trainScore": 1.24214,
+        "validationMetrics": {
+          "totalReturn": 0.1577,
+          "annualReturn": 0.1194,
+          "maxDrawdown": -0.5159,
+          "winRate": 0.208,
+          "sharpe": 0.496
+        },
+        "validationImprovement": {
+          "totalReturn": -0.5183,
+          "annualReturn": -0.3694,
+          "sharpe": -0.4288,
+          "maxDrawdown": -0.1981
+        },
+        "validationScore": -2.2732
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.4551,
+          "annualReturn": 0.1321,
+          "maxDrawdown": -0.6761,
+          "winRate": 0.1916,
+          "sharpe": 0.5046
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.676,
+          "annualReturn": 0.4888,
+          "maxDrawdown": -0.3178,
+          "winRate": 0.2171,
+          "sharpe": 0.9248
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 0.1467,
+          "annualReturn": 0.0463,
+          "maxDrawdown": -0.662,
+          "winRate": 0.1864,
+          "sharpe": 0.3692
+        },
+        "trainImprovement": {
+          "totalReturn": -0.3084,
+          "annualReturn": -0.0858,
+          "sharpe": -0.1354,
+          "maxDrawdown": 0.0141
+        },
+        "trainScore": -0.68228,
+        "validationMetrics": {
+          "totalReturn": 0.8785,
+          "annualReturn": 0.6256,
+          "maxDrawdown": -0.3117,
+          "winRate": 0.211,
+          "sharpe": 1.0608
+        },
+        "validationImprovement": {
+          "totalReturn": 0.2025,
+          "annualReturn": 0.1368,
+          "sharpe": 0.136,
+          "maxDrawdown": 0.0061
+        },
+        "validationScore": 0.39641
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "GRT-USD",
+      "name": "The Graph",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.474,
+        "annualReturn": -0.2848,
+        "maxDrawdown": -0.611,
+        "winRate": 0.1366,
+        "sharpe": -0.774
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.75,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 4.0123,
+          "annualReturn": 0.4349,
+          "maxDrawdown": -0.5316,
+          "winRate": 0.2089,
+          "sharpe": 0.8412
+        },
+        "trainImprovement": {
+          "totalReturn": 2.5411,
+          "annualReturn": 0.2103,
+          "sharpe": 0.225,
+          "maxDrawdown": 0.1586
+        },
+        "trainScore": 2.8709,
+        "validationMetrics": {
+          "totalReturn": -0.648,
+          "annualReturn": -0.42,
+          "maxDrawdown": -0.7134,
+          "winRate": 0.1242,
+          "sharpe": -1.2833
+        },
+        "validationImprovement": {
+          "totalReturn": -0.174,
+          "annualReturn": -0.1352,
+          "sharpe": -0.5093,
+          "maxDrawdown": -0.1024
+        },
+        "validationScore": -1.50469
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.4712,
+          "annualReturn": 0.2246,
+          "maxDrawdown": -0.6902,
+          "winRate": 0.2071,
+          "sharpe": 0.6162
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.474,
+          "annualReturn": -0.2848,
+          "maxDrawdown": -0.611,
+          "winRate": 0.1366,
+          "sharpe": -0.774
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 1.1429,
+          "annualReturn": 0.1862,
+          "maxDrawdown": -0.6832,
+          "winRate": 0.2391,
+          "sharpe": 0.5758
+        },
+        "trainImprovement": {
+          "totalReturn": -0.3283,
+          "annualReturn": -0.0384,
+          "sharpe": -0.0404,
+          "maxDrawdown": 0.007
+        },
+        "trainScore": -0.5363,
+        "validationMetrics": {
+          "totalReturn": -0.3896,
+          "annualReturn": -0.2271,
+          "maxDrawdown": -0.6522,
+          "winRate": 0.1698,
+          "sharpe": -0.448
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0844,
+          "annualReturn": 0.0577,
+          "sharpe": 0.326,
+          "maxDrawdown": -0.0412
+        },
+        "validationScore": 0.29897
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "HBAR-USD",
+      "name": "Hedera",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.3282,
+        "annualReturn": -0.1874,
+        "maxDrawdown": -0.5999,
+        "winRate": 0.1511,
+        "sharpe": -0.3769
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 3.2122,
+          "annualReturn": 0.38,
+          "maxDrawdown": -0.5223,
+          "winRate": 0.2062,
+          "sharpe": 0.785
+        },
+        "trainImprovement": {
+          "totalReturn": 0.5088,
+          "annualReturn": 0.0392,
+          "sharpe": 0.0434,
+          "maxDrawdown": 0.0914
+        },
+        "trainScore": 0.66716,
+        "validationMetrics": {
+          "totalReturn": -0.2365,
+          "annualReturn": -0.1313,
+          "maxDrawdown": -0.5691,
+          "winRate": 0.1304,
+          "sharpe": -0.2255
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0917,
+          "annualReturn": 0.0561,
+          "sharpe": 0.1514,
+          "maxDrawdown": 0.0308
+        },
+        "validationScore": 0.31126
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 2.7034,
+          "annualReturn": 0.3408,
+          "maxDrawdown": -0.6137,
+          "winRate": 0.1973,
+          "sharpe": 0.7416
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.3282,
+          "annualReturn": -0.1874,
+          "maxDrawdown": -0.5999,
+          "winRate": 0.1511,
+          "sharpe": -0.3769
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.8,
+        "qTail": 0.95,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 1.3679,
+          "annualReturn": 0.213,
+          "maxDrawdown": -0.5816,
+          "winRate": 0.1982,
+          "sharpe": 0.5888
+        },
+        "trainImprovement": {
+          "totalReturn": -1.3355,
+          "annualReturn": -0.1278,
+          "sharpe": -0.1528,
+          "maxDrawdown": 0.0321
+        },
+        "trainScore": -2.142,
+        "validationMetrics": {
+          "totalReturn": 0.0204,
+          "annualReturn": 0.0106,
+          "maxDrawdown": -0.44,
+          "winRate": 0.1387,
+          "sharpe": 0.205
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3486,
+          "annualReturn": 0.198,
+          "sharpe": 0.5819,
+          "maxDrawdown": 0.1599
+        },
+        "validationScore": 1.25048
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ICP-USD",
+      "name": "Internet Computer",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.6043,
+        "annualReturn": -0.3835,
+        "maxDrawdown": -0.6521,
+        "winRate": 0.1594,
+        "sharpe": -0.467
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.9031,
+          "annualReturn": 0.155,
+          "maxDrawdown": -0.5592,
+          "winRate": 0.1938,
+          "sharpe": 0.5237
+        },
+        "trainImprovement": {
+          "totalReturn": 1.192,
+          "annualReturn": 0.2285,
+          "sharpe": 0.4018,
+          "maxDrawdown": 0.2049
+        },
+        "trainScore": 1.91669,
+        "validationMetrics": {
+          "totalReturn": -0.4987,
+          "annualReturn": -0.3025,
+          "maxDrawdown": -0.5679,
+          "winRate": 0.1573,
+          "sharpe": -0.264
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1056,
+          "annualReturn": 0.081,
+          "sharpe": 0.203,
+          "maxDrawdown": 0.0842
+        },
+        "validationScore": 0.47326
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.2889,
+          "annualReturn": -0.0735,
+          "maxDrawdown": -0.7641,
+          "winRate": 0.1947,
+          "sharpe": 0.1219
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.6043,
+          "annualReturn": -0.3835,
+          "maxDrawdown": -0.6521,
+          "winRate": 0.1594,
+          "sharpe": -0.467
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.93,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.1544,
+          "annualReturn": 0.0327,
+          "maxDrawdown": -0.6165,
+          "winRate": 0.1893,
+          "sharpe": 0.3137
+        },
+        "trainImprovement": {
+          "totalReturn": 0.4433,
+          "annualReturn": 0.1062,
+          "sharpe": 0.1918,
+          "maxDrawdown": 0.1476
+        },
+        "trainScore": 0.88003,
+        "validationMetrics": {
+          "totalReturn": -0.4065,
+          "annualReturn": -0.2383,
+          "maxDrawdown": -0.5189,
+          "winRate": 0.1573,
+          "sharpe": -0.128
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1978,
+          "annualReturn": 0.1452,
+          "sharpe": 0.339,
+          "maxDrawdown": 0.1332
+        },
+        "validationScore": 0.80274
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "INJ-USD",
+      "name": "Injective",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.3491,
+        "annualReturn": -0.2007,
+        "maxDrawdown": -0.7175,
+        "winRate": 0.1925,
+        "sharpe": -0.1084
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 9.6003,
+          "annualReturn": 0.697,
+          "maxDrawdown": -0.6452,
+          "winRate": 0.2409,
+          "sharpe": 1.0606
+        },
+        "trainImprovement": {
+          "totalReturn": 4.5471,
+          "annualReturn": 0.2002,
+          "sharpe": 0.1646,
+          "maxDrawdown": 0.0957
+        },
+        "trainScore": 4.51021,
+        "validationMetrics": {
+          "totalReturn": -0.2161,
+          "annualReturn": -0.1193,
+          "maxDrawdown": -0.7223,
+          "winRate": 0.1905,
+          "sharpe": 0.0647
+        },
+        "validationImprovement": {
+          "totalReturn": 0.133,
+          "annualReturn": 0.0814,
+          "sharpe": 0.1731,
+          "maxDrawdown": -0.0048
+        },
+        "validationScore": 0.31814
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 5.0532,
+          "annualReturn": 0.4968,
+          "maxDrawdown": -0.7409,
+          "winRate": 0.2436,
+          "sharpe": 0.896
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.3491,
+          "annualReturn": -0.2007,
+          "maxDrawdown": -0.7175,
+          "winRate": 0.1925,
+          "sharpe": -0.1084
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.85,
+        "qTail": 0.93,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 6.867,
+          "annualReturn": 0.5873,
+          "maxDrawdown": -0.6923,
+          "winRate": 0.24,
+          "sharpe": 0.9727
+        },
+        "trainImprovement": {
+          "totalReturn": 1.8138,
+          "annualReturn": 0.0905,
+          "sharpe": 0.0767,
+          "maxDrawdown": 0.0486
+        },
+        "trainScore": 1.83213,
+        "validationMetrics": {
+          "totalReturn": -0.0882,
+          "annualReturn": -0.047,
+          "maxDrawdown": -0.6703,
+          "winRate": 0.1946,
+          "sharpe": 0.2097
+        },
+        "validationImprovement": {
+          "totalReturn": 0.2609,
+          "annualReturn": 0.1537,
+          "sharpe": 0.3181,
+          "maxDrawdown": 0.0472
+        },
+        "validationScore": 0.70528
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "KAVA-USD",
+      "name": "Kava",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.7054,
+        "annualReturn": -0.4715,
+        "maxDrawdown": -0.7723,
+        "winRate": 0.1429,
+        "sharpe": -0.9967
+      },
+      "calibrated": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.5073,
+          "annualReturn": -0.1466,
+          "maxDrawdown": -0.6774,
+          "winRate": 0.1982,
+          "sharpe": -0.1292
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.7054,
+          "annualReturn": -0.4715,
+          "maxDrawdown": -0.7723,
+          "winRate": 0.1429,
+          "sharpe": -0.9967
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.5073,
+          "annualReturn": -0.1466,
+          "maxDrawdown": -0.6774,
+          "winRate": 0.1982,
+          "sharpe": -0.1292
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.7054,
+          "annualReturn": -0.4715,
+          "maxDrawdown": -0.7723,
+          "winRate": 0.1429,
+          "sharpe": -0.9967
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.6492,
+          "annualReturn": -0.2092,
+          "maxDrawdown": -0.7239,
+          "winRate": 0.2284,
+          "sharpe": -0.24
+        },
+        "trainImprovement": {
+          "totalReturn": -0.1419,
+          "annualReturn": -0.0626,
+          "sharpe": -0.1108,
+          "maxDrawdown": -0.0465
+        },
+        "trainScore": -0.56712,
+        "validationMetrics": {
+          "totalReturn": -0.6012,
+          "annualReturn": -0.381,
+          "maxDrawdown": -0.7406,
+          "winRate": 0.1698,
+          "sharpe": -0.6086
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1042,
+          "annualReturn": 0.0905,
+          "sharpe": 0.3881,
+          "maxDrawdown": 0.0317
+        },
+        "validationScore": 0.57785
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "LINK-USD",
+      "name": "Chainlink",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.4473,
+        "annualReturn": -0.2661,
+        "maxDrawdown": -0.5923,
+        "winRate": 0.1801,
+        "sharpe": -0.5381
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.987,
+          "annualReturn": 0.1663,
+          "maxDrawdown": -0.4695,
+          "winRate": 0.2409,
+          "sharpe": 0.5483
+        },
+        "trainImprovement": {
+          "totalReturn": 1.2221,
+          "annualReturn": 0.2246,
+          "sharpe": 0.4013,
+          "maxDrawdown": 0.0725
+        },
+        "trainScore": 1.72949,
+        "validationMetrics": {
+          "totalReturn": -0.5102,
+          "annualReturn": -0.3109,
+          "maxDrawdown": -0.544,
+          "winRate": 0.1553,
+          "sharpe": -0.7456
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0629,
+          "annualReturn": -0.0448,
+          "sharpe": -0.2075,
+          "maxDrawdown": 0.0483
+        },
+        "validationScore": -0.38593
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.2351,
+          "annualReturn": -0.0583,
+          "maxDrawdown": -0.542,
+          "winRate": 0.2222,
+          "sharpe": 0.147
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4473,
+          "annualReturn": -0.2661,
+          "maxDrawdown": -0.5923,
+          "winRate": 0.1801,
+          "sharpe": -0.5381
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.3658,
+          "annualReturn": -0.097,
+          "maxDrawdown": -0.7704,
+          "winRate": 0.4649,
+          "sharpe": 0.2057
+        },
+        "trainImprovement": {
+          "totalReturn": -0.1307,
+          "annualReturn": -0.0387,
+          "sharpe": 0.0587,
+          "maxDrawdown": -0.2284
+        },
+        "trainScore": -0.87451,
+        "validationMetrics": {
+          "totalReturn": -0.2813,
+          "annualReturn": -0.1583,
+          "maxDrawdown": -0.6741,
+          "winRate": 0.4265,
+          "sharpe": 0.0275
+        },
+        "validationImprovement": {
+          "totalReturn": 0.166,
+          "annualReturn": 0.1078,
+          "sharpe": 0.5656,
+          "maxDrawdown": -0.0818
+        },
+        "validationScore": 0.50714
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "LTC-USD",
+      "name": "Litecoin",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.4698,
+        "annualReturn": -0.2818,
+        "maxDrawdown": -0.6305,
+        "winRate": 0.1822,
+        "sharpe": -0.7639
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.75,
+        "qTail": 0.9,
+        "eta": 0.35,
+        "trainMetrics": {
+          "totalReturn": -0.1833,
+          "annualReturn": -0.0443,
+          "maxDrawdown": -0.5918,
+          "winRate": 0.2364,
+          "sharpe": 0.1418
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1835,
+          "annualReturn": 0.053,
+          "sharpe": 0.1196,
+          "maxDrawdown": 0.0501
+        },
+        "trainScore": 0.39141,
+        "validationMetrics": {
+          "totalReturn": -0.4453,
+          "annualReturn": -0.2647,
+          "maxDrawdown": -0.6038,
+          "winRate": 0.1739,
+          "sharpe": -0.7007
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0245,
+          "annualReturn": 0.0171,
+          "sharpe": 0.0632,
+          "maxDrawdown": 0.0267
+        },
+        "validationScore": 0.13652
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3668,
+          "annualReturn": -0.0973,
+          "maxDrawdown": -0.6419,
+          "winRate": 0.2311,
+          "sharpe": 0.0222
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4698,
+          "annualReturn": -0.2818,
+          "maxDrawdown": -0.6305,
+          "winRate": 0.1822,
+          "sharpe": -0.7639
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.7,
+        "qTail": 0.95,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.5905,
+          "annualReturn": -0.1813,
+          "maxDrawdown": -0.6973,
+          "winRate": 0.2373,
+          "sharpe": -0.1681
+        },
+        "trainImprovement": {
+          "totalReturn": -0.2237,
+          "annualReturn": -0.084,
+          "sharpe": -0.1903,
+          "maxDrawdown": -0.0554
+        },
+        "trainScore": -0.85597,
+        "validationMetrics": {
+          "totalReturn": -0.1252,
+          "annualReturn": -0.0674,
+          "maxDrawdown": -0.4982,
+          "winRate": 0.1905,
+          "sharpe": -0.0086
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3446,
+          "annualReturn": 0.2144,
+          "sharpe": 0.7553,
+          "maxDrawdown": 0.1323
+        },
+        "validationScore": 1.38432
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "MANA-USD",
+      "name": "Decentraland",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.4159,
+        "annualReturn": -0.2446,
+        "maxDrawdown": -0.5185,
+        "winRate": 0.1718,
+        "sharpe": -0.4761
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.0111,
+          "annualReturn": 0.0025,
+          "maxDrawdown": -0.6186,
+          "winRate": 0.1849,
+          "sharpe": 0.2669
+        },
+        "trainImprovement": {
+          "totalReturn": 0.4058,
+          "annualReturn": 0.1089,
+          "sharpe": 0.2072,
+          "maxDrawdown": 0.056
+        },
+        "trainScore": 0.71647,
+        "validationMetrics": {
+          "totalReturn": -0.5755,
+          "annualReturn": -0.3604,
+          "maxDrawdown": -0.6069,
+          "winRate": 0.1594,
+          "sharpe": -0.89
+        },
+        "validationImprovement": {
+          "totalReturn": -0.1596,
+          "annualReturn": -0.1158,
+          "sharpe": -0.4139,
+          "maxDrawdown": -0.0884
+        },
+        "validationScore": -1.26785
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.3947,
+          "annualReturn": -0.1064,
+          "maxDrawdown": -0.6746,
+          "winRate": 0.1902,
+          "sharpe": 0.0597
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4159,
+          "annualReturn": -0.2446,
+          "maxDrawdown": -0.5185,
+          "winRate": 0.1718,
+          "sharpe": -0.4761
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.3925,
+          "annualReturn": -0.1056,
+          "maxDrawdown": -0.6956,
+          "winRate": 0.1929,
+          "sharpe": 0.0696
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0022,
+          "annualReturn": 0.0008,
+          "sharpe": 0.0099,
+          "maxDrawdown": -0.021
+        },
+        "trainScore": -0.05492,
+        "validationMetrics": {
+          "totalReturn": -0.4128,
+          "annualReturn": -0.2425,
+          "maxDrawdown": -0.5107,
+          "winRate": 0.1698,
+          "sharpe": -0.4317
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0031,
+          "annualReturn": 0.0021,
+          "sharpe": 0.0444,
+          "maxDrawdown": 0.0078
+        },
+        "validationScore": 0.06072
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "MKR-USD",
+      "name": "Maker",
+      "rows": 1334,
+      "splitRows": {
+        "train": 933,
+        "validation": 401
+      },
+      "baseline": {
+        "totalReturn": 0.4311,
+        "annualReturn": 0.2526,
+        "maxDrawdown": -0.3692,
+        "winRate": 0.207,
+        "sharpe": 0.6696
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.93,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 2.1433,
+          "annualReturn": 0.3625,
+          "maxDrawdown": -0.5157,
+          "winRate": 0.2229,
+          "sharpe": 0.888
+        },
+        "trainImprovement": {
+          "totalReturn": 0.3624,
+          "annualReturn": 0.0443,
+          "sharpe": 0.0903,
+          "maxDrawdown": 0.0354
+        },
+        "trainScore": 0.49525,
+        "validationMetrics": {
+          "totalReturn": 0.1025,
+          "annualReturn": 0.0633,
+          "maxDrawdown": -0.3881,
+          "winRate": 0.202,
+          "sharpe": 0.3839
+        },
+        "validationImprovement": {
+          "totalReturn": -0.3286,
+          "annualReturn": -0.1893,
+          "sharpe": -0.2857,
+          "maxDrawdown": -0.0189
+        },
+        "validationScore": -1.10086
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.7809,
+          "annualReturn": 0.3182,
+          "maxDrawdown": -0.5511,
+          "winRate": 0.2347,
+          "sharpe": 0.7977
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.4311,
+          "annualReturn": 0.2526,
+          "maxDrawdown": -0.3692,
+          "winRate": 0.207,
+          "sharpe": 0.6696
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.75,
+        "qTail": 0.95,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 0.9743,
+          "annualReturn": 0.2017,
+          "maxDrawdown": -0.5534,
+          "winRate": 0.2197,
+          "sharpe": 0.6179
+        },
+        "trainImprovement": {
+          "totalReturn": -0.8066,
+          "annualReturn": -0.1165,
+          "sharpe": -0.1798,
+          "maxDrawdown": -0.0023
+        },
+        "trainScore": -1.50051,
+        "validationMetrics": {
+          "totalReturn": 0.8205,
+          "annualReturn": 0.4572,
+          "maxDrawdown": -0.3312,
+          "winRate": 0.2145,
+          "sharpe": 0.9213
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3894,
+          "annualReturn": 0.2046,
+          "sharpe": 0.2517,
+          "maxDrawdown": 0.038
+        },
+        "validationScore": 0.76526
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "NEAR-USD",
+      "name": "NEAR Protocol",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.0961,
+        "annualReturn": -0.0514,
+        "maxDrawdown": -0.5461,
+        "winRate": 0.2091,
+        "sharpe": 0.1777
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.8,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 5.6019,
+          "annualReturn": 0.5262,
+          "maxDrawdown": -0.5952,
+          "winRate": 0.2116,
+          "sharpe": 0.9666
+        },
+        "trainImprovement": {
+          "totalReturn": 2.9486,
+          "annualReturn": 0.1895,
+          "sharpe": 0.2063,
+          "maxDrawdown": -0.0305
+        },
+        "trainScore": 2.85719,
+        "validationMetrics": {
+          "totalReturn": -0.6729,
+          "annualReturn": -0.4418,
+          "maxDrawdown": -0.7839,
+          "winRate": 0.1718,
+          "sharpe": -0.8597
+        },
+        "validationImprovement": {
+          "totalReturn": -0.5768,
+          "annualReturn": -0.3904,
+          "sharpe": -1.0374,
+          "maxDrawdown": -0.2378
+        },
+        "validationScore": -3.52726
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 2.6533,
+          "annualReturn": 0.3367,
+          "maxDrawdown": -0.5647,
+          "winRate": 0.2018,
+          "sharpe": 0.7603
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.0961,
+          "annualReturn": -0.0514,
+          "maxDrawdown": -0.5461,
+          "winRate": 0.2091,
+          "sharpe": 0.1777
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.8108,
+          "annualReturn": -0.3113,
+          "maxDrawdown": -0.9455,
+          "winRate": 0.3973,
+          "sharpe": -0.0423
+        },
+        "trainImprovement": {
+          "totalReturn": -3.4641,
+          "annualReturn": -0.648,
+          "sharpe": -0.8026,
+          "maxDrawdown": -0.3808
+        },
+        "trainScore": -7.75672,
+        "validationMetrics": {
+          "totalReturn": 0.273,
+          "annualReturn": 0.1342,
+          "maxDrawdown": -0.5377,
+          "winRate": 0.4161,
+          "sharpe": 0.5422
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3691,
+          "annualReturn": 0.1856,
+          "sharpe": 0.3645,
+          "maxDrawdown": 0.0084
+        },
+        "validationScore": 0.80293
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "OP-USD",
+      "name": "Optimism",
+      "rows": 1457,
+      "splitRows": {
+        "train": 1019,
+        "validation": 438
+      },
+      "baseline": {
+        "totalReturn": -0.7417,
+        "annualReturn": -0.541,
+        "maxDrawdown": -0.7848,
+        "winRate": 0.1553,
+        "sharpe": -1.2313
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.6656,
+          "annualReturn": 0.2744,
+          "maxDrawdown": -0.5922,
+          "winRate": 0.2237,
+          "sharpe": 0.6793
+        },
+        "trainImprovement": {
+          "totalReturn": 0.5577,
+          "annualReturn": 0.0719,
+          "sharpe": 0.079,
+          "maxDrawdown": 0.0575
+        },
+        "trainScore": 0.70888,
+        "validationMetrics": {
+          "totalReturn": -0.7109,
+          "annualReturn": -0.5103,
+          "maxDrawdown": -0.7614,
+          "winRate": 0.1804,
+          "sharpe": -1.0751
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0308,
+          "annualReturn": 0.0307,
+          "sharpe": 0.1562,
+          "maxDrawdown": 0.0234
+        },
+        "validationScore": 0.23671
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.1079,
+          "annualReturn": 0.2025,
+          "maxDrawdown": -0.6497,
+          "winRate": 0.208,
+          "sharpe": 0.6003
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.7417,
+          "annualReturn": -0.541,
+          "maxDrawdown": -0.7848,
+          "winRate": 0.1553,
+          "sharpe": -1.2313
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.8,
+        "qTail": 0.93,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 0.2162,
+          "annualReturn": 0.0496,
+          "maxDrawdown": -0.6675,
+          "winRate": 0.211,
+          "sharpe": 0.4272
+        },
+        "trainImprovement": {
+          "totalReturn": -0.8917,
+          "annualReturn": -0.1529,
+          "sharpe": -0.1731,
+          "maxDrawdown": -0.0178
+        },
+        "trainScore": -1.67606,
+        "validationMetrics": {
+          "totalReturn": -0.6059,
+          "annualReturn": -0.4147,
+          "maxDrawdown": -0.6717,
+          "winRate": 0.1553,
+          "sharpe": -0.7768
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1358,
+          "annualReturn": 0.1263,
+          "sharpe": 0.4545,
+          "maxDrawdown": 0.1131
+        },
+        "validationScore": 0.82083
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "RNDR-USD",
+      "name": "Render",
+      "rows": 671,
+      "splitRows": {
+        "train": 469,
+        "validation": 202
+      },
+      "baseline": {
+        "totalReturn": -0.0068,
+        "annualReturn": -0.0084,
+        "maxDrawdown": -0.4167,
+        "winRate": 0.1733,
+        "sharpe": 0.2656
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.5377,
+          "annualReturn": 0.2601,
+          "maxDrawdown": -0.3304,
+          "winRate": 0.1834,
+          "sharpe": 0.7138
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1967,
+          "annualReturn": 0.0893,
+          "sharpe": 0.1518,
+          "maxDrawdown": 0.0326
+        },
+        "trainScore": 0.42564,
+        "validationMetrics": {
+          "totalReturn": -0.0568,
+          "annualReturn": -0.0703,
+          "maxDrawdown": -0.446,
+          "winRate": 0.1535,
+          "sharpe": 0.1195
+        },
+        "validationImprovement": {
+          "totalReturn": -0.05,
+          "annualReturn": -0.0619,
+          "sharpe": -0.1461,
+          "maxDrawdown": -0.0293
+        },
+        "validationScore": -0.44308
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.341,
+          "annualReturn": 0.1708,
+          "maxDrawdown": -0.363,
+          "winRate": 0.2004,
+          "sharpe": 0.562
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.0068,
+          "annualReturn": -0.0084,
+          "maxDrawdown": -0.4167,
+          "winRate": 0.1733,
+          "sharpe": 0.2656
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.0495,
+          "annualReturn": 0.0263,
+          "maxDrawdown": -0.5508,
+          "winRate": 0.2601,
+          "sharpe": 0.3296
+        },
+        "trainImprovement": {
+          "totalReturn": -0.2915,
+          "annualReturn": -0.1445,
+          "sharpe": -0.2324,
+          "maxDrawdown": -0.1878
+        },
+        "trainScore": -1.47639,
+        "validationMetrics": {
+          "totalReturn": 0.318,
+          "annualReturn": 0.4113,
+          "maxDrawdown": -0.3433,
+          "winRate": 0.2228,
+          "sharpe": 0.8595
+        },
+        "validationImprovement": {
+          "totalReturn": 0.3248,
+          "annualReturn": 0.4197,
+          "sharpe": 0.5939,
+          "maxDrawdown": 0.0734
+        },
+        "validationScore": 1.21351
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SAND-USD",
+      "name": "The Sandbox",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.4915,
+        "annualReturn": -0.2973,
+        "maxDrawdown": -0.5002,
+        "winRate": 0.1449,
+        "sharpe": -0.6729
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.1479,
+          "annualReturn": 0.0314,
+          "maxDrawdown": -0.5717,
+          "winRate": 0.2276,
+          "sharpe": 0.3513
+        },
+        "trainImprovement": {
+          "totalReturn": 0.6314,
+          "annualReturn": 0.169,
+          "sharpe": 0.2975,
+          "maxDrawdown": 0.2055
+        },
+        "trainScore": 1.27906,
+        "validationMetrics": {
+          "totalReturn": -0.7352,
+          "annualReturn": -0.5,
+          "maxDrawdown": -0.7493,
+          "winRate": 0.1905,
+          "sharpe": -1.1483
+        },
+        "validationImprovement": {
+          "totalReturn": -0.2437,
+          "annualReturn": -0.2027,
+          "sharpe": -0.4754,
+          "maxDrawdown": -0.2491
+        },
+        "validationScore": -2.04783
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.4835,
+          "annualReturn": -0.1376,
+          "maxDrawdown": -0.7772,
+          "winRate": 0.192,
+          "sharpe": 0.0538
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4915,
+          "annualReturn": -0.2973,
+          "maxDrawdown": -0.5002,
+          "winRate": 0.1449,
+          "sharpe": -0.6729
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.4835,
+          "annualReturn": -0.1376,
+          "maxDrawdown": -0.7772,
+          "winRate": 0.192,
+          "sharpe": 0.0538
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.4915,
+          "annualReturn": -0.2973,
+          "maxDrawdown": -0.5002,
+          "winRate": 0.1449,
+          "sharpe": -0.6729
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SNX-USD",
+      "name": "Synthetix",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.3463,
+        "annualReturn": -0.1989,
+        "maxDrawdown": -0.6409,
+        "winRate": 0.1739,
+        "sharpe": 0.1027
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.5163,
+          "annualReturn": -0.1501,
+          "maxDrawdown": -0.772,
+          "winRate": 0.2169,
+          "sharpe": 0.0259
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1218,
+          "annualReturn": 0.0535,
+          "sharpe": 0.1087,
+          "maxDrawdown": 0.017
+        },
+        "trainScore": 0.27227,
+        "validationMetrics": {
+          "totalReturn": -0.2947,
+          "annualReturn": -0.1665,
+          "maxDrawdown": -0.6376,
+          "winRate": 0.176,
+          "sharpe": 0.1495
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0516,
+          "annualReturn": 0.0324,
+          "sharpe": 0.0468,
+          "maxDrawdown": 0.0033
+        },
+        "validationScore": 0.11472
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.6381,
+          "annualReturn": -0.2036,
+          "maxDrawdown": -0.789,
+          "winRate": 0.2151,
+          "sharpe": -0.0828
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.3463,
+          "annualReturn": -0.1989,
+          "maxDrawdown": -0.6409,
+          "winRate": 0.1739,
+          "sharpe": 0.1027
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "vol_squeeze",
+        "qHead": 0.7,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.6641,
+          "annualReturn": -0.2168,
+          "maxDrawdown": -0.8037,
+          "winRate": 0.2098,
+          "sharpe": -0.1181
+        },
+        "trainImprovement": {
+          "totalReturn": -0.026,
+          "annualReturn": -0.0132,
+          "sharpe": -0.0353,
+          "maxDrawdown": -0.0147
+        },
+        "trainScore": -0.15005,
+        "validationMetrics": {
+          "totalReturn": -0.0806,
+          "annualReturn": -0.0429,
+          "maxDrawdown": -0.5365,
+          "winRate": 0.1781,
+          "sharpe": 0.3106
+        },
+        "validationImprovement": {
+          "totalReturn": 0.2657,
+          "annualReturn": 0.156,
+          "sharpe": 0.2079,
+          "maxDrawdown": 0.1044
+        },
+        "validationScore": 0.69207
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SOL-USD",
+      "name": "Solana",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.127,
+        "annualReturn": -0.0684,
+        "maxDrawdown": -0.4851,
+        "winRate": 0.2215,
+        "sharpe": -0.0039
+      },
+      "calibrated": {
+        "mode": "pt_amplify",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 1.7725,
+          "annualReturn": 0.2566,
+          "maxDrawdown": -0.7572,
+          "winRate": 0.296,
+          "sharpe": 0.6813
+        },
+        "trainImprovement": {
+          "totalReturn": 1.231,
+          "annualReturn": 0.1548,
+          "sharpe": 0.2107,
+          "maxDrawdown": 0.0839
+        },
+        "trainScore": 1.53024,
+        "validationMetrics": {
+          "totalReturn": -0.2446,
+          "annualReturn": -0.1362,
+          "maxDrawdown": -0.426,
+          "winRate": 0.2795,
+          "sharpe": -0.1216
+        },
+        "validationImprovement": {
+          "totalReturn": -0.1176,
+          "annualReturn": -0.0678,
+          "sharpe": -0.1177,
+          "maxDrawdown": 0.0591
+        },
+        "validationScore": -0.30407
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.5415,
+          "annualReturn": 0.1018,
+          "maxDrawdown": -0.8411,
+          "winRate": 0.2356,
+          "sharpe": 0.4706
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.127,
+          "annualReturn": -0.0684,
+          "maxDrawdown": -0.4851,
+          "winRate": 0.2215,
+          "sharpe": -0.0039
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.3204,
+          "annualReturn": 0.0642,
+          "maxDrawdown": -0.8499,
+          "winRate": 0.2338,
+          "sharpe": 0.4133
+        },
+        "trainImprovement": {
+          "totalReturn": -0.2211,
+          "annualReturn": -0.0376,
+          "sharpe": -0.0573,
+          "maxDrawdown": -0.0088
+        },
+        "trainScore": -0.45391,
+        "validationMetrics": {
+          "totalReturn": -0.0634,
+          "annualReturn": -0.0336,
+          "maxDrawdown": -0.4149,
+          "winRate": 0.2153,
+          "sharpe": 0.0801
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0636,
+          "annualReturn": 0.0348,
+          "sharpe": 0.084,
+          "maxDrawdown": 0.0702
+        },
+        "validationScore": 0.27096
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "THETA-USD",
+      "name": "Theta Network",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.5048,
+        "annualReturn": -0.307,
+        "maxDrawdown": -0.5846,
+        "winRate": 0.1346,
+        "sharpe": -0.5383
+      },
+      "calibrated": {
+        "mode": "tail_denoise",
+        "qHead": 0.8,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 1.9403,
+          "annualReturn": 0.2733,
+          "maxDrawdown": -0.5191,
+          "winRate": 0.1947,
+          "sharpe": 0.6994
+        },
+        "trainImprovement": {
+          "totalReturn": 1.237,
+          "annualReturn": 0.1466,
+          "sharpe": 0.2086,
+          "maxDrawdown": 0.0877
+        },
+        "trainScore": 1.53552,
+        "validationMetrics": {
+          "totalReturn": -0.6466,
+          "annualReturn": -0.4188,
+          "maxDrawdown": -0.6571,
+          "winRate": 0.1222,
+          "sharpe": -0.9527
+        },
+        "validationImprovement": {
+          "totalReturn": -0.1418,
+          "annualReturn": -0.1118,
+          "sharpe": -0.4144,
+          "maxDrawdown": -0.0725
+        },
+        "validationScore": -1.1909
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.7033,
+          "annualReturn": 0.1267,
+          "maxDrawdown": -0.6068,
+          "winRate": 0.1911,
+          "sharpe": 0.4908
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.5048,
+          "annualReturn": -0.307,
+          "maxDrawdown": -0.5846,
+          "winRate": 0.1346,
+          "sharpe": -0.5383
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "momentum_regime",
+        "qHead": 0.85,
+        "qTail": 0.93,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.3712,
+          "annualReturn": 0.0733,
+          "maxDrawdown": -0.6362,
+          "winRate": 0.1956,
+          "sharpe": 0.4144
+        },
+        "trainImprovement": {
+          "totalReturn": -0.3321,
+          "annualReturn": -0.0534,
+          "sharpe": -0.0764,
+          "maxDrawdown": -0.0294
+        },
+        "trainScore": -0.7156,
+        "validationMetrics": {
+          "totalReturn": -0.0212,
+          "annualReturn": -0.0111,
+          "maxDrawdown": -0.3772,
+          "winRate": 0.1304,
+          "sharpe": 0.1764
+        },
+        "validationImprovement": {
+          "totalReturn": 0.4836,
+          "annualReturn": 0.2959,
+          "sharpe": 0.7147,
+          "maxDrawdown": 0.2074
+        },
+        "validationScore": 1.62973
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "TRX-USD",
+      "name": "TRON",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": 0.3109,
+        "annualReturn": 0.1517,
+        "maxDrawdown": -0.2493,
+        "winRate": 0.3147,
+        "sharpe": 0.8373
+      },
+      "calibrated": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 1.8058,
+          "annualReturn": 0.26,
+          "maxDrawdown": -0.4903,
+          "winRate": 0.5102,
+          "sharpe": 0.6229
+        },
+        "trainImprovement": {
+          "totalReturn": 1.2167,
+          "annualReturn": 0.1507,
+          "sharpe": 0.2193,
+          "maxDrawdown": 0.0394
+        },
+        "trainScore": 1.45272,
+        "validationMetrics": {
+          "totalReturn": 0.4682,
+          "annualReturn": 0.2218,
+          "maxDrawdown": -0.26,
+          "winRate": 0.4658,
+          "sharpe": 0.9533
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1573,
+          "annualReturn": 0.0701,
+          "sharpe": 0.116,
+          "maxDrawdown": -0.0107
+        },
+        "validationScore": 0.25838
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.5891,
+          "annualReturn": 0.1093,
+          "maxDrawdown": -0.5297,
+          "winRate": 0.3333,
+          "sharpe": 0.4036
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 0.3109,
+          "annualReturn": 0.1517,
+          "maxDrawdown": -0.2493,
+          "winRate": 0.3147,
+          "sharpe": 0.8373
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "trend_smooth",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.777,
+          "annualReturn": 0.1374,
+          "maxDrawdown": -0.5423,
+          "winRate": 0.3458,
+          "sharpe": 0.4485
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1879,
+          "annualReturn": 0.0281,
+          "sharpe": 0.0449,
+          "maxDrawdown": -0.0126
+        },
+        "trainScore": 0.18774,
+        "validationMetrics": {
+          "totalReturn": 0.4892,
+          "annualReturn": 0.2309,
+          "maxDrawdown": -0.2232,
+          "winRate": 0.3313,
+          "sharpe": 1.1629
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1783,
+          "annualReturn": 0.0792,
+          "sharpe": 0.3256,
+          "maxDrawdown": 0.0261
+        },
+        "validationScore": 0.56743
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "UNI-USD",
+      "name": "Uniswap",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.7194,
+        "annualReturn": -0.4847,
+        "maxDrawdown": -0.7329,
+        "winRate": 0.1636,
+        "sharpe": -1.2135
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.85,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": 0.5948,
+          "annualReturn": 0.1102,
+          "maxDrawdown": -0.514,
+          "winRate": 0.2187,
+          "sharpe": 0.4556
+        },
+        "trainImprovement": {
+          "totalReturn": 0.612,
+          "annualReturn": 0.1141,
+          "sharpe": 0.181,
+          "maxDrawdown": 0.1382
+        },
+        "trainScore": 1.00997,
+        "validationMetrics": {
+          "totalReturn": -0.8118,
+          "annualReturn": -0.5816,
+          "maxDrawdown": -0.8208,
+          "winRate": 0.1698,
+          "sharpe": -1.6325
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0924,
+          "annualReturn": -0.0969,
+          "sharpe": -0.419,
+          "maxDrawdown": -0.0879
+        },
+        "validationScore": -1.17139
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.0172,
+          "annualReturn": -0.0039,
+          "maxDrawdown": -0.6522,
+          "winRate": 0.2116,
+          "sharpe": 0.2746
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.7194,
+          "annualReturn": -0.4847,
+          "maxDrawdown": -0.7329,
+          "winRate": 0.1636,
+          "sharpe": -1.2135
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "downside_guard",
+        "qHead": 0.7,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.154,
+          "annualReturn": -0.0368,
+          "maxDrawdown": -0.7305,
+          "winRate": 0.4533,
+          "sharpe": 0.3301
+        },
+        "trainImprovement": {
+          "totalReturn": -0.1368,
+          "annualReturn": -0.0329,
+          "sharpe": 0.0555,
+          "maxDrawdown": -0.0783
+        },
+        "trainScore": -0.40303,
+        "validationMetrics": {
+          "totalReturn": -0.3594,
+          "annualReturn": -0.2073,
+          "maxDrawdown": -0.6767,
+          "winRate": 0.3789,
+          "sharpe": 0.0847
+        },
+        "validationImprovement": {
+          "totalReturn": 0.36,
+          "annualReturn": 0.2774,
+          "sharpe": 1.2982,
+          "maxDrawdown": 0.0562
+        },
+        "validationScore": 1.85082
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "VET-USD",
+      "name": "VeChain",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.5844,
+        "annualReturn": -0.3675,
+        "maxDrawdown": -0.6054,
+        "winRate": 0.1387,
+        "sharpe": -1.2912
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.93,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.6952,
+          "annualReturn": 0.2487,
+          "maxDrawdown": -0.5087,
+          "winRate": 0.2071,
+          "sharpe": 0.6699
+        },
+        "trainImprovement": {
+          "totalReturn": 0.3122,
+          "annualReturn": 0.034,
+          "sharpe": 0.0509,
+          "maxDrawdown": -0.0245
+        },
+        "trainScore": 0.27048,
+        "validationMetrics": {
+          "totalReturn": -0.6327,
+          "annualReturn": -0.407,
+          "maxDrawdown": -0.6513,
+          "winRate": 0.1304,
+          "sharpe": -1.5281
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0483,
+          "annualReturn": -0.0395,
+          "sharpe": -0.2369,
+          "maxDrawdown": -0.0459
+        },
+        "validationScore": -0.63698
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.383,
+          "annualReturn": 0.2147,
+          "maxDrawdown": -0.4842,
+          "winRate": 0.2062,
+          "sharpe": 0.619
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.5844,
+          "annualReturn": -0.3675,
+          "maxDrawdown": -0.6054,
+          "winRate": 0.1387,
+          "sharpe": -1.2912
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "trend_smooth",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 0.1023,
+          "annualReturn": 0.0221,
+          "maxDrawdown": -0.5996,
+          "winRate": 0.2107,
+          "sharpe": 0.3107
+        },
+        "trainImprovement": {
+          "totalReturn": -1.2807,
+          "annualReturn": -0.1926,
+          "sharpe": -0.3083,
+          "maxDrawdown": -0.1154
+        },
+        "trainScore": -2.78267,
+        "validationMetrics": {
+          "totalReturn": -0.4553,
+          "annualReturn": -0.2717,
+          "maxDrawdown": -0.5707,
+          "winRate": 0.1325,
+          "sharpe": -0.8282
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1291,
+          "annualReturn": 0.0958,
+          "sharpe": 0.463,
+          "maxDrawdown": 0.0347
+        },
+        "validationScore": 0.68261
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "XLM-USD",
+      "name": "Stellar",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.3497,
+        "annualReturn": -0.2011,
+        "maxDrawdown": -0.6816,
+        "winRate": 0.1387,
+        "sharpe": -0.2698
+      },
+      "calibrated": {
+        "mode": "trend_smooth",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 2.4692,
+          "annualReturn": 0.3213,
+          "maxDrawdown": -0.4531,
+          "winRate": 0.2116,
+          "sharpe": 0.711
+        },
+        "trainImprovement": {
+          "totalReturn": 1.0313,
+          "annualReturn": 0.1004,
+          "sharpe": 0.1053,
+          "maxDrawdown": -0.0064
+        },
+        "trainScore": 1.06319,
+        "validationMetrics": {
+          "totalReturn": -0.4419,
+          "annualReturn": -0.2623,
+          "maxDrawdown": -0.6586,
+          "winRate": 0.1346,
+          "sharpe": -0.4742
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0922,
+          "annualReturn": -0.0612,
+          "sharpe": -0.2044,
+          "maxDrawdown": 0.023
+        },
+        "validationScore": -0.47036
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 1.4379,
+          "annualReturn": 0.2209,
+          "maxDrawdown": -0.4467,
+          "winRate": 0.2062,
+          "sharpe": 0.6057
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.3497,
+          "annualReturn": -0.2011,
+          "maxDrawdown": -0.6816,
+          "winRate": 0.1387,
+          "sharpe": -0.2698
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.85,
+        "qTail": 0.93,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": 1.4001,
+          "annualReturn": 0.2167,
+          "maxDrawdown": -0.5448,
+          "winRate": 0.2027,
+          "sharpe": 0.599
+        },
+        "trainImprovement": {
+          "totalReturn": -0.0378,
+          "annualReturn": -0.0042,
+          "sharpe": -0.0067,
+          "maxDrawdown": -0.0981
+        },
+        "trainScore": -0.38033,
+        "validationMetrics": {
+          "totalReturn": -0.1898,
+          "annualReturn": -0.104,
+          "maxDrawdown": -0.5376,
+          "winRate": 0.1222,
+          "sharpe": -0.0425
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1599,
+          "annualReturn": 0.0971,
+          "sharpe": 0.2273,
+          "maxDrawdown": 0.144
+        },
+        "validationScore": 0.65016
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "XRP-USD",
+      "name": "XRP",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.365,
+        "annualReturn": -0.211,
+        "maxDrawdown": -0.5581,
+        "winRate": 0.1449,
+        "sharpe": -0.5566
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.75,
+        "qTail": 0.93,
+        "eta": 0.35,
+        "trainMetrics": {
+          "totalReturn": 3.1706,
+          "annualReturn": 0.377,
+          "maxDrawdown": -0.3598,
+          "winRate": 0.2187,
+          "sharpe": 0.8936
+        },
+        "trainImprovement": {
+          "totalReturn": 0.9993,
+          "annualReturn": 0.082,
+          "sharpe": 0.132,
+          "maxDrawdown": 0.0701
+        },
+        "trainScore": 1.18453,
+        "validationMetrics": {
+          "totalReturn": -0.3364,
+          "annualReturn": -0.1926,
+          "maxDrawdown": -0.5289,
+          "winRate": 0.1429,
+          "sharpe": -0.4915
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0286,
+          "annualReturn": 0.0184,
+          "sharpe": 0.0651,
+          "maxDrawdown": 0.0292
+        },
+        "validationScore": 0.14676
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 2.1713,
+          "annualReturn": 0.295,
+          "maxDrawdown": -0.4299,
+          "winRate": 0.2204,
+          "sharpe": 0.7616
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.365,
+          "annualReturn": -0.211,
+          "maxDrawdown": -0.5581,
+          "winRate": 0.1449,
+          "sharpe": -0.5566
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.85,
+        "qTail": 0.97,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": 2.2612,
+          "annualReturn": 0.3032,
+          "maxDrawdown": -0.4398,
+          "winRate": 0.2133,
+          "sharpe": 0.78
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0899,
+          "annualReturn": 0.0082,
+          "sharpe": 0.0184,
+          "maxDrawdown": -0.0099
+        },
+        "trainScore": 0.07173,
+        "validationMetrics": {
+          "totalReturn": -0.192,
+          "annualReturn": -0.1052,
+          "maxDrawdown": -0.4745,
+          "winRate": 0.1284,
+          "sharpe": -0.1992
+        },
+        "validationImprovement": {
+          "totalReturn": 0.173,
+          "annualReturn": 0.1058,
+          "sharpe": 0.3574,
+          "maxDrawdown": 0.0836
+        },
+        "validationScore": 0.69976
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "XTZ-USD",
+      "name": "Tezos",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": -0.3475,
+        "annualReturn": -0.1997,
+        "maxDrawdown": -0.624,
+        "winRate": 0.1594,
+        "sharpe": -0.2508
+      },
+      "calibrated": {
+        "mode": "vol_squeeze",
+        "qHead": 0.85,
+        "qTail": 0.95,
+        "eta": 0.8,
+        "trainMetrics": {
+          "totalReturn": -0.3824,
+          "annualReturn": -0.1023,
+          "maxDrawdown": -0.6521,
+          "winRate": 0.2338,
+          "sharpe": 0.0601
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0946,
+          "annualReturn": 0.0328,
+          "sharpe": 0.0937,
+          "maxDrawdown": 0.0331
+        },
+        "trainScore": 0.2482,
+        "validationMetrics": {
+          "totalReturn": -0.4422,
+          "annualReturn": -0.2625,
+          "maxDrawdown": -0.6045,
+          "winRate": 0.1429,
+          "sharpe": -0.4285
+        },
+        "validationImprovement": {
+          "totalReturn": -0.0947,
+          "annualReturn": -0.0628,
+          "sharpe": -0.1777,
+          "maxDrawdown": 0.0195
+        },
+        "validationScore": -0.43487
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": -0.477,
+          "annualReturn": -0.1351,
+          "maxDrawdown": -0.6852,
+          "winRate": 0.2107,
+          "sharpe": -0.0336
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": -0.3475,
+          "annualReturn": -0.1997,
+          "maxDrawdown": -0.624,
+          "winRate": 0.1594,
+          "sharpe": -0.2508
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "trend_smooth",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "trainMetrics": {
+          "totalReturn": -0.5562,
+          "annualReturn": -0.1664,
+          "maxDrawdown": -0.7593,
+          "winRate": 0.2142,
+          "sharpe": -0.0972
+        },
+        "trainImprovement": {
+          "totalReturn": -0.0792,
+          "annualReturn": -0.0313,
+          "sharpe": -0.0636,
+          "maxDrawdown": -0.0741
+        },
+        "trainScore": -0.47177,
+        "validationMetrics": {
+          "totalReturn": -0.1819,
+          "annualReturn": -0.0995,
+          "maxDrawdown": -0.5398,
+          "winRate": 0.1573,
+          "sharpe": -0.0125
+        },
+        "validationImprovement": {
+          "totalReturn": 0.1656,
+          "annualReturn": 0.1002,
+          "sharpe": 0.2383,
+          "maxDrawdown": 0.0842
+        },
+        "validationScore": 0.57216
+      }
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ZEC-USD",
+      "name": "Zcash",
+      "rows": 1608,
+      "splitRows": {
+        "train": 1125,
+        "validation": 483
+      },
+      "baseline": {
+        "totalReturn": 16.1896,
+        "annualReturn": 3.4105,
+        "maxDrawdown": -0.5692,
+        "winRate": 0.3002,
+        "sharpe": 1.9448
+      },
+      "calibrated": {
+        "mode": "momentum_regime",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.2751,
+          "annualReturn": 0.0559,
+          "maxDrawdown": -0.6184,
+          "winRate": 0.2,
+          "sharpe": 0.3488
+        },
+        "trainImprovement": {
+          "totalReturn": 0.1448,
+          "annualReturn": 0.0281,
+          "sharpe": 0.0558,
+          "maxDrawdown": 0.0213
+        },
+        "trainScore": 0.23425,
+        "validationMetrics": {
+          "totalReturn": 15.0467,
+          "annualReturn": 3.255,
+          "maxDrawdown": -0.565,
+          "winRate": 0.2981,
+          "sharpe": 1.9098
+        },
+        "validationImprovement": {
+          "totalReturn": -1.1429,
+          "annualReturn": -0.1555,
+          "sharpe": -0.035,
+          "maxDrawdown": 0.0042
+        },
+        "validationScore": -1.73059
+      },
+      "fallback": {
+        "mode": "no_transform",
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.2,
+        "trainMetrics": {
+          "totalReturn": 0.1303,
+          "annualReturn": 0.0278,
+          "maxDrawdown": -0.6397,
+          "winRate": 0.1991,
+          "sharpe": 0.293
+        },
+        "trainImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "trainScore": 0.0,
+        "validationMetrics": {
+          "totalReturn": 16.1896,
+          "annualReturn": 3.4105,
+          "maxDrawdown": -0.5692,
+          "winRate": 0.3002,
+          "sharpe": 1.9448
+        },
+        "validationImprovement": {
+          "totalReturn": 0.0,
+          "annualReturn": 0.0,
+          "sharpe": 0.0,
+          "maxDrawdown": 0.0
+        },
+        "validationScore": 0.0
+      },
+      "oracle": {
+        "mode": "tail_denoise",
+        "qHead": 0.75,
+        "qTail": 0.97,
+        "eta": 0.5,
+        "trainMetrics": {
+          "totalReturn": -0.349,
+          "annualReturn": -0.0917,
+          "maxDrawdown": -0.6827,
+          "winRate": 0.1947,
+          "sharpe": 0.0359
+        },
+        "trainImprovement": {
+          "totalReturn": -0.4793,
+          "annualReturn": -0.1195,
+          "sharpe": -0.2571,
+          "maxDrawdown": -0.043
+        },
+        "trainScore": -1.30544,
+        "validationMetrics": {
+          "totalReturn": 20.8913,
+          "annualReturn": 4.0035,
+          "maxDrawdown": -0.5375,
+          "winRate": 0.3023,
+          "sharpe": 2.0708
+        },
+        "validationImprovement": {
+          "totalReturn": 4.7017,
+          "annualReturn": 0.593,
+          "sharpe": 0.126,
+          "maxDrawdown": 0.0317
+        },
+        "validationScore": 4.70475
+      }
+    }
+  ],
+  "failures": []
+}

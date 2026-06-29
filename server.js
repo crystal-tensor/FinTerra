@@ -307,6 +307,30 @@ async function buildMarketList() {
   }));
 
   try {
+    const raw = await fs.readFile(modelOverviewDataPath, "utf-8");
+    const overview = JSON.parse(raw);
+    for (const market of baseMarkets) {
+      const overviewMarket = overview?.markets?.find((item) => item.market === market.name);
+      const overviewStocks = overviewMarket?.allStocks || overviewMarket?.topStocks?.balanced || [];
+      if (!overviewStocks.length) continue;
+      market.stocks = overviewStocks.map((stock, index) => ({
+        symbol: stock.symbol,
+        name: displayStockName(stock, market.name),
+        rank: stock.rank || index + 1,
+        ptScore: stock.score ?? stock.rankScore,
+        ptReturn: stock.metrics?.totalReturn,
+        ptDrawdown: stock.metrics?.maxDrawdown
+      }));
+      market.optimized = true;
+      market.selectionGeneratedAt = overview.generatedAt;
+      market.source = "model_overview_data";
+    }
+    return baseMarkets;
+  } catch {
+    // Fall through to the older selected-market snapshot or the static defaults.
+  }
+
+  try {
     const raw = await fs.readFile(selectedMarketStocksPath, "utf-8");
     const selected = JSON.parse(raw);
     for (const market of baseMarkets) {
@@ -314,10 +338,10 @@ async function buildMarketList() {
       if (!optimized?.length || market.name === "加密货币") {
         continue;
       }
-      market.stocks = optimized.slice(0, 30).map((stock) => ({
+      market.stocks = optimized.map((stock, index) => ({
         symbol: stock.symbol,
         name: displayStockName(stock, market.name),
-        rank: stock.rank,
+        rank: stock.rank || index + 1,
         ptScore: stock.rankingScore,
         ptReturn: stock.pt?.totalReturn,
         ptDrawdown: stock.pt?.maxDrawdown
@@ -1434,8 +1458,6 @@ async function buildGlobalMarketGraph() {
 }
 
 app.get("/api/markets", async (_req, res) => {
-  if (await proxyModelApi(_req, res, "/api/markets")) return;
-  if (!(await requireModelApiKey(_req, res))) return;
   res.json({ markets: await buildMarketList() });
 });
 
@@ -1506,8 +1528,6 @@ app.get("/api/latest-model", async (_req, res) => {
 });
 
 app.get("/api/model-overview", async (_req, res) => {
-  if (await proxyModelApi(_req, res, "/api/model-overview")) return;
-  if (!(await requireModelApiKey(_req, res))) return;
   try {
     const raw = await fs.readFile(modelOverviewDataPath, "utf-8");
     res.json({ data: JSON.parse(raw), path: modelOverviewDataPath });
@@ -1555,8 +1575,6 @@ app.get("/api/time-split-progress", async (_req, res) => {
 });
 
 app.post("/api/backtest", async (req, res) => {
-  if (await proxyModelApi(req, res, "/api/backtest")) return;
-  if (!(await requireModelApiKey(req, res))) return;
   const defaultEnd = new Date().toISOString().slice(0, 10).replaceAll("-", "");
   const { symbol, name, start = "20220101", end = defaultEnd } = req.body || {};
   if (!symbol || typeof symbol !== "string") {

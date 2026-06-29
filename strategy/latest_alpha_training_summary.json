@@ -1,0 +1,1683 @@
+{
+  "generatedAt": "2026-06-27 16:24:03",
+  "objective": "累计收益、年化收益、夏普比率必须提升；最大回撤尽可能变小",
+  "resultPrefix": "stock_results_fast",
+  "models": [
+    {
+      "market": "A股",
+      "latestAlphaModel": "strategy/A股/latest_alpha_model.json",
+      "timestampedAlphaModel": "strategy/A股/strict_alpha_model_20260627_162406.json",
+      "counts": {
+        "sourceRows": 5176,
+        "successfulStocks": 5176,
+        "uniqueParameterSets": 135,
+        "selectionStatus": {
+          "strict_plus_drawdown": 4870,
+          "strict_return_annual_sharpe": 235,
+          "fallback_best_available": 71
+        }
+      },
+      "alphaEvidence": {
+        "stocks": 5176,
+        "avgScore": 0.981299,
+        "positiveScoreRate": 0.983578,
+        "returnImprovedRate": 0.987635,
+        "sharpeImprovedRate": 0.987249,
+        "drawdownImprovedRate": 0.945711,
+        "allObjectivesImprovedRate": 0.940881,
+        "avgBaseline": {
+          "totalReturn": 0.423187,
+          "annualReturn": 0.110293,
+          "maxDrawdown": -0.374913,
+          "winRate": 0.229959,
+          "sharpe": 0.333428
+        },
+        "avgModel": {
+          "totalReturn": 0.952092,
+          "annualReturn": 0.259363,
+          "maxDrawdown": -0.309138,
+          "winRate": 0.263911,
+          "sharpe": 0.662062
+        },
+        "avgImprovement": {
+          "totalReturn": 0.528905,
+          "annualReturn": 0.14907,
+          "sharpe": 0.328633,
+          "maxDrawdown": 0.065775
+        },
+        "strictPassRate": 0.986283,
+        "strictPlusDrawdownPassRate": 0.940881,
+        "fallbackRate": 0.013717
+      },
+      "topStocks": [
+        {
+          "market": "A股",
+          "symbol": "300476.SZ",
+          "name": "胜宏科技",
+          "rows": 620,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.85,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 14.36329,
+          "strictObjective": 18.99612,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 4.293,
+            "annualReturn": 0.9686,
+            "maxDrawdown": -0.4511,
+            "winRate": 0.2855,
+            "sharpe": 1.3571
+          },
+          "metrics": {
+            "totalReturn": 18.698,
+            "annualReturn": 2.3583,
+            "maxDrawdown": -0.3792,
+            "winRate": 0.4484,
+            "sharpe": 1.946
+          },
+          "improvement": {
+            "totalReturn": 14.405,
+            "annualReturn": 1.3897,
+            "sharpe": 0.5889,
+            "maxDrawdown": 0.0719
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "603256.SS",
+          "name": "宏和科技",
+          "rows": 620,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.5
+          },
+          "score": 12.93852,
+          "strictObjective": 18.219748,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 18.4131,
+            "annualReturn": 2.3385,
+            "maxDrawdown": -0.4225,
+            "winRate": 0.3274,
+            "sharpe": 2.3265
+          },
+          "metrics": {
+            "totalReturn": 32.1165,
+            "annualReturn": 3.1479,
+            "maxDrawdown": -0.3564,
+            "winRate": 0.471,
+            "sharpe": 2.4215
+          },
+          "improvement": {
+            "totalReturn": 13.7034,
+            "annualReturn": 0.8094,
+            "sharpe": 0.095,
+            "maxDrawdown": 0.0661
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "688519.SS",
+          "name": "南亚新材",
+          "rows": 620,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.85,
+            "qTail": 0.9,
+            "eta": 0.5
+          },
+          "score": 13.66975,
+          "strictObjective": 18.104958,
+          "selectionStatus": "strict_return_annual_sharpe",
+          "strictPass": true,
+          "drawdownPass": false,
+          "baseline": {
+            "totalReturn": 3.7061,
+            "annualReturn": 0.8767,
+            "maxDrawdown": -0.359,
+            "winRate": 0.2726,
+            "sharpe": 1.3108
+          },
+          "metrics": {
+            "totalReturn": 17.4328,
+            "annualReturn": 2.2689,
+            "maxDrawdown": -0.3709,
+            "winRate": 0.4903,
+            "sharpe": 1.9685
+          },
+          "improvement": {
+            "totalReturn": 13.7267,
+            "annualReturn": 1.3922,
+            "sharpe": 0.6577,
+            "maxDrawdown": -0.0119
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "301396.SZ",
+          "name": "宏景科技",
+          "rows": 620,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.8,
+            "qTail": 0.95,
+            "eta": 0.8
+          },
+          "score": 10.17263,
+          "strictObjective": 13.932829,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 8.7992,
+            "annualReturn": 1.5285,
+            "maxDrawdown": -0.3651,
+            "winRate": 0.279,
+            "sharpe": 1.566
+          },
+          "metrics": {
+            "totalReturn": 19.0601,
+            "annualReturn": 2.3833,
+            "maxDrawdown": -0.2674,
+            "winRate": 0.2919,
+            "sharpe": 1.9201
+          },
+          "improvement": {
+            "totalReturn": 10.2609,
+            "annualReturn": 0.8548,
+            "sharpe": 0.3541,
+            "maxDrawdown": 0.0977
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "301217.SZ",
+          "name": "铜冠铜箔",
+          "rows": 620,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.5
+          },
+          "score": 9.84286,
+          "strictObjective": 13.400915,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 7.4371,
+            "annualReturn": 1.3793,
+            "maxDrawdown": -0.4798,
+            "winRate": 0.2903,
+            "sharpe": 1.688
+          },
+          "metrics": {
+            "totalReturn": 17.2566,
+            "annualReturn": 2.2562,
+            "maxDrawdown": -0.3272,
+            "winRate": 0.471,
+            "sharpe": 2.0107
+          },
+          "improvement": {
+            "totalReturn": 9.8195,
+            "annualReturn": 0.8769,
+            "sharpe": 0.3227,
+            "maxDrawdown": 0.1526
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "301086.SZ",
+          "name": "鸿富瀚",
+          "rows": 620,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 8.59464,
+          "strictObjective": 11.365337,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 0.7259,
+            "annualReturn": 0.2484,
+            "maxDrawdown": -0.6219,
+            "winRate": 0.3161,
+            "sharpe": 0.6819
+          },
+          "metrics": {
+            "totalReturn": 8.0026,
+            "annualReturn": 1.4429,
+            "maxDrawdown": -0.3578,
+            "winRate": 0.5113,
+            "sharpe": 1.7077
+          },
+          "improvement": {
+            "totalReturn": 7.2767,
+            "annualReturn": 1.1945,
+            "sharpe": 1.0258,
+            "maxDrawdown": 0.2641
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "300502.SZ",
+          "name": "新易盛",
+          "rows": 620,
+          "params": {
+            "mode": "vol_squeeze",
+            "qHead": 0.85,
+            "qTail": 0.97,
+            "eta": 0.8
+          },
+          "score": 8.14934,
+          "strictObjective": 11.142633,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 6.2276,
+            "annualReturn": 1.2343,
+            "maxDrawdown": -0.5727,
+            "winRate": 0.3065,
+            "sharpe": 1.5808
+          },
+          "metrics": {
+            "totalReturn": 13.9849,
+            "annualReturn": 2.005,
+            "maxDrawdown": -0.3785,
+            "winRate": 0.3129,
+            "sharpe": 2.0525
+          },
+          "improvement": {
+            "totalReturn": 7.7573,
+            "annualReturn": 0.7707,
+            "sharpe": 0.4717,
+            "maxDrawdown": 0.1942
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "688498.SS",
+          "name": "源杰科技",
+          "rows": 620,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.85,
+            "qTail": 0.95,
+            "eta": 0.5
+          },
+          "score": 7.86286,
+          "strictObjective": 10.994837,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 9.1688,
+            "annualReturn": 1.5669,
+            "maxDrawdown": -0.4357,
+            "winRate": 0.3016,
+            "sharpe": 1.7474
+          },
+          "metrics": {
+            "totalReturn": 16.962,
+            "annualReturn": 2.2347,
+            "maxDrawdown": -0.3444,
+            "winRate": 0.2968,
+            "sharpe": 2.1164
+          },
+          "improvement": {
+            "totalReturn": 7.7932,
+            "annualReturn": 0.6678,
+            "sharpe": 0.369,
+            "maxDrawdown": 0.0913
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "300548.SZ",
+          "name": "长芯博创",
+          "rows": 620,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 7.74768,
+          "strictObjective": 10.848418,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 9.1653,
+            "annualReturn": 1.5665,
+            "maxDrawdown": -0.3868,
+            "winRate": 0.2661,
+            "sharpe": 1.7556
+          },
+          "metrics": {
+            "totalReturn": 16.8816,
+            "annualReturn": 2.2288,
+            "maxDrawdown": -0.3457,
+            "winRate": 0.2565,
+            "sharpe": 2.1617
+          },
+          "improvement": {
+            "totalReturn": 7.7163,
+            "annualReturn": 0.6623,
+            "sharpe": 0.4061,
+            "maxDrawdown": 0.0411
+          }
+        },
+        {
+          "market": "A股",
+          "symbol": "300903.SZ",
+          "name": "科翔股份",
+          "rows": 620,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.5
+          },
+          "score": 8.02114,
+          "strictObjective": 10.845281,
+          "selectionStatus": "strict_return_annual_sharpe",
+          "strictPass": true,
+          "drawdownPass": false,
+          "baseline": {
+            "totalReturn": 4.4685,
+            "annualReturn": 0.9948,
+            "maxDrawdown": -0.3539,
+            "winRate": 0.2968,
+            "sharpe": 1.4274
+          },
+          "metrics": {
+            "totalReturn": 12.498,
+            "annualReturn": 1.8801,
+            "maxDrawdown": -0.3597,
+            "winRate": 0.4629,
+            "sharpe": 1.7979
+          },
+          "improvement": {
+            "totalReturn": 8.0295,
+            "annualReturn": 0.8853,
+            "sharpe": 0.3705,
+            "maxDrawdown": -0.0058
+          }
+        }
+      ]
+    },
+    {
+      "market": "美股",
+      "latestAlphaModel": "strategy/美股/latest_alpha_model.json",
+      "timestampedAlphaModel": "strategy/美股/strict_alpha_model_20260627_162411.json",
+      "counts": {
+        "sourceRows": 7468,
+        "successfulStocks": 7468,
+        "uniqueParameterSets": 137,
+        "selectionStatus": {
+          "strict_return_annual_sharpe": 368,
+          "strict_plus_drawdown": 6995,
+          "fallback_best_available": 105
+        }
+      },
+      "alphaEvidence": {
+        "stocks": 7468,
+        "avgScore": 2.018677,
+        "positiveScoreRate": 0.984333,
+        "returnImprovedRate": 0.988082,
+        "sharpeImprovedRate": 0.987815,
+        "drawdownImprovedRate": 0.94068,
+        "allObjectivesImprovedRate": 0.936663,
+        "avgBaseline": {
+          "totalReturn": 0.429647,
+          "annualReturn": 0.083736,
+          "maxDrawdown": -0.480214,
+          "winRate": 0.219294,
+          "sharpe": 0.055347
+        },
+        "avgModel": {
+          "totalReturn": 1.918467,
+          "annualReturn": 0.340999,
+          "maxDrawdown": -0.401611,
+          "winRate": 0.259015,
+          "sharpe": 0.483428
+        },
+        "avgImprovement": {
+          "totalReturn": 1.48882,
+          "annualReturn": 0.257263,
+          "sharpe": 0.428081,
+          "maxDrawdown": 0.078603
+        },
+        "strictPassRate": 0.98594,
+        "strictPlusDrawdownPassRate": 0.936663,
+        "fallbackRate": 0.01406
+      },
+      "topStocks": [
+        {
+          "market": "美股",
+          "symbol": "KUST",
+          "name": "Kustom Entertainment, Inc.",
+          "rows": 1100,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.7,
+            "qTail": 0.97,
+            "eta": 0.5
+          },
+          "score": 790.02011,
+          "strictObjective": 1004.352764,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 15.4514,
+            "annualReturn": 0.8994,
+            "maxDrawdown": -0.8058,
+            "winRate": 0.1191,
+            "sharpe": 0.5532
+          },
+          "metrics": {
+            "totalReturn": 891.6386,
+            "annualReturn": 3.7421,
+            "maxDrawdown": -0.796,
+            "winRate": 0.1282,
+            "sharpe": 0.5678
+          },
+          "improvement": {
+            "totalReturn": 876.1872,
+            "annualReturn": 2.8427,
+            "sharpe": 0.0146,
+            "maxDrawdown": 0.0098
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "XTIA",
+          "name": "XTI Aerospace, Inc. Common Stock ",
+          "rows": 1100,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.85,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 440.85751,
+          "strictObjective": 566.938258,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 88.7229,
+            "annualReturn": 1.8015,
+            "maxDrawdown": -0.9325,
+            "winRate": 0.1073,
+            "sharpe": 0.6275
+          },
+          "metrics": {
+            "totalReturn": 577.3879,
+            "annualReturn": 3.2934,
+            "maxDrawdown": -0.7389,
+            "winRate": 0.0709,
+            "sharpe": 0.6308
+          },
+          "improvement": {
+            "totalReturn": 488.665,
+            "annualReturn": 1.4919,
+            "sharpe": 0.0033,
+            "maxDrawdown": 0.1936
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "AIFU",
+          "name": "AIFU Inc.",
+          "rows": 1100,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.85,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 213.37926,
+          "strictObjective": 281.826851,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 134.5132,
+            "annualReturn": 2.0791,
+            "maxDrawdown": -0.8277,
+            "winRate": 0.1745,
+            "sharpe": 0.6722
+          },
+          "metrics": {
+            "totalReturn": 370.7723,
+            "annualReturn": 2.88,
+            "maxDrawdown": -0.623,
+            "winRate": 0.1727,
+            "sharpe": 0.6903
+          },
+          "improvement": {
+            "totalReturn": 236.2591,
+            "annualReturn": 0.8009,
+            "sharpe": 0.0181,
+            "maxDrawdown": 0.2047
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "NXTT",
+          "name": "Next Technology Holding Inc.",
+          "rows": 965,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.85,
+            "qTail": 0.95,
+            "eta": 0.5
+          },
+          "score": 209.50364,
+          "strictObjective": 266.550179,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": -0.8618,
+            "annualReturn": -0.4035,
+            "maxDrawdown": -0.9691,
+            "winRate": 0.1575,
+            "sharpe": 0.348
+          },
+          "metrics": {
+            "totalReturn": 229.5223,
+            "annualReturn": 3.14,
+            "maxDrawdown": -0.9671,
+            "winRate": 0.2933,
+            "sharpe": 0.731
+          },
+          "improvement": {
+            "totalReturn": 230.3841,
+            "annualReturn": 3.5435,
+            "sharpe": 0.383,
+            "maxDrawdown": 0.002
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "SNWV",
+          "name": "SANUWAVE Health, Inc.",
+          "rows": 492,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.85,
+            "qTail": 0.97,
+            "eta": 0.2
+          },
+          "score": 133.44057,
+          "strictObjective": 239.429281,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 846.1347,
+            "annualReturn": 30.5997,
+            "maxDrawdown": -0.5494,
+            "winRate": 0.2236,
+            "sharpe": 0.7176
+          },
+          "metrics": {
+            "totalReturn": 992.8933,
+            "annualReturn": 33.2944,
+            "maxDrawdown": -0.5431,
+            "winRate": 0.2256,
+            "sharpe": 0.718
+          },
+          "improvement": {
+            "totalReturn": 146.7586,
+            "annualReturn": 2.6947,
+            "sharpe": 0.0004,
+            "maxDrawdown": 0.0063
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "CRBP",
+          "name": "Corbus Pharmaceuticals Holdings, Inc.",
+          "rows": 1100,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.7,
+            "qTail": 0.95,
+            "eta": 0.8
+          },
+          "score": 141.75611,
+          "strictObjective": 183.025402,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 35.5101,
+            "annualReturn": 1.28,
+            "maxDrawdown": -0.7043,
+            "winRate": 0.2227,
+            "sharpe": 0.536
+          },
+          "metrics": {
+            "totalReturn": 192.325,
+            "annualReturn": 2.3402,
+            "maxDrawdown": -0.6728,
+            "winRate": 0.2455,
+            "sharpe": 0.5782
+          },
+          "improvement": {
+            "totalReturn": 156.8149,
+            "annualReturn": 1.0602,
+            "sharpe": 0.0422,
+            "maxDrawdown": 0.0315
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "NCI",
+          "name": "Neo-Concept International Group Holdings Limited",
+          "rows": 522,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.85,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 134.2779,
+          "strictObjective": 177.320348,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 66.2051,
+            "annualReturn": 6.6242,
+            "maxDrawdown": -0.7136,
+            "winRate": 0.1762,
+            "sharpe": 1.0872
+          },
+          "metrics": {
+            "totalReturn": 211.8852,
+            "annualReturn": 12.3025,
+            "maxDrawdown": -0.5675,
+            "winRate": 0.1973,
+            "sharpe": 1.1801
+          },
+          "improvement": {
+            "totalReturn": 145.6801,
+            "annualReturn": 5.6783,
+            "sharpe": 0.0929,
+            "maxDrawdown": 0.1461
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "INHD",
+          "name": "Inno Holdings Inc.",
+          "rows": 601,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.7,
+            "qTail": 0.97,
+            "eta": 0.8
+          },
+          "score": 137.93822,
+          "strictObjective": 176.672946,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 2.2304,
+            "annualReturn": 0.6351,
+            "maxDrawdown": -0.8229,
+            "winRate": 0.1764,
+            "sharpe": 0.7301
+          },
+          "metrics": {
+            "totalReturn": 151.776,
+            "annualReturn": 7.2371,
+            "maxDrawdown": -0.8221,
+            "winRate": 0.1864,
+            "sharpe": 0.775
+          },
+          "improvement": {
+            "totalReturn": 149.5456,
+            "annualReturn": 6.602,
+            "sharpe": 0.0449,
+            "maxDrawdown": 0.0008
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "FIEE",
+          "name": "FiEE, Inc",
+          "rows": 886,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 114.96187,
+          "strictObjective": 146.534929,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": -0.1484,
+            "annualReturn": -0.0447,
+            "maxDrawdown": -0.9364,
+            "winRate": 0.1558,
+            "sharpe": 0.4837
+          },
+          "metrics": {
+            "totalReturn": 125.4483,
+            "annualReturn": 2.9613,
+            "maxDrawdown": -0.7765,
+            "winRate": 0.1806,
+            "sharpe": 0.6497
+          },
+          "improvement": {
+            "totalReturn": 125.5967,
+            "annualReturn": 3.006,
+            "sharpe": 0.166,
+            "maxDrawdown": 0.1599
+          }
+        },
+        {
+          "market": "美股",
+          "symbol": "AIRJW",
+          "name": "AirJoule Technologies Corporation",
+          "rows": 960,
+          "params": {
+            "mode": "vol_squeeze",
+            "qHead": 0.8,
+            "qTail": 0.97,
+            "eta": 0.8
+          },
+          "score": 108.94654,
+          "strictObjective": 139.880407,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 14.894,
+            "annualReturn": 1.0669,
+            "maxDrawdown": -0.7908,
+            "winRate": 0.1833,
+            "sharpe": 1.1216
+          },
+          "metrics": {
+            "totalReturn": 134.4454,
+            "annualReturn": 2.6273,
+            "maxDrawdown": -0.6585,
+            "winRate": 0.1823,
+            "sharpe": 1.48
+          },
+          "improvement": {
+            "totalReturn": 119.5514,
+            "annualReturn": 1.5604,
+            "sharpe": 0.3584,
+            "maxDrawdown": 0.1323
+          }
+        }
+      ]
+    },
+    {
+      "market": "港股",
+      "latestAlphaModel": "strategy/港股/latest_alpha_model.json",
+      "timestampedAlphaModel": "strategy/港股/strict_alpha_model_20260627_162413.json",
+      "counts": {
+        "sourceRows": 3402,
+        "successfulStocks": 3402,
+        "uniqueParameterSets": 136,
+        "selectionStatus": {
+          "strict_plus_drawdown": 3244,
+          "fallback_best_available": 55,
+          "strict_return_annual_sharpe": 103
+        }
+      },
+      "alphaEvidence": {
+        "stocks": 3402,
+        "avgScore": 2.046218,
+        "positiveScoreRate": 0.984715,
+        "returnImprovedRate": 0.986479,
+        "sharpeImprovedRate": 0.984715,
+        "drawdownImprovedRate": 0.957378,
+        "allObjectivesImprovedRate": 0.953557,
+        "avgBaseline": {
+          "totalReturn": 0.366504,
+          "annualReturn": -0.041055,
+          "maxDrawdown": -0.570228,
+          "winRate": 0.145007,
+          "sharpe": 0.01342
+        },
+        "avgModel": {
+          "totalReturn": 1.89398,
+          "annualReturn": 0.16688,
+          "maxDrawdown": -0.459055,
+          "winRate": 0.164529,
+          "sharpe": 0.405841
+        },
+        "avgImprovement": {
+          "totalReturn": 1.527476,
+          "annualReturn": 0.207935,
+          "sharpe": 0.392421,
+          "maxDrawdown": 0.111173
+        },
+        "strictPassRate": 0.983833,
+        "strictPlusDrawdownPassRate": 0.953557,
+        "fallbackRate": 0.016167
+      },
+      "topStocks": [
+        {
+          "market": "港股",
+          "symbol": "00167.HK",
+          "name": "IDT INT'L",
+          "rows": 664,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.2
+          },
+          "score": 140.74041,
+          "strictObjective": 179.850958,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 0.4599,
+            "annualReturn": 0.1544,
+            "maxDrawdown": -0.7331,
+            "winRate": 0.1551,
+            "sharpe": 0.5795
+          },
+          "metrics": {
+            "totalReturn": 153.5925,
+            "annualReturn": 5.7739,
+            "maxDrawdown": -0.7104,
+            "winRate": 0.2681,
+            "sharpe": 0.6545
+          },
+          "improvement": {
+            "totalReturn": 153.1326,
+            "annualReturn": 5.6195,
+            "sharpe": 0.075,
+            "maxDrawdown": 0.0227
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "0167.HK",
+          "name": "0167.HK",
+          "rows": 664,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.2
+          },
+          "score": 140.74041,
+          "strictObjective": 179.850958,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 0.4599,
+            "annualReturn": 0.1544,
+            "maxDrawdown": -0.7331,
+            "winRate": 0.1551,
+            "sharpe": 0.5795
+          },
+          "metrics": {
+            "totalReturn": 153.5925,
+            "annualReturn": 5.7739,
+            "maxDrawdown": -0.7104,
+            "winRate": 0.2681,
+            "sharpe": 0.6545
+          },
+          "improvement": {
+            "totalReturn": 153.1326,
+            "annualReturn": 5.6195,
+            "sharpe": 0.075,
+            "maxDrawdown": 0.0227
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "08448.HK",
+          "name": "环球印馆",
+          "rows": 1056,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 124.36317,
+          "strictObjective": 161.440861,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 41.3983,
+            "annualReturn": 1.4454,
+            "maxDrawdown": -0.7434,
+            "winRate": 0.1098,
+            "sharpe": 0.8224
+          },
+          "metrics": {
+            "totalReturn": 178.6672,
+            "annualReturn": 2.4514,
+            "maxDrawdown": -0.6353,
+            "winRate": 0.2008,
+            "sharpe": 0.9676
+          },
+          "improvement": {
+            "totalReturn": 137.2689,
+            "annualReturn": 1.006,
+            "sharpe": 0.1452,
+            "maxDrawdown": 0.1081
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "00544.HK",
+          "name": "大同集团",
+          "rows": 1077,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 123.24674,
+          "strictObjective": 157.209667,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 5.063,
+            "annualReturn": 0.5245,
+            "maxDrawdown": -0.6312,
+            "winRate": 0.078,
+            "sharpe": 0.5109
+          },
+          "metrics": {
+            "totalReturn": 140.7838,
+            "annualReturn": 2.1875,
+            "maxDrawdown": -0.62,
+            "winRate": 0.1318,
+            "sharpe": 0.7595
+          },
+          "improvement": {
+            "totalReturn": 135.7208,
+            "annualReturn": 1.663,
+            "sharpe": 0.2486,
+            "maxDrawdown": 0.0112
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "08187.HK",
+          "name": "积木集团",
+          "rows": 1078,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 117.79827,
+          "strictObjective": 149.975015,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 0.5262,
+            "annualReturn": 0.1039,
+            "maxDrawdown": -0.8941,
+            "winRate": 0.1243,
+            "sharpe": 0.5479
+          },
+          "metrics": {
+            "totalReturn": 129.8466,
+            "annualReturn": 2.1248,
+            "maxDrawdown": -0.6755,
+            "winRate": 0.1271,
+            "sharpe": 0.5976
+          },
+          "improvement": {
+            "totalReturn": 129.3204,
+            "annualReturn": 2.0209,
+            "sharpe": 0.0497,
+            "maxDrawdown": 0.2186
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "08431.HK",
+          "name": "浩柏国际",
+          "rows": 1074,
+          "params": {
+            "mode": "vol_squeeze",
+            "qHead": 0.7,
+            "qTail": 0.95,
+            "eta": 0.8
+          },
+          "score": 113.76517,
+          "strictObjective": 147.480607,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 35.3131,
+            "annualReturn": 1.323,
+            "maxDrawdown": -0.9273,
+            "winRate": 0.1471,
+            "sharpe": 0.6918
+          },
+          "metrics": {
+            "totalReturn": 160.9831,
+            "annualReturn": 2.2993,
+            "maxDrawdown": -0.8526,
+            "winRate": 0.1443,
+            "sharpe": 0.7463
+          },
+          "improvement": {
+            "totalReturn": 125.67,
+            "annualReturn": 0.9763,
+            "sharpe": 0.0545,
+            "maxDrawdown": 0.0747
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "08427.HK",
+          "name": "万顺瑞强集团",
+          "rows": 1078,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 112.3109,
+          "strictObjective": 147.452336,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 58.1916,
+            "annualReturn": 1.5959,
+            "maxDrawdown": -0.8236,
+            "winRate": 0.1336,
+            "sharpe": 0.6724
+          },
+          "metrics": {
+            "totalReturn": 181.9824,
+            "annualReturn": 2.3797,
+            "maxDrawdown": -0.5393,
+            "winRate": 0.1271,
+            "sharpe": 0.7248
+          },
+          "improvement": {
+            "totalReturn": 123.7908,
+            "annualReturn": 0.7838,
+            "sharpe": 0.0524,
+            "maxDrawdown": 0.2843
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "08365.HK",
+          "name": "亦辰集团",
+          "rows": 1078,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.85,
+            "qTail": 0.95,
+            "eta": 0.8
+          },
+          "score": 80.56705,
+          "strictObjective": 105.660493,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 39.7243,
+            "annualReturn": 1.3786,
+            "maxDrawdown": -0.6464,
+            "winRate": 0.1438,
+            "sharpe": 0.5287
+          },
+          "metrics": {
+            "totalReturn": 128.5759,
+            "annualReturn": 2.1177,
+            "maxDrawdown": -0.5148,
+            "winRate": 0.1271,
+            "sharpe": 0.5492
+          },
+          "improvement": {
+            "totalReturn": 88.8516,
+            "annualReturn": 0.7391,
+            "sharpe": 0.0205,
+            "maxDrawdown": 0.1316
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "01396.HK",
+          "name": "粤港湾智算",
+          "rows": 1049,
+          "params": {
+            "mode": "downside_guard",
+            "qHead": 0.7,
+            "qTail": 0.97,
+            "eta": 0.8
+          },
+          "score": 69.71456,
+          "strictObjective": 89.593607,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 10.1882,
+            "annualReturn": 0.7863,
+            "maxDrawdown": -0.9069,
+            "winRate": 0.1563,
+            "sharpe": 0.5821
+          },
+          "metrics": {
+            "totalReturn": 86.7478,
+            "annualReturn": 1.9297,
+            "maxDrawdown": -0.8927,
+            "winRate": 0.2564,
+            "sharpe": 0.7986
+          },
+          "improvement": {
+            "totalReturn": 76.5596,
+            "annualReturn": 1.1434,
+            "sharpe": 0.2165,
+            "maxDrawdown": 0.0142
+          }
+        },
+        {
+          "market": "港股",
+          "symbol": "08370.HK",
+          "name": "智升集团控股",
+          "rows": 1077,
+          "params": {
+            "mode": "vol_squeeze",
+            "qHead": 0.7,
+            "qTail": 0.97,
+            "eta": 0.8
+          },
+          "score": 61.45812,
+          "strictObjective": 88.642768,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 130.614,
+            "annualReturn": 2.1324,
+            "maxDrawdown": -0.4679,
+            "winRate": 0.1123,
+            "sharpe": 0.6423
+          },
+          "metrics": {
+            "totalReturn": 198.3665,
+            "annualReturn": 2.4521,
+            "maxDrawdown": -0.2812,
+            "winRate": 0.1133,
+            "sharpe": 0.6646
+          },
+          "improvement": {
+            "totalReturn": 67.7525,
+            "annualReturn": 0.3197,
+            "sharpe": 0.0223,
+            "maxDrawdown": 0.1867
+          }
+        }
+      ]
+    },
+    {
+      "market": "加密货币",
+      "latestAlphaModel": "strategy/加密货币/latest_alpha_model.json",
+      "timestampedAlphaModel": "strategy/加密货币/strict_alpha_model_20260627_162413.json",
+      "counts": {
+        "sourceRows": 898,
+        "successfulStocks": 898,
+        "uniqueParameterSets": 114,
+        "selectionStatus": {
+          "strict_plus_drawdown": 848,
+          "strict_return_annual_sharpe": 23,
+          "fallback_best_available": 27
+        }
+      },
+      "alphaEvidence": {
+        "stocks": 898,
+        "avgScore": 6.914964,
+        "positiveScoreRate": 0.977728,
+        "returnImprovedRate": 0.977728,
+        "sharpeImprovedRate": 0.976615,
+        "drawdownImprovedRate": 0.953229,
+        "allObjectivesImprovedRate": 0.944321,
+        "avgBaseline": {
+          "totalReturn": 3.689238,
+          "annualReturn": 0.59854,
+          "maxDrawdown": -0.665382,
+          "winRate": 0.174003,
+          "sharpe": -0.089719
+        },
+        "avgModel": {
+          "totalReturn": 10.406831,
+          "annualReturn": 1.128136,
+          "maxDrawdown": -0.55278,
+          "winRate": 0.188069,
+          "sharpe": 0.338361
+        },
+        "avgImprovement": {
+          "totalReturn": 6.717593,
+          "annualReturn": 0.529596,
+          "sharpe": 0.42808,
+          "maxDrawdown": 0.112602
+        },
+        "strictPassRate": 0.969933,
+        "strictPlusDrawdownPassRate": 0.944321,
+        "fallbackRate": 0.030067
+      },
+      "topStocks": [
+        {
+          "market": "加密货币",
+          "symbol": "ZETA-USD",
+          "name": "ZetaChain",
+          "rows": 917,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 3257.86003,
+          "strictObjective": 4332.195353,
+          "selectionStatus": "fallback_best_available",
+          "strictPass": false,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 2466.944,
+            "annualReturn": 7.5555,
+            "maxDrawdown": -0.9323,
+            "winRate": 0.1516,
+            "sharpe": 0.5242
+          },
+          "metrics": {
+            "totalReturn": 6085.2989,
+            "annualReturn": 9.9641,
+            "maxDrawdown": -0.8471,
+            "winRate": 0.1799,
+            "sharpe": 0.5242
+          },
+          "improvement": {
+            "totalReturn": 3618.3549,
+            "annualReturn": 2.4086,
+            "sharpe": 0.0,
+            "maxDrawdown": 0.0852
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "GRAM-USD",
+          "name": "Gram (prev. Toncoin)",
+          "rows": 778,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 691.20814,
+          "strictObjective": 879.186283,
+          "selectionStatus": "strict_return_annual_sharpe",
+          "strictPass": true,
+          "drawdownPass": false,
+          "baseline": {
+            "totalReturn": -0.069,
+            "annualReturn": -0.0229,
+            "maxDrawdown": -0.6654,
+            "winRate": 0.1452,
+            "sharpe": 0.471
+          },
+          "metrics": {
+            "totalReturn": 764.1383,
+            "annualReturn": 7.5914,
+            "maxDrawdown": -0.8168,
+            "winRate": 0.135,
+            "sharpe": 0.5699
+          },
+          "improvement": {
+            "totalReturn": 764.2073,
+            "annualReturn": 7.6143,
+            "sharpe": 0.0989,
+            "maxDrawdown": -0.1514
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "SPACE-USD",
+          "name": "Spacecoin",
+          "rows": 208,
+          "params": {
+            "mode": "trend_smooth",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 149.82394,
+          "strictObjective": 284.463249,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 192.2597,
+            "annualReturn": 587.5024,
+            "maxDrawdown": -0.4565,
+            "winRate": 0.1154,
+            "sharpe": 1.0994
+          },
+          "metrics": {
+            "totalReturn": 245.7617,
+            "annualReturn": 790.2914,
+            "maxDrawdown": -0.2836,
+            "winRate": 0.1058,
+            "sharpe": 1.1004
+          },
+          "improvement": {
+            "totalReturn": 53.502,
+            "annualReturn": 202.789,
+            "sharpe": 0.001,
+            "maxDrawdown": 0.1729
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "NOS-USD",
+          "name": "Nosana",
+          "rows": 1599,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.85,
+            "qTail": 0.95,
+            "eta": 0.5
+          },
+          "score": 134.69484,
+          "strictObjective": 183.896113,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 160.5934,
+            "annualReturn": 1.2287,
+            "maxDrawdown": -0.6752,
+            "winRate": 0.1495,
+            "sharpe": 1.0601
+          },
+          "metrics": {
+            "totalReturn": 309.9886,
+            "annualReturn": 1.4709,
+            "maxDrawdown": -0.6486,
+            "winRate": 0.1495,
+            "sharpe": 1.1356
+          },
+          "improvement": {
+            "totalReturn": 149.3952,
+            "annualReturn": 0.2422,
+            "sharpe": 0.0755,
+            "maxDrawdown": 0.0266
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "USDU-USD",
+          "name": "USDu",
+          "rows": 1271,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.7,
+            "qTail": 0.97,
+            "eta": 0.2
+          },
+          "score": 132.82331,
+          "strictObjective": 168.908542,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": -0.8939,
+            "annualReturn": -0.3591,
+            "maxDrawdown": -0.995,
+            "winRate": 0.1243,
+            "sharpe": 0.4412
+          },
+          "metrics": {
+            "totalReturn": 144.8565,
+            "annualReturn": 1.6856,
+            "maxDrawdown": -0.606,
+            "winRate": 0.1141,
+            "sharpe": 0.4444
+          },
+          "improvement": {
+            "totalReturn": 145.7504,
+            "annualReturn": 2.0447,
+            "sharpe": 0.0032,
+            "maxDrawdown": 0.389
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "FAR-USD",
+          "name": "FAR Labs",
+          "rows": 783,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.8
+          },
+          "score": 128.81528,
+          "strictObjective": 166.588082,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 31.5405,
+            "annualReturn": 2.0673,
+            "maxDrawdown": -0.8065,
+            "winRate": 0.2031,
+            "sharpe": 0.6917
+          },
+          "metrics": {
+            "totalReturn": 173.2538,
+            "annualReturn": 4.2638,
+            "maxDrawdown": -0.7699,
+            "winRate": 0.2261,
+            "sharpe": 0.8082
+          },
+          "improvement": {
+            "totalReturn": 141.7133,
+            "annualReturn": 2.1965,
+            "sharpe": 0.1165,
+            "maxDrawdown": 0.0366
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "ARX-USD",
+          "name": "Arcium",
+          "rows": 1615,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.85,
+            "qTail": 0.95,
+            "eta": 0.8
+          },
+          "score": 121.06291,
+          "strictObjective": 155.567602,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 21.9522,
+            "annualReturn": 0.6306,
+            "maxDrawdown": -0.6741,
+            "winRate": 0.195,
+            "sharpe": 0.8893
+          },
+          "metrics": {
+            "totalReturn": 155.6843,
+            "annualReturn": 1.2004,
+            "maxDrawdown": -0.5809,
+            "winRate": 0.1895,
+            "sharpe": 1.1593
+          },
+          "improvement": {
+            "totalReturn": 133.7321,
+            "annualReturn": 0.5698,
+            "sharpe": 0.27,
+            "maxDrawdown": 0.0932
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "KAS-USD",
+          "name": "Kaspa",
+          "rows": 1464,
+          "params": {
+            "mode": "tail_denoise",
+            "qHead": 0.8,
+            "qTail": 0.9,
+            "eta": 0.2
+          },
+          "score": 39.25572,
+          "strictObjective": 80.597018,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 383.2829,
+            "annualReturn": 1.7855,
+            "maxDrawdown": -0.6949,
+            "winRate": 0.2425,
+            "sharpe": 1.5679
+          },
+          "metrics": {
+            "totalReturn": 426.7718,
+            "annualReturn": 1.8374,
+            "maxDrawdown": -0.6528,
+            "winRate": 0.2418,
+            "sharpe": 1.5903
+          },
+          "improvement": {
+            "totalReturn": 43.4889,
+            "annualReturn": 0.0519,
+            "sharpe": 0.0224,
+            "maxDrawdown": 0.0421
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "GCOIN-USD",
+          "name": "Playnance",
+          "rows": 1609,
+          "params": {
+            "mode": "crypto_trend_guard",
+            "qHead": 0.7,
+            "qTail": 0.9,
+            "eta": 0.5
+          },
+          "score": 51.53343,
+          "strictObjective": 66.591067,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 12.8715,
+            "annualReturn": 0.5097,
+            "maxDrawdown": -0.8247,
+            "winRate": 0.174,
+            "sharpe": 0.8425
+          },
+          "metrics": {
+            "totalReturn": 69.1685,
+            "annualReturn": 0.946,
+            "maxDrawdown": -0.6124,
+            "winRate": 0.1566,
+            "sharpe": 1.1508
+          },
+          "improvement": {
+            "totalReturn": 56.297,
+            "annualReturn": 0.4363,
+            "sharpe": 0.3083,
+            "maxDrawdown": 0.2123
+          }
+        },
+        {
+          "market": "加密货币",
+          "symbol": "HUNDRED-USD",
+          "name": "HUNDRED",
+          "rows": 1071,
+          "params": {
+            "mode": "momentum_regime",
+            "qHead": 0.7,
+            "qTail": 0.97,
+            "eta": 0.8
+          },
+          "score": 45.53174,
+          "strictObjective": 61.946301,
+          "selectionStatus": "strict_plus_drawdown",
+          "strictPass": true,
+          "drawdownPass": true,
+          "baseline": {
+            "totalReturn": 49.383,
+            "annualReturn": 1.515,
+            "maxDrawdown": -0.6495,
+            "winRate": 0.3109,
+            "sharpe": 1.8922
+          },
+          "metrics": {
+            "totalReturn": 99.2044,
+            "annualReturn": 1.9566,
+            "maxDrawdown": -0.5032,
+            "winRate": 0.3287,
+            "sharpe": 2.1298
+          },
+          "improvement": {
+            "totalReturn": 49.8214,
+            "annualReturn": 0.4416,
+            "sharpe": 0.2376,
+            "maxDrawdown": 0.1463
+          }
+        }
+      ]
+    }
+  ]
+}

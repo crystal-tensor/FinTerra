@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-06-23 12:07:58",
+  "updatedAt": "2026-06-23 12:10:03",
+  "dateRange": {
+    "start": "20220101",
+    "end": "20260623"
+  },
+  "dataSource": "tencent+binance",
+  "dataDir": "data",
+  "universe": "all",
+  "cryptoUniverse": "binance-usdt",
+  "counts": {
+    "requested": 433,
+    "successful": 29,
+    "failed": 2,
+    "processed": 31
+  },
+  "successes": [
+    {
+      "market": "加密货币",
+      "symbol": "USDC-USD",
+      "name": "USDC",
+      "rows": null,
+      "path": "data/加密货币_USDC-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BTC-USD",
+      "name": "BTC",
+      "rows": null,
+      "path": "data/加密货币_BTC-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ETH-USD",
+      "name": "ETH",
+      "rows": null,
+      "path": "data/加密货币_ETH-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "USD1-USD",
+      "name": "USD1",
+      "rows": 378,
+      "path": "data/加密货币_USD1-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SOL-USD",
+      "name": "SOL",
+      "rows": null,
+      "path": "data/加密货币_SOL-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "XRP-USD",
+      "name": "XRP",
+      "rows": null,
+      "path": "data/加密货币_XRP-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "TAO-USD",
+      "name": "TAO",
+      "rows": 784,
+      "path": "data/加密货币_TAO-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ZEC-USD",
+      "name": "ZEC",
+      "rows": null,
+      "path": "data/加密货币_ZEC-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "MEGA-USD",
+      "name": "MEGA",
+      "rows": 248,
+      "path": "data/加密货币_MEGA-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "WLD-USD",
+      "name": "WLD",
+      "rows": 1046,
+      "path": "data/加密货币_WLD-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BNB-USD",
+      "name": "BNB",
+      "rows": null,
+      "path": "data/加密货币_BNB-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SYN-USD",
+      "name": "SYN",
+      "rows": 1198,
+      "path": "data/加密货币_SYN-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "TRX-USD",
+      "name": "TRX",
+      "rows": null,
+      "path": "data/加密货币_TRX-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "NEAR-USD",
+      "name": "NEAR",
+      "rows": null,
+      "path": "data/加密货币_NEAR-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ENA-USD",
+      "name": "ENA",
+      "rows": 793,
+      "path": "data/加密货币_ENA-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "DOGE-USD",
+      "name": "DOGE",
+      "rows": null,
+      "path": "data/加密货币_DOGE-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SUI-USD",
+      "name": "SUI",
+      "rows": 1128,
+      "path": "data/加密货币_SUI-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "EUR-USD",
+      "name": "EUR",
+      "rows": 1615,
+      "path": "data/加密货币_EUR-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "XPL-USD",
+      "name": "XPL",
+      "rows": 252,
+      "path": "data/加密货币_XPL-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "RESOLV-USD",
+      "name": "RESOLV",
+      "rows": 358,
+      "path": "data/加密货币_RESOLV-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ALLO-USD",
+      "name": "ALLO",
+      "rows": 205,
+      "path": "data/加密货币_ALLO-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "LAYER-USD",
+      "name": "LAYER",
+      "rows": 478,
+      "path": "data/加密货币_LAYER-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "XLM-USD",
+      "name": "XLM",
+      "rows": null,
+      "path": "data/加密货币_XLM-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "DEXE-USD",
+      "name": "DEXE",
+      "rows": 1615,
+      "path": "data/加密货币_DEXE-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BCH-USD",
+      "name": "BCH",
+      "rows": null,
+      "path": "data/加密货币_BCH-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "RLUSD-USD",
+      "name": "RLUSD",
+      "rows": 133,
+      "path": "data/加密货币_RLUSD-USD.csv",
+      "cached": false
+    },
+    {
+      "market": "加密货币",
+      "symbol": "AVAX-USD",
+      "name": "AVAX",
+      "rows": null,
+      "path": "data/加密货币_AVAX-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ADA-USD",
+      "name": "ADA",
+      "rows": null,
+      "path": "data/加密货币_ADA-USD.csv",
+      "cached": true
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ID-USD",
+      "name": "ID",
+      "rows": 1170,
+      "path": "data/加密货币_ID-USD.csv",
+      "cached": false
+    }
+  ],
+  "failures": [
+    {
+      "market": "加密货币",
+      "symbol": "RE-USD",
+      "name": "RE",
+      "error": "Binance=Binance 加密货币源 可用历史数据不足，无法训练: RE-USD; Yahoo=Yahoo Chart 加密货币源 可用历史数据不足，无法训练: RE-USD"
+    },
+    {
+      "market": "加密货币",
+      "symbol": "SPCXB-USD",
+      "name": "SPCXB",
+      "error": "Binance=Binance 加密货币源 可用历史数据不足，无法训练: SPCXB-USD; Yahoo=Yahoo Chart 加密货币源 可用历史数据不足，无法训练: SPCXB-USD"
+    }
+  ]
+}

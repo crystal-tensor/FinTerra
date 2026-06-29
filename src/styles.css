@@ -1434,6 +1434,112 @@ th {
   margin-top: 12px;
 }
 
+.pt-report-card,
+.stock-pt-summary-card {
+  border-color: #bfdbfe;
+  background:
+    linear-gradient(135deg, rgba(239, 246, 255, 0.92), rgba(236, 253, 245, 0.88)),
+    #ffffff;
+}
+
+.stock-pt-summary-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.stock-pt-summary-card h4 {
+  margin: 6px 0 0;
+  color: #0f172a;
+}
+
+.stock-pt-summary-card p {
+  margin: 7px 0 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.pt-report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.pt-report-actions > span {
+  color: #475569;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.pt-report-actions .paid-link {
+  border-color: #0f766e;
+  background: #0f766e;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pt-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  grid-column: 1 / -1;
+  margin-top: 12px;
+}
+
+.pt-summary-grid article {
+  min-height: 86px;
+  border: 1px solid #dbe4f0;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.pt-summary-grid small {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.pt-summary-grid strong {
+  display: block;
+  margin-top: 8px;
+  color: #0f172a;
+  font-size: 26px;
+}
+
+.pt-summary-grid p,
+.pt-report-locked {
+  grid-column: 1 / -1;
+}
+
+.pt-summary-grid p {
+  margin: 0;
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 8px;
+  background: rgba(15, 118, 110, 0.06);
+  color: #334155;
+  padding: 10px 12px;
+  line-height: 1.65;
+}
+
+.pt-report-locked {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 8px;
+  background: rgba(15, 118, 110, 0.06);
+  color: #334155;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .trade-preview .table-wrap {
   max-height: 260px;
   overflow: auto;
@@ -2537,6 +2643,27 @@ body {
   font-size: 17px;
 }
 
+.api-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.site-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid var(--fc-border-soft);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--fc-text);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
 .api-status-panel,
 .api-code-block,
 .api-step-list article,
@@ -2663,12 +2790,23 @@ body {
   gap: 14px;
 }
 
+.api-pricing-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .api-price-card {
   display: flex;
   flex-direction: column;
   min-height: 330px;
   border-radius: 14px;
   padding: 20px;
+}
+
+.api-price-card.featured {
+  border-color: rgba(34, 211, 238, 0.5);
+  background:
+    linear-gradient(180deg, rgba(34, 211, 238, 0.12), rgba(52, 211, 153, 0.06)),
+    var(--fc-panel);
 }
 
 .api-price-head {
@@ -4451,6 +4589,50 @@ body {
   padding: 10px 11px;
   font-size: 11px;
   line-height: 1.65;
+}
+
+.lab-premium-report {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid rgba(34, 211, 238, 0.24);
+  border-radius: 9px;
+  background: rgba(34, 211, 238, 0.07);
+  padding: 10px 11px;
+}
+
+.lab-premium-report strong,
+.lab-premium-report span {
+  display: block;
+}
+
+.lab-premium-report strong {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.lab-premium-report span {
+  margin-top: 3px;
+  color: var(--fc-muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.lab-premium-report a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--fc-cyan), var(--fc-green));
+  color: #03131d;
+  padding: 7px 10px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .lab-process-list {

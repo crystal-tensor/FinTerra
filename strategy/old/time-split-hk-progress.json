@@ -1,0 +1,208 @@
+{
+  "startedAt": "2026-06-16 18:23:33",
+  "updatedAt": "2026-06-16 18:28:05",
+  "status": "complete",
+  "markets": [
+    "港股"
+  ],
+  "totalAssets": 50,
+  "completedAssets": 50,
+  "successAssets": 50,
+  "failedAssets": 0,
+  "percent": 1.0,
+  "latestCompleted": {
+    "market": "港股",
+    "symbol": "9999.HK",
+    "name": "网易-S"
+  },
+  "failures": [],
+  "partial": {
+    "calibrated": {
+      "assets": 50,
+      "activeRate": 1.0,
+      "avgImprovement": {
+        "totalReturn": -0.008742,
+        "annualReturn": -0.00522,
+        "sharpe": 0.02295,
+        "maxDrawdown": -0.009278
+      },
+      "returnImprovedRate": 0.6,
+      "sharpeImprovedRate": 0.6,
+      "drawdownImprovedRate": 0.5,
+      "allObjectivesImprovedRate": 0.44,
+      "byMarket": {
+        "港股": {
+          "assets": 50,
+          "activeRate": 1.0,
+          "avgImprovement": {
+            "totalReturn": -0.008742,
+            "annualReturn": -0.00522,
+            "sharpe": 0.02295,
+            "maxDrawdown": -0.009278
+          },
+          "allObjectivesImprovedRate": 0.44
+        }
+      }
+    },
+    "stableSelected": {
+      "assets": 50,
+      "activeRate": 0.88,
+      "avgImprovement": {
+        "totalReturn": -0.014414,
+        "annualReturn": -0.00961,
+        "sharpe": -0.000718,
+        "maxDrawdown": -0.01482
+      },
+      "returnImprovedRate": 0.42,
+      "sharpeImprovedRate": 0.38,
+      "drawdownImprovedRate": 0.34,
+      "allObjectivesImprovedRate": 0.28,
+      "byMarket": {
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.88,
+          "avgImprovement": {
+            "totalReturn": -0.014414,
+            "annualReturn": -0.00961,
+            "sharpe": -0.000718,
+            "maxDrawdown": -0.01482
+          },
+          "allObjectivesImprovedRate": 0.28
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.98,
+      "avgImprovement": {
+        "totalReturn": 0.199608,
+        "annualReturn": 0.150702,
+        "sharpe": 0.553996,
+        "maxDrawdown": 0.040302
+      },
+      "returnImprovedRate": 0.98,
+      "sharpeImprovedRate": 0.98,
+      "drawdownImprovedRate": 0.82,
+      "allObjectivesImprovedRate": 0.82,
+      "byMarket": {
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.199608,
+            "annualReturn": 0.150702,
+            "sharpe": 0.553996,
+            "maxDrawdown": 0.040302
+          },
+          "allObjectivesImprovedRate": 0.82
+        }
+      }
+    }
+  },
+  "final": {
+    "bestConfig": {
+      "model": "per-asset-time-split-calibration-with-gate",
+      "objective": 0.312561,
+      "thresholds": {
+        "trainScoreMin": -0.2,
+        "trainTotalReturnMin": -0.05,
+        "trainSharpeMin": -0.05,
+        "trainDrawdownMin": -0.05,
+        "splitFraction": 0.7
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.96,
+        "avgImprovement": {
+          "totalReturn": -0.014324,
+          "annualReturn": -0.00939,
+          "sharpe": 0.01135,
+          "maxDrawdown": -0.008804
+        },
+        "returnImprovedRate": 0.56,
+        "sharpeImprovedRate": 0.56,
+        "drawdownImprovedRate": 0.5,
+        "allObjectivesImprovedRate": 0.44,
+        "byMarket": {
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.96,
+            "avgImprovement": {
+              "totalReturn": -0.014324,
+              "annualReturn": -0.00939,
+              "sharpe": 0.01135,
+              "maxDrawdown": -0.008804
+            },
+            "allObjectivesImprovedRate": 0.44
+          }
+        }
+      }
+    },
+    "stabilityGateConfig": {
+      "model": "per-asset-three-stage-stability-gate",
+      "objective": 0,
+      "thresholds": {
+        "splitFraction": 0.7,
+        "innerSelectFraction": 0.7,
+        "stabilityScoreMin": 0,
+        "stabilityTotalReturnMin": 0,
+        "stabilitySharpeMin": 0,
+        "stabilityDrawdownMin": 0
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.88,
+        "avgImprovement": {
+          "totalReturn": -0.014414,
+          "annualReturn": -0.00961,
+          "sharpe": -0.000718,
+          "maxDrawdown": -0.01482
+        },
+        "returnImprovedRate": 0.42,
+        "sharpeImprovedRate": 0.38,
+        "drawdownImprovedRate": 0.34,
+        "allObjectivesImprovedRate": 0.28,
+        "byMarket": {
+          "港股": {
+            "assets": 50,
+            "activeRate": 0.88,
+            "avgImprovement": {
+              "totalReturn": -0.014414,
+              "annualReturn": -0.00961,
+              "sharpe": -0.000718,
+              "maxDrawdown": -0.01482
+            },
+            "allObjectivesImprovedRate": 0.28
+          }
+        }
+      }
+    },
+    "oracleUpperBound": {
+      "assets": 50,
+      "activeRate": 0.98,
+      "avgImprovement": {
+        "totalReturn": 0.199608,
+        "annualReturn": 0.150702,
+        "sharpe": 0.553996,
+        "maxDrawdown": 0.040302
+      },
+      "returnImprovedRate": 0.98,
+      "sharpeImprovedRate": 0.98,
+      "drawdownImprovedRate": 0.82,
+      "allObjectivesImprovedRate": 0.82,
+      "byMarket": {
+        "港股": {
+          "assets": 50,
+          "activeRate": 0.98,
+          "avgImprovement": {
+            "totalReturn": 0.199608,
+            "annualReturn": 0.150702,
+            "sharpe": 0.553996,
+            "maxDrawdown": 0.040302
+          },
+          "allObjectivesImprovedRate": 0.82
+        }
+      }
+    }
+  }
+}

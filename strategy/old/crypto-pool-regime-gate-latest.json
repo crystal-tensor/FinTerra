@@ -1,0 +1,818 @@
+{
+  "generatedAt": "2026-06-16 18:57:34",
+  "experimentName": "crypto-regime-gate-cv",
+  "status": "candidate_not_promoted",
+  "conclusion": "加密货币状态门控仍无法避免验证期负贡献。",
+  "sourceModelPath": ".tmp/time-split-crypto-pool-latest.json",
+  "fastMode": true,
+  "assetCount": 50,
+  "sampleCount": 1095,
+  "featureCount": 57,
+  "bestConfig": {
+    "model": "crypto-regime-gate-extra_trees",
+    "objective": 0.068687,
+    "thresholds": {
+      "predictedScoreMin": -0.15,
+      "predictedTotalReturnMin": -0.05,
+      "predictedSharpeMin": -0.05,
+      "predictedDrawdownMin": 0.02
+    },
+    "summary": {
+      "assets": 50,
+      "activeRate": 0.2,
+      "avgImprovement": {
+        "totalReturn": -0.002614,
+        "annualReturn": -0.00168,
+        "sharpe": 0.001722,
+        "maxDrawdown": -0.000614
+      },
+      "returnImprovedRate": 0.1,
+      "sharpeImprovedRate": 0.12,
+      "drawdownImprovedRate": 0.1,
+      "allObjectivesImprovedRate": 0.08,
+      "byMarket": {
+        "加密货币": {
+          "assets": 50,
+          "activeRate": 0.2,
+          "avgImprovement": {
+            "totalReturn": -0.002614,
+            "annualReturn": -0.00168,
+            "sharpe": 0.001722,
+            "maxDrawdown": -0.000614
+          },
+          "allObjectivesImprovedRate": 0.08
+        }
+      }
+    }
+  },
+  "oracleUpperBound": {
+    "assets": 50,
+    "activeRate": 0.96,
+    "avgImprovement": {
+      "totalReturn": 0.323556,
+      "annualReturn": 0.161096,
+      "sharpe": 0.451082,
+      "maxDrawdown": 0.07462
+    },
+    "returnImprovedRate": 0.96,
+    "sharpeImprovedRate": 0.96,
+    "drawdownImprovedRate": 0.88,
+    "allObjectivesImprovedRate": 0.88,
+    "byMarket": {
+      "加密货币": {
+        "assets": 50,
+        "activeRate": 0.96,
+        "avgImprovement": {
+          "totalReturn": 0.323556,
+          "annualReturn": 0.161096,
+          "sharpe": 0.451082,
+          "maxDrawdown": 0.07462
+        },
+        "allObjectivesImprovedRate": 0.88
+      }
+    }
+  },
+  "topConfigs": [
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.068687,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.2,
+        "avgImprovement": {
+          "totalReturn": -0.002614,
+          "annualReturn": -0.00168,
+          "sharpe": 0.001722,
+          "maxDrawdown": -0.000614
+        },
+        "returnImprovedRate": 0.1,
+        "sharpeImprovedRate": 0.12,
+        "drawdownImprovedRate": 0.1,
+        "allObjectivesImprovedRate": 0.08,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": -0.002614,
+              "annualReturn": -0.00168,
+              "sharpe": 0.001722,
+              "maxDrawdown": -0.000614
+            },
+            "allObjectivesImprovedRate": 0.08
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.068687,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.2,
+        "avgImprovement": {
+          "totalReturn": -0.002614,
+          "annualReturn": -0.00168,
+          "sharpe": 0.001722,
+          "maxDrawdown": -0.000614
+        },
+        "returnImprovedRate": 0.1,
+        "sharpeImprovedRate": 0.12,
+        "drawdownImprovedRate": 0.1,
+        "allObjectivesImprovedRate": 0.08,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": -0.002614,
+              "annualReturn": -0.00168,
+              "sharpe": 0.001722,
+              "maxDrawdown": -0.000614
+            },
+            "allObjectivesImprovedRate": 0.08
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.068687,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.2,
+        "avgImprovement": {
+          "totalReturn": -0.002614,
+          "annualReturn": -0.00168,
+          "sharpe": 0.001722,
+          "maxDrawdown": -0.000614
+        },
+        "returnImprovedRate": 0.1,
+        "sharpeImprovedRate": 0.12,
+        "drawdownImprovedRate": 0.1,
+        "allObjectivesImprovedRate": 0.08,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.2,
+            "avgImprovement": {
+              "totalReturn": -0.002614,
+              "annualReturn": -0.00168,
+              "sharpe": 0.001722,
+              "maxDrawdown": -0.000614
+            },
+            "allObjectivesImprovedRate": 0.08
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.040367,
+      "thresholds": {
+        "predictedScoreMin": 0.1,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.1,
+        "avgImprovement": {
+          "totalReturn": -9e-05,
+          "annualReturn": 0.000376,
+          "sharpe": 0.00381,
+          "maxDrawdown": -0.000734
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.1,
+            "avgImprovement": {
+              "totalReturn": -9e-05,
+              "annualReturn": 0.000376,
+              "sharpe": 0.00381,
+              "maxDrawdown": -0.000734
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.040367,
+      "thresholds": {
+        "predictedScoreMin": 0.1,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.1,
+        "avgImprovement": {
+          "totalReturn": -9e-05,
+          "annualReturn": 0.000376,
+          "sharpe": 0.00381,
+          "maxDrawdown": -0.000734
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.1,
+            "avgImprovement": {
+              "totalReturn": -9e-05,
+              "annualReturn": 0.000376,
+              "sharpe": 0.00381,
+              "maxDrawdown": -0.000734
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.040367,
+      "thresholds": {
+        "predictedScoreMin": 0.1,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.1,
+        "avgImprovement": {
+          "totalReturn": -9e-05,
+          "annualReturn": 0.000376,
+          "sharpe": 0.00381,
+          "maxDrawdown": -0.000734
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.1,
+            "avgImprovement": {
+              "totalReturn": -9e-05,
+              "annualReturn": 0.000376,
+              "sharpe": 0.00381,
+              "maxDrawdown": -0.000734
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": -0.05,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.04001,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": 0,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.18,
+        "avgImprovement": {
+          "totalReturn": -0.003452,
+          "annualReturn": -0.002216,
+          "sharpe": 3.2e-05,
+          "maxDrawdown": -0.001908
+        },
+        "returnImprovedRate": 0.08,
+        "sharpeImprovedRate": 0.1,
+        "drawdownImprovedRate": 0.08,
+        "allObjectivesImprovedRate": 0.06,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.18,
+            "avgImprovement": {
+              "totalReturn": -0.003452,
+              "annualReturn": -0.002216,
+              "sharpe": 3.2e-05,
+              "maxDrawdown": -0.001908
+            },
+            "allObjectivesImprovedRate": 0.06
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.032759,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.12,
+        "avgImprovement": {
+          "totalReturn": -0.00171,
+          "annualReturn": -0.000694,
+          "sharpe": 0.002204,
+          "maxDrawdown": -0.000906
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": -0.00171,
+              "annualReturn": -0.000694,
+              "sharpe": 0.002204,
+              "maxDrawdown": -0.000906
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.032759,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.12,
+        "avgImprovement": {
+          "totalReturn": -0.00171,
+          "annualReturn": -0.000694,
+          "sharpe": 0.002204,
+          "maxDrawdown": -0.000906
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": -0.00171,
+              "annualReturn": -0.000694,
+              "sharpe": 0.002204,
+              "maxDrawdown": -0.000906
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.032759,
+      "thresholds": {
+        "predictedScoreMin": -0.15,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0.03,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.12,
+        "avgImprovement": {
+          "totalReturn": -0.00171,
+          "annualReturn": -0.000694,
+          "sharpe": 0.002204,
+          "maxDrawdown": -0.000906
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": -0.00171,
+              "annualReturn": -0.000694,
+              "sharpe": 0.002204,
+              "maxDrawdown": -0.000906
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.032759,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": -0.05,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.12,
+        "avgImprovement": {
+          "totalReturn": -0.00171,
+          "annualReturn": -0.000694,
+          "sharpe": 0.002204,
+          "maxDrawdown": -0.000906
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": -0.00171,
+              "annualReturn": -0.000694,
+              "sharpe": 0.002204,
+              "maxDrawdown": -0.000906
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    },
+    {
+      "model": "crypto-regime-gate-extra_trees",
+      "objective": 0.032759,
+      "thresholds": {
+        "predictedScoreMin": 0,
+        "predictedTotalReturnMin": 0.03,
+        "predictedSharpeMin": 0,
+        "predictedDrawdownMin": 0.02
+      },
+      "summary": {
+        "assets": 50,
+        "activeRate": 0.12,
+        "avgImprovement": {
+          "totalReturn": -0.00171,
+          "annualReturn": -0.000694,
+          "sharpe": 0.002204,
+          "maxDrawdown": -0.000906
+        },
+        "returnImprovedRate": 0.04,
+        "sharpeImprovedRate": 0.06,
+        "drawdownImprovedRate": 0.06,
+        "allObjectivesImprovedRate": 0.04,
+        "byMarket": {
+          "加密货币": {
+            "assets": 50,
+            "activeRate": 0.12,
+            "avgImprovement": {
+              "totalReturn": -0.00171,
+              "annualReturn": -0.000694,
+              "sharpe": 0.002204,
+              "maxDrawdown": -0.000906
+            },
+            "allObjectivesImprovedRate": 0.04
+          }
+        }
+      }
+    }
+  ],
+  "topSafeConfigs": []
+}

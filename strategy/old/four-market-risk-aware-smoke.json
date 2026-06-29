@@ -1,0 +1,5350 @@
+{
+  "generatedAt": "2026-06-16 12:29:51",
+  "dateRange": {
+    "start": "20240101",
+    "end": "20260616"
+  },
+  "validationFraction": 0.34,
+  "cache": {
+    "dir": ".tmp/training_data_cache",
+    "refresh": false,
+    "downloadPause": 0.0,
+    "downloadTimeout": 15.0,
+    "cachedOrDownloadedStocks": 3
+  },
+  "dataSource": "auto",
+  "localDataDir": ".tmp/local_market_data",
+  "grid": {
+    "qHeads": [
+      0.7,
+      0.75,
+      0.8,
+      0.85
+    ],
+    "qTails": [
+      0.9,
+      0.93,
+      0.95,
+      0.97
+    ],
+    "etas": [
+      0.2,
+      0.35,
+      0.5,
+      0.65,
+      0.8
+    ],
+    "combinations": 80
+  },
+  "counts": {
+    "requestedStocks": 12,
+    "successfulStocks": 3,
+    "failedStocks": 9
+  },
+  "splitCounts": {
+    "train": 2,
+    "validation": 1
+  },
+  "modelSummary": {
+    "globalModel": {
+      "params": {
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "avgScore": 0.6585,
+        "robustnessScore": 1.1785,
+        "returnImprovedRate": 1.0,
+        "sharpeImprovedRate": 1.0,
+        "drawdownImprovedRate": 1.0,
+        "allObjectivesImprovedRate": 1.0,
+        "stocks": 2
+      },
+      "trainEvidence": {
+        "stocks": 2,
+        "avgScore": 0.6585,
+        "positiveScoreRate": 1.0,
+        "returnImprovedRate": 1.0,
+        "sharpeImprovedRate": 1.0,
+        "drawdownImprovedRate": 1.0,
+        "allObjectivesImprovedRate": 1.0,
+        "avgBaseline": {
+          "totalReturn": -0.13,
+          "annualReturn": -0.06565,
+          "maxDrawdown": -0.2686,
+          "winRate": 0.21625,
+          "sharpe": -0.42895
+        },
+        "avgModel": {
+          "totalReturn": 0.0122,
+          "annualReturn": -0.00305,
+          "maxDrawdown": -0.2179,
+          "winRate": 0.24605,
+          "sharpe": -0.01085
+        },
+        "avgImprovement": {
+          "totalReturn": 0.1422,
+          "annualReturn": 0.0626,
+          "sharpe": 0.4181,
+          "maxDrawdown": 0.0507
+        }
+      },
+      "validationEvidence": {
+        "stocks": 1,
+        "avgScore": 0.30028,
+        "positiveScoreRate": 1.0,
+        "returnImprovedRate": 1.0,
+        "sharpeImprovedRate": 1.0,
+        "drawdownImprovedRate": 1.0,
+        "allObjectivesImprovedRate": 1.0,
+        "avgBaseline": {
+          "totalReturn": 0.4407,
+          "annualReturn": 0.1749,
+          "maxDrawdown": -0.2259,
+          "winRate": 0.2522,
+          "sharpe": 0.8132
+        },
+        "avgModel": {
+          "totalReturn": 0.5643,
+          "annualReturn": 0.2183,
+          "maxDrawdown": -0.209,
+          "winRate": 0.2715,
+          "sharpe": 0.9535
+        },
+        "avgImprovement": {
+          "totalReturn": 0.1236,
+          "annualReturn": 0.0434,
+          "sharpe": 0.1403,
+          "maxDrawdown": 0.0169
+        }
+      }
+    },
+    "marketModels": [
+      {
+        "market": "A股",
+        "params": {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "avgScore": 0.6585,
+          "robustnessScore": 1.1785,
+          "returnImprovedRate": 1.0,
+          "sharpeImprovedRate": 1.0,
+          "drawdownImprovedRate": 1.0,
+          "allObjectivesImprovedRate": 1.0,
+          "stocks": 2
+        },
+        "trainEvidence": {
+          "stocks": 2,
+          "avgScore": 0.6585,
+          "positiveScoreRate": 1.0,
+          "returnImprovedRate": 1.0,
+          "sharpeImprovedRate": 1.0,
+          "drawdownImprovedRate": 1.0,
+          "allObjectivesImprovedRate": 1.0,
+          "avgBaseline": {
+            "totalReturn": -0.13,
+            "annualReturn": -0.06565,
+            "maxDrawdown": -0.2686,
+            "winRate": 0.21625,
+            "sharpe": -0.42895
+          },
+          "avgModel": {
+            "totalReturn": 0.0122,
+            "annualReturn": -0.00305,
+            "maxDrawdown": -0.2179,
+            "winRate": 0.24605,
+            "sharpe": -0.01085
+          },
+          "avgImprovement": {
+            "totalReturn": 0.1422,
+            "annualReturn": 0.0626,
+            "sharpe": 0.4181,
+            "maxDrawdown": 0.0507
+          }
+        },
+        "validationEvidence": {
+          "stocks": 1,
+          "avgScore": 0.30028,
+          "positiveScoreRate": 1.0,
+          "returnImprovedRate": 1.0,
+          "sharpeImprovedRate": 1.0,
+          "drawdownImprovedRate": 1.0,
+          "allObjectivesImprovedRate": 1.0,
+          "avgBaseline": {
+            "totalReturn": 0.4407,
+            "annualReturn": 0.1749,
+            "maxDrawdown": -0.2259,
+            "winRate": 0.2522,
+            "sharpe": 0.8132
+          },
+          "avgModel": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "avgImprovement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          }
+        }
+      }
+    ]
+  },
+  "deliverableModel": {
+    "modelName": "PT Heavy Tail OHLCV Transformer",
+    "modelVersion": "0.1.0",
+    "generatedAt": "2026-06-16 12:29:51",
+    "trainingRange": {
+      "start": "20240101",
+      "end": "20260616"
+    },
+    "selectionMethod": "Grid search on training split, validation reported out-of-sample by symbol split",
+    "parameterGrid": {
+      "qHeads": [
+        0.7,
+        0.75,
+        0.8,
+        0.85
+      ],
+      "qTails": [
+        0.9,
+        0.93,
+        0.95,
+        0.97
+      ],
+      "etas": [
+        0.2,
+        0.35,
+        0.5,
+        0.65,
+        0.8
+      ],
+      "combinations": 80
+    },
+    "integrationContract": {
+      "input": "OHLCV table with columns: open, high, low, close, volume",
+      "output": "Transformed OHLCV table with PT model prices: pt_open, pt_high, pt_low, pt_close, pt_volume",
+      "institutionUsage": "Run existing trading strategies against the transformed OHLCV columns without changing strategy rules"
+    },
+    "globalParameters": {
+      "qHead": 0.7,
+      "qTail": 0.9,
+      "eta": 0.5,
+      "validationEvidence": {
+        "stocks": 1,
+        "avgScore": 0.30028,
+        "positiveScoreRate": 1.0,
+        "returnImprovedRate": 1.0,
+        "sharpeImprovedRate": 1.0,
+        "drawdownImprovedRate": 1.0,
+        "allObjectivesImprovedRate": 1.0,
+        "avgBaseline": {
+          "totalReturn": 0.4407,
+          "annualReturn": 0.1749,
+          "maxDrawdown": -0.2259,
+          "winRate": 0.2522,
+          "sharpe": 0.8132
+        },
+        "avgModel": {
+          "totalReturn": 0.5643,
+          "annualReturn": 0.2183,
+          "maxDrawdown": -0.209,
+          "winRate": 0.2715,
+          "sharpe": 0.9535
+        },
+        "avgImprovement": {
+          "totalReturn": 0.1236,
+          "annualReturn": 0.0434,
+          "sharpe": 0.1403,
+          "maxDrawdown": 0.0169
+        }
+      }
+    },
+    "marketParameters": {
+      "A股": {
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "validationEvidence": {
+          "stocks": 1,
+          "avgScore": 0.30028,
+          "positiveScoreRate": 1.0,
+          "returnImprovedRate": 1.0,
+          "sharpeImprovedRate": 1.0,
+          "drawdownImprovedRate": 1.0,
+          "allObjectivesImprovedRate": 1.0,
+          "avgBaseline": {
+            "totalReturn": 0.4407,
+            "annualReturn": 0.1749,
+            "maxDrawdown": -0.2259,
+            "winRate": 0.2522,
+            "sharpe": 0.8132
+          },
+          "avgModel": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "avgImprovement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          }
+        }
+      }
+    }
+  },
+  "marketSummary": [
+    {
+      "market": "A股",
+      "stocks": 3,
+      "bestParams": {
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5
+      },
+      "avgScore": 0.692587,
+      "avgBaseline": {
+        "totalReturn": 0.060233,
+        "annualReturn": 0.014533,
+        "maxDrawdown": -0.254367,
+        "winRate": 0.228233,
+        "sharpe": -0.0149
+      },
+      "avgBest": {
+        "totalReturn": 0.250567,
+        "annualReturn": 0.0906,
+        "maxDrawdown": -0.205667,
+        "winRate": 0.264467,
+        "sharpe": 0.390433
+      },
+      "avgImprovement": {
+        "totalReturn": 0.190333,
+        "annualReturn": 0.076067,
+        "sharpe": 0.405333,
+        "maxDrawdown": 0.0487
+      }
+    }
+  ],
+  "stockResults": [
+    {
+      "market": "A股",
+      "symbol": "600036.SS",
+      "name": "招商银行",
+      "rows": 571,
+      "baseline": {
+        "totalReturn": 0.0665,
+        "annualReturn": 0.0288,
+        "maxDrawdown": -0.2084,
+        "winRate": 0.2609,
+        "sharpe": 0.2486
+      },
+      "best": {
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.5,
+        "score": 0.708,
+        "metrics": {
+          "totalReturn": 0.2728,
+          "annualReturn": 0.1123,
+          "maxDrawdown": -0.1716,
+          "winRate": 0.2925,
+          "sharpe": 0.6703
+        },
+        "improvement": {
+          "totalReturn": 0.2063,
+          "annualReturn": 0.0835,
+          "sharpe": 0.4217,
+          "maxDrawdown": 0.0368
+        }
+      },
+      "candidateScores": [
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.1805,
+            "annualReturn": 0.076,
+            "maxDrawdown": -0.1494,
+            "winRate": 0.275,
+            "sharpe": 0.4957
+          },
+          "improvement": {
+            "totalReturn": 0.114,
+            "annualReturn": 0.0472,
+            "sharpe": 0.2471,
+            "maxDrawdown": 0.059
+          },
+          "score": 0.4677
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.2119,
+            "annualReturn": 0.0885,
+            "maxDrawdown": -0.169,
+            "winRate": 0.289,
+            "sharpe": 0.5563
+          },
+          "improvement": {
+            "totalReturn": 0.1454,
+            "annualReturn": 0.0597,
+            "sharpe": 0.3077,
+            "maxDrawdown": 0.0394
+          },
+          "score": 0.53145
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.2728,
+            "annualReturn": 0.1123,
+            "maxDrawdown": -0.1716,
+            "winRate": 0.2925,
+            "sharpe": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.2168,
+            "annualReturn": 0.0905,
+            "maxDrawdown": -0.1962,
+            "winRate": 0.2977,
+            "sharpe": 0.5593
+          },
+          "improvement": {
+            "totalReturn": 0.1503,
+            "annualReturn": 0.0617,
+            "sharpe": 0.3107,
+            "maxDrawdown": 0.0122
+          },
+          "score": 0.49634
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.2008,
+            "annualReturn": 0.0841,
+            "maxDrawdown": -0.1988,
+            "winRate": 0.303,
+            "sharpe": 0.527
+          },
+          "improvement": {
+            "totalReturn": 0.1343,
+            "annualReturn": 0.0553,
+            "sharpe": 0.2784,
+            "maxDrawdown": 0.0096
+          },
+          "score": 0.44228
+        }
+      ],
+      "topCandidates": [
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "累计收益率": 0.2728,
+            "年化收益率": 0.1123,
+            "最大回撤": -0.1716,
+            "胜率": 0.2925,
+            "夏普比率": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "累计收益率": 0.2728,
+            "年化收益率": 0.1123,
+            "最大回撤": -0.1716,
+            "胜率": 0.2925,
+            "夏普比率": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "累计收益率": 0.2728,
+            "年化收益率": 0.1123,
+            "最大回撤": -0.1716,
+            "胜率": 0.2925,
+            "夏普比率": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "累计收益率": 0.2728,
+            "年化收益率": 0.1123,
+            "最大回撤": -0.1716,
+            "胜率": 0.2925,
+            "夏普比率": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "累计收益率": 0.2728,
+            "年化收益率": 0.1123,
+            "最大回撤": -0.1716,
+            "胜率": 0.2925,
+            "夏普比率": 0.6703
+          },
+          "improvement": {
+            "totalReturn": 0.2063,
+            "annualReturn": 0.0835,
+            "sharpe": 0.4217,
+            "maxDrawdown": 0.0368
+          },
+          "score": 0.708
+        }
+      ],
+      "split": "train"
+    },
+    {
+      "market": "A股",
+      "symbol": "600519.SS",
+      "name": "贵州茅台",
+      "rows": 571,
+      "baseline": {
+        "totalReturn": -0.3265,
+        "annualReturn": -0.1601,
+        "maxDrawdown": -0.3288,
+        "winRate": 0.1716,
+        "sharpe": -1.1065
+      },
+      "best": {
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.65,
+        "score": 0.76838,
+        "metrics": {
+          "totalReturn": -0.2209,
+          "annualReturn": -0.1043,
+          "maxDrawdown": -0.2479,
+          "winRate": 0.2102,
+          "sharpe": -0.5905
+        },
+        "improvement": {
+          "totalReturn": 0.1056,
+          "annualReturn": 0.0558,
+          "sharpe": 0.516,
+          "maxDrawdown": 0.0809
+        }
+      },
+      "candidateScores": [
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": -0.2469,
+            "annualReturn": -0.1176,
+            "maxDrawdown": -0.2597,
+            "winRate": 0.1856,
+            "sharpe": -0.6939
+          },
+          "improvement": {
+            "totalReturn": 0.0796,
+            "annualReturn": 0.0425,
+            "sharpe": 0.4126,
+            "maxDrawdown": 0.0691
+          },
+          "score": 0.61605
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": -0.2442,
+            "annualReturn": -0.1162,
+            "maxDrawdown": -0.2631,
+            "winRate": 0.1944,
+            "sharpe": -0.6771
+          },
+          "improvement": {
+            "totalReturn": 0.0823,
+            "annualReturn": 0.0439,
+            "sharpe": 0.4294,
+            "maxDrawdown": 0.0657
+          },
+          "score": 0.63054
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": -0.2484,
+            "annualReturn": -0.1184,
+            "maxDrawdown": -0.2642,
+            "winRate": 0.1996,
+            "sharpe": -0.692
+          },
+          "improvement": {
+            "totalReturn": 0.0781,
+            "annualReturn": 0.0417,
+            "sharpe": 0.4145,
+            "maxDrawdown": 0.0646
+          },
+          "score": 0.609
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": -0.2209,
+            "annualReturn": -0.1043,
+            "maxDrawdown": -0.2479,
+            "winRate": 0.2102,
+            "sharpe": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": -0.2919,
+            "annualReturn": -0.1413,
+            "maxDrawdown": -0.2919,
+            "winRate": 0.2207,
+            "sharpe": -0.8083
+          },
+          "improvement": {
+            "totalReturn": 0.0346,
+            "annualReturn": 0.0188,
+            "sharpe": 0.2982,
+            "maxDrawdown": 0.0369
+          },
+          "score": 0.39778
+        }
+      ],
+      "topCandidates": [
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "累计收益率": -0.2209,
+            "年化收益率": -0.1043,
+            "最大回撤": -0.2479,
+            "胜率": 0.2102,
+            "夏普比率": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "累计收益率": -0.2209,
+            "年化收益率": -0.1043,
+            "最大回撤": -0.2479,
+            "胜率": 0.2102,
+            "夏普比率": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "累计收益率": -0.2209,
+            "年化收益率": -0.1043,
+            "最大回撤": -0.2479,
+            "胜率": 0.2102,
+            "夏普比率": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "累计收益率": -0.2209,
+            "年化收益率": -0.1043,
+            "最大回撤": -0.2479,
+            "胜率": 0.2102,
+            "夏普比率": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "累计收益率": -0.2209,
+            "年化收益率": -0.1043,
+            "最大回撤": -0.2479,
+            "胜率": 0.2102,
+            "夏普比率": -0.5905
+          },
+          "improvement": {
+            "totalReturn": 0.1056,
+            "annualReturn": 0.0558,
+            "sharpe": 0.516,
+            "maxDrawdown": 0.0809
+          },
+          "score": 0.76838
+        }
+      ],
+      "split": "train"
+    },
+    {
+      "market": "A股",
+      "symbol": "601318.SS",
+      "name": "中国平安",
+      "rows": 571,
+      "baseline": {
+        "totalReturn": 0.4407,
+        "annualReturn": 0.1749,
+        "maxDrawdown": -0.2259,
+        "winRate": 0.2522,
+        "sharpe": 0.8132
+      },
+      "best": {
+        "qHead": 0.7,
+        "qTail": 0.9,
+        "eta": 0.8,
+        "score": 0.60138,
+        "metrics": {
+          "totalReturn": 0.6998,
+          "annualReturn": 0.2638,
+          "maxDrawdown": -0.1975,
+          "winRate": 0.2907,
+          "sharpe": 1.0915
+        },
+        "improvement": {
+          "totalReturn": 0.2591,
+          "annualReturn": 0.0889,
+          "sharpe": 0.2783,
+          "maxDrawdown": 0.0284
+        }
+      },
+      "candidateScores": [
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.8,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.2,
+          "metrics": {
+            "totalReturn": 0.5473,
+            "annualReturn": 0.2125,
+            "maxDrawdown": -0.2114,
+            "winRate": 0.2592,
+            "sharpe": 0.9377
+          },
+          "improvement": {
+            "totalReturn": 0.1066,
+            "annualReturn": 0.0376,
+            "sharpe": 0.1245,
+            "maxDrawdown": 0.0145
+          },
+          "score": 0.26244
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.35,
+          "metrics": {
+            "totalReturn": 0.5615,
+            "annualReturn": 0.2173,
+            "maxDrawdown": -0.1979,
+            "winRate": 0.268,
+            "sharpe": 0.9518
+          },
+          "improvement": {
+            "totalReturn": 0.1208,
+            "annualReturn": 0.0424,
+            "sharpe": 0.1386,
+            "maxDrawdown": 0.028
+          },
+          "score": 0.31332
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.5,
+          "metrics": {
+            "totalReturn": 0.5643,
+            "annualReturn": 0.2183,
+            "maxDrawdown": -0.209,
+            "winRate": 0.2715,
+            "sharpe": 0.9535
+          },
+          "improvement": {
+            "totalReturn": 0.1236,
+            "annualReturn": 0.0434,
+            "sharpe": 0.1403,
+            "maxDrawdown": 0.0169
+          },
+          "score": 0.30028
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.65,
+          "metrics": {
+            "totalReturn": 0.5631,
+            "annualReturn": 0.2179,
+            "maxDrawdown": -0.2283,
+            "winRate": 0.2802,
+            "sharpe": 0.9458
+          },
+          "improvement": {
+            "totalReturn": 0.1224,
+            "annualReturn": 0.043,
+            "sharpe": 0.1326,
+            "maxDrawdown": -0.0024
+          },
+          "score": 0.25658
+        },
+        {
+          "qHead": 0.85,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "totalReturn": 0.6998,
+            "annualReturn": 0.2638,
+            "maxDrawdown": -0.1975,
+            "winRate": 0.2907,
+            "sharpe": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        }
+      ],
+      "topCandidates": [
+        {
+          "qHead": 0.7,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "累计收益率": 0.6998,
+            "年化收益率": 0.2638,
+            "最大回撤": -0.1975,
+            "胜率": 0.2907,
+            "夏普比率": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.93,
+          "eta": 0.8,
+          "metrics": {
+            "累计收益率": 0.6998,
+            "年化收益率": 0.2638,
+            "最大回撤": -0.1975,
+            "胜率": 0.2907,
+            "夏普比率": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.95,
+          "eta": 0.8,
+          "metrics": {
+            "累计收益率": 0.6998,
+            "年化收益率": 0.2638,
+            "最大回撤": -0.1975,
+            "胜率": 0.2907,
+            "夏普比率": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.7,
+          "qTail": 0.97,
+          "eta": 0.8,
+          "metrics": {
+            "累计收益率": 0.6998,
+            "年化收益率": 0.2638,
+            "最大回撤": -0.1975,
+            "胜率": 0.2907,
+            "夏普比率": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        },
+        {
+          "qHead": 0.75,
+          "qTail": 0.9,
+          "eta": 0.8,
+          "metrics": {
+            "累计收益率": 0.6998,
+            "年化收益率": 0.2638,
+            "最大回撤": -0.1975,
+            "胜率": 0.2907,
+            "夏普比率": 1.0915
+          },
+          "improvement": {
+            "totalReturn": 0.2591,
+            "annualReturn": 0.0889,
+            "sharpe": 0.2783,
+            "maxDrawdown": 0.0284
+          },
+          "score": 0.60138
+        }
+      ],
+      "split": "validation"
+    }
+  ],
+  "failures": [
+    {
+      "market": "美股",
+      "symbol": "AAPL",
+      "name": "Apple",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: AAPL"
+    },
+    {
+      "market": "美股",
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: MSFT"
+    },
+    {
+      "market": "美股",
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: NVDA"
+    },
+    {
+      "market": "港股",
+      "symbol": "0700.HK",
+      "name": "腾讯控股",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: 0700.HK"
+    },
+    {
+      "market": "港股",
+      "symbol": "9988.HK",
+      "name": "阿里巴巴-W",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: 9988.HK"
+    },
+    {
+      "market": "港股",
+      "symbol": "3690.HK",
+      "name": "美团-W",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: 3690.HK"
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: BTC-USD"
+    },
+    {
+      "market": "加密货币",
+      "symbol": "ETH-USD",
+      "name": "Ethereum",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: ETH-USD"
+    },
+    {
+      "market": "加密货币",
+      "symbol": "BNB-USD",
+      "name": "BNB",
+      "error": "Yahoo Finance 未返回数据，请检查股票代码或日期区间: BNB-USD"
+    }
+  ]
+}
